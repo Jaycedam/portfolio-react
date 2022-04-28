@@ -1,10 +1,12 @@
 import React from "react";
+import Navbar from "./Navbar"
 import abstract from '../images/abstract.svg'
-import { VscBracketDot } from 'react-icons/vsc';
+import { VscBracketDot, VscMail } from 'react-icons/vsc';
 
 export default function Hero() {
     return (
         <div className="container-fluid hero">
+            <Navbar/>
 
             <div className="row content">
                 <div className="col-12 col-lg-6">
@@ -14,8 +16,8 @@ export default function Hero() {
                         
                         </p>
                     <div className="flex justify-content-start">
-                        <a href="mailto:jaycedam@gmail.com" className="btn btn-outline-dark btn-lg">
-                            Contactar
+                        <a href="mailto:jaycedam@gmail.com" className="btn btn-outline-light mail-btn">
+                            <h2><VscMail/></h2>
                         </a>
                     </div>
                 </div>

@@ -10,7 +10,7 @@ export default function About() {
                 </div>
 
                 <div className="col-12 col-lg-9">
-                    <h2>Acerca de</h2>
+                    <h2 className="title">Acerca de</h2>
                     <p> Pellentesque nec nisl interdum, consectetur quam sodales, ultricies libero. Nunc nec sem nec est rutrum sodales.
                         Quisque est diam, dictum at suscipit eu, gravida quis felis. Duis mattis finibus lobortis.
                         Vivamus nec consequat nibh. Sed tincidunt nisl sit amet magna tincidunt porta. Vestibulum et nunc aliquet, vehicula enim nec,

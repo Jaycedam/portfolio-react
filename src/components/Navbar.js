@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa"
 
 export default function Nabvar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-light">
             <div className="container-fluid">
                 <a className="navbar-brand" href="#home">jordancortes<strong>.dev</strong></a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
