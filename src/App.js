@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 import Nabvar from './components/Navbar';
 import Hero from './components/Hero';
 import ProjectList from './components/ProjectList';
