@@ -27,10 +27,10 @@ export default function ProjectList() {
     );
 
     return (
-        <div className="container px-4 py-5" id="projects">
-            <h2 className="pb-2 border-bottom">Proyectos</h2>
+        <div className="container pt-5" id="projects">
+            <h2 className="pb-4 pt-5">Proyectos</h2>
 
-            <div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div className="row gx-5 g-5">
                 {projectElements}
             </div>
         </div>

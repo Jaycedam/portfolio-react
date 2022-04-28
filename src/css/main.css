@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
 :root {
-  --bg: #FCFCFC;
+  --bg: #f6f6f6;
   --bg-dark: #171717;
-  --color-text: #333333;
-  --color-text-dark: #FCFCFC;
+  --color-text-dark: #333333;
+  --color-text-light: #FCFCFC;
   --accent-primary: #26ddd8;
   --accent-secondary: #ffa4c9;
 }
@@ -13,7 +14,7 @@ body {
   margin: 0;
   font-family: 'Poppins', arial;
   background-color: var(--bg);
-  color: var(--color-text) !important;
+  color: var(--color-text-dark) !important;
 }
 
 ul {
@@ -34,13 +35,20 @@ a {
   color: var(--accent-primary) !important;
 }
 
+.navbar-brand strong {
+  color: var(--accent-secondary);
+}
+
 .hero {
   height: 90vh;
   overflow: hidden;
+  padding: 0 10%;
 }
 
 .hero .content {
-  height: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .hero h1 {
@@ -49,59 +57,136 @@ a {
 }
 
 .hero .title-icon {
-  color: var(--accent-primary);
+  color: var(--accent-secondary);
 }
 
 .hero .hero-image {
   width: 80%;
 }
 
-.hero .arrow-down {
-  color: var(--accent-secondary);
-  font-size: 3em;
-}
-
 .bg-light {
   background-color: var(--bg) !important;
 }
 
+.project-container {
+  height: 200px;
+}
+
+.project-container .row {
+  height: 100%;
+  background-color: white;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.project-container p {
+  font-weight: 300;
+}
+
+.project-container h4 {
+  font-weight: 700;
+}
+
+.project-container .image {
+  height: 100%;
+}
+
+.project-container .image img {
+  width: 100%;
+}
+
+.about img {
+  width: 100%;
+}
+
+.about .image {
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  width: 80%;
+  margin: auto;
+  background-color: var(--bg-dark);
+}
+
 @media only screen and (max-width: 992px) {
-  .hero-image-container {
-    display: none;
+  .hero .content {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about img {
+    width: 70%;
+    padding-bottom: 2em;
   }
 }
 
 @media only screen and (max-width: 576px) {
   .hero h1 {
-    font-size: 3em;
+    font-size: 2.5em;
+  }
+
+  .project-container {
+    height: auto;
+  }
+
+  .project-container .content- {
+    width: 100%;
+  }
+
+  .project-container .image {
+    display: none;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--bg-dark);
-    color: var(--color-text-dark) !important;
+    color: var(--color-text-light) !important;
   }
+
   .navbar-toggler-icon {
     -webkit-filter: invert(100%);
-            filter: invert(100%);
+    filter: invert(100%);
   }
+
   .bg-light {
     background-color: var(--bg-dark) !important;
   }
+
   .nav-link {
-    color: var(--color-text-dark) !important;
+    color: var(--color-text-light) !important;
   }
+
   .navbar-text a {
     color: white !important;
   }
+
   .btn-outline-dark {
-    color: var(--color-text-dark);
+    color: var(--color-text-light);
     border-color: var(--bg);
   }
+
   .btn-outline-dark:hover {
     background-color: var(--bg);
-    color: var(--color-text);
+    color: var(--color-text-dark);
+  }
+
+  .hero .arrow-down {
+    color: var(--color-text-light);
+    font-size: 3em;
+  }
+
+  .project-container .row {
+    background-color: #252525;
   }
 }
-/*# sourceMappingURL=main.css.map */

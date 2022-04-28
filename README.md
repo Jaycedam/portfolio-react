@@ -2,5 +2,5 @@
 Currently in development.
 
 ## About
-> - The front-end for the website is being created with React, SCSS for styling and react-icons.
-> - ~~The projects are being fetch from an API~~ (In progress)
+> - The front-end for the website is being created with React and Bootstrap.
+> - The projects are being fetch from an API for demostration.
