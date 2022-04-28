@@ -82,6 +82,10 @@ a {
     background-color: var(--bg-dark);
     color: var(--color-text-dark) !important;
   }
+  .navbar-toggler-icon {
+    -webkit-filter: invert(100%);
+            filter: invert(100%);
+  }
   .bg-light {
     background-color: var(--bg-dark) !important;
   }
