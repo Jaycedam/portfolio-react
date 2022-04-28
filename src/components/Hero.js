@@ -1,6 +1,6 @@
 import React from "react";
 import abstract from '../images/abstract.svg'
-import { VscBracketDot, VscChevronDown, VscMail } from 'react-icons/vsc';
+import { VscBracketDot } from 'react-icons/vsc';
 import { BsCaretDown } from 'react-icons/bs'
 
 export default function Hero() {
@@ -20,7 +20,7 @@ export default function Hero() {
                 </div>
 
                 <div className="col-lg-6 hero-image-container">
-                    <img src={abstract} className="hero-image" />
+                    <img src={abstract} alt="" className="hero-image" />
                 </div>
             </div>
 

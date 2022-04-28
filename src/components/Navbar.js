@@ -5,7 +5,7 @@ export default function Nabvar() {
     return (
         <nav className="navbar navbar-expand-lg sticky-top navbar-light bg-light">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">JORDAN CORTÉS</a>
+                <a className="navbar-brand" href="#home">JORDAN CORTÉS</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -18,7 +18,7 @@ export default function Nabvar() {
                             <a className="nav-link" href="#projects">Proyectos</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Acerca</a>
+                            <a className="nav-link" href="#about">Acerca</a>
                         </li>
                     </ul>
                     <span className="navbar-text">

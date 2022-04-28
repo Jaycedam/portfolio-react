@@ -1,5 +1,5 @@
 # Front end for Personal Website (React)
-Currently in development, for a live preview visit [here](https://jordan-cortes.herokuapp.com/).
+Currently in development.
 
 ## About
 > - The front-end for the website is being created with React, SCSS for styling and react-icons.
