@@ -26,3 +26,90 @@ ul {
 a {
     text-decoration: none;
 }
+
+.github-icon {
+    margin-left: 0.5em;
+}
+
+.navbar-brand {
+    color: var(--accent-primary)!important;
+}
+
+.hero {
+    height: 90vh;
+    overflow: hidden;
+
+    .content {
+        height: 90%;
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 4em;
+    }
+
+    .title-icon {
+        color: var(--accent-primary);
+    }
+
+    .hero-image {
+        width: 80%;
+    }
+
+    .arrow-down {
+        color: var(--accent-secondary);
+        font-size: 3em;
+    }
+}
+
+// BOOTSTRAP OVERRIDES
+.bg-light {
+    background-color: var(--bg)!important;
+}
+
+// MEDIA QUERIES
+@media only screen and (max-width: 992px) {
+    .hero-image-container {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .hero {
+        h1 {
+            font-size: 3em;
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--bg-dark);
+        color: var(--color-text-dark)!important;
+    }
+
+    .bg-light {
+        background-color: var(--bg-dark)!important;
+    }
+
+    .nav-link {
+        color: var(--color-text-dark)!important;
+    }
+
+    .navbar-text {
+        a {
+            color: white!important;
+        }
+    }
+
+    .btn-outline-dark {
+        color: var(--color-text-dark);
+        border-color: var(--bg);
+
+        &:hover {
+            background-color: var(--bg);
+            color: var(--color-text);
+        }
+    }
+  
+}
