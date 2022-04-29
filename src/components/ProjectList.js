@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Project from "./Project"
+import Project from "./Project";
 
 export default function ProjectList() {
 
@@ -10,7 +10,6 @@ export default function ProjectList() {
         const response = await fetch(url)
         const responseJSON = await response.json()
         setProjects(responseJSON)
-        console.log(response.status)
     }
 
     useEffect(() => {
@@ -19,6 +18,7 @@ export default function ProjectList() {
 
     const projectElements = projects.map(n => {
         return <Project key={n.id}
+            imageUrl={n.imageUrl}
             name={n.name}
             about={n.about}
             url={n.url}
@@ -30,7 +30,7 @@ export default function ProjectList() {
         <div className="container pt-5 project-list" id="projects">
             <h2 className="pb-4 pt-5 title">Proyectos</h2>
 
-            <div className="row g-5">
+            <div className="row">
                 {projectElements}
             </div>
         </div>

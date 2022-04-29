@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa"
 
-export default function Nabvar() {
+export default function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-light">
             <div className="container-fluid">
@@ -11,9 +11,6 @@ export default function Nabvar() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarText">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li className="nav-item">
-                            <a className="nav-link" aria-current="page" href="#home">Inicio</a>
-                        </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#about">Acerca</a>
                         </li>
