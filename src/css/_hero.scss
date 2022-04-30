@@ -1,0 +1,44 @@
+.hero-container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .hero-text {
+        color: var(--text-dark);
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 3em;
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        p {
+            margin: 0;
+            font-weight: 300;
+        }
+
+        strong {
+            color: var(--primary-color);
+        }
+    }
+
+    .hero-logo {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 40%;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .icon-down {
+        font-size: 1.5em;
+        margin-top: 2em;
+    }
+    
+}

@@ -1,0 +1,29 @@
+.btn-light {
+    padding: 15px 30px;
+    text-align: center;
+    border: 1px solid var(--text-light);
+    color: var(--text-light);
+    border-radius: 10px;
+    transition: color .20s ease-in-out, background-color .20s ease-in-out, border-color .20s ease-in-out;
+
+    &:hover, &:focus {
+        color: var(--text-dark);
+        background-color: var(--text-light);
+        border-color: var(--text-dark);
+    }
+}
+
+.btn-dark {
+    padding: 15px 30px;
+    text-align: center;
+    border: 1px solid var(--secondary-color);
+    color: var(--text-dark);
+    border-radius: 10px;
+    transition: color .20s ease-in-out, background-color .20s ease-in-out, border-color .20s ease-in-out;
+
+    &:hover, &:focus {
+        color: var(--text-light);
+        background-color: var(--secondary-color);
+        border-color: var(--text-light);
+    }
+}

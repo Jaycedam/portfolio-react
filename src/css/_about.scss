@@ -1,0 +1,19 @@
+.about-container {
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    background-image: var(--bg-gradient);
+    color: var(--text-light);
+    .text {
+        text-align: justify;
+    }
+
+    .image {
+        display: none;
+        img {
+            width: 100%;
+        }
+    }
+
+
+}

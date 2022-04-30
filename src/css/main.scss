@@ -1,0 +1,47 @@
+@use "_elements";
+@use "_header";
+@use "_hero";
+@use "_about";
+@use "_projects";
+@use "_footer";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+:root {
+    --bg-light: #f6f6f6;
+    --bg-dark: #171717;
+    --primary-color: #7623f8;
+    --secondary-color: #fb56b9;
+    --text-light: #fff;
+    --text-dark: #171717;
+    --bg-gradient: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    --header-height: 80px;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    font-family: 'Poppins', arial;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-dark);
+
+    &:hover {
+        color: var(--secondary-color);
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+// CONTAINER FOR CONTENT AFTER HERO
+.main-container {
+    padding: 0 2em;
+}
