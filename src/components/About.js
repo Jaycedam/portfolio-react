@@ -12,8 +12,11 @@ export default function About() {
             <div className="text">
                 <h2>Acerca de</h2>
                 <p>
-                    Pellentesque nec nisl interdum, consectetur quam sodales, ultricies libero. Nunc nec sem nec est rutrum sodales.
-                    Quisque est diam, dictum at suscipit eu, gravida quis felis. Duis mattis finibus lobortis.
+                    Esta página ha sido creada con React, SCSS y react-icons. 
+                    Los proyectos son mostrados a través de una API, 
+                    desde una aplicación creada con Java Spring Boot.
+                    Diseño acorde a las guías "Mobile first" para un mejor diseño responsivo.
+                    Además incluye dark mode automático acorde al tema de tu dispositivo. 
                 </p>
             </div>
         </section>

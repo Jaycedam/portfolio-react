@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithub } from "react-icons/fa"
 
 export default function Navbar() {
     return (
@@ -11,19 +12,19 @@ export default function Navbar() {
                 <ul className="primary-navigation">
                     <li>
                         <a href="#top">
-                            Inicio
+                            INICIO
                         </a>
                     </li>
 
                     <li>
                         <a href="#about">
-                            Acerca
+                            ACERCA
                         </a>
                     </li>
 
                     <li>
                         <a href="#projects">
-                            Proyectos
+                            PROYECTOS <FaGithub/>
                         </a>
                     </li>
 

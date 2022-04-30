@@ -4,6 +4,7 @@ import ProjectList from './components/ProjectList';
 import Footer from './components/Footer';
 import About from './components/About';
 import Header from './components/Header';
+import Technologies from './components/Technologies';
 
 function App() {
   return (
@@ -11,10 +12,9 @@ function App() {
       <Header />
       <Hero />
       <About />
-      <div className='main-container'>
-        <ProjectList/>
-      </div>
-      <Footer/>
+      <ProjectList />
+      {/* <Technologies /> */}
+      <Footer />
     </>
   );
 }
