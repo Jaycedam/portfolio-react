@@ -12,11 +12,8 @@ function App() {
       <Header />
       <Hero />
       <About />
-      <div className='container'>
-        <ProjectList />
-        {/* <Technologies /> */}
-      </div>
-
+      <ProjectList />
+      <Technologies/>
       <Footer />
     </>
   );

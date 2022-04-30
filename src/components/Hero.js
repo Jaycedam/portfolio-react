@@ -1,6 +1,6 @@
 import React from "react";
-import { VscBracketDot } from 'react-icons/vsc';
 import abstract from '../images/abstract.svg'
+import { FaRegHandPointDown } from "react-icons/fa"
 
 export default function Hero() {
     return (
@@ -15,7 +15,7 @@ export default function Hero() {
                 </p>
 
                 <h1>Software<br />
-                    Developer <strong><VscBracketDot /></strong>
+                    Developer
                 </h1>
 
             </div>
@@ -24,8 +24,9 @@ export default function Hero() {
                 <a href="mailto:jaycedam@gmail.com" className="btn-dark">
                     Contactar
                 </a>
-
             </div>
+
+            <FaRegHandPointDown className="down-icon"/>
         </div>
     )
 }

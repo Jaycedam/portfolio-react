@@ -3,8 +3,8 @@
 @use "_hero";
 @use "_about";
 @use "_projects";
-@use "_footer";
 @use "_technologies";
+@use "_footer";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
@@ -15,8 +15,10 @@ html {
 :root {
     --bg-light: #fafafa;
     --bg-dark: #171717;
-    --primary-color: #7623f8;
-    --secondary-color: #fb56b9;
+    --card-light: #fdfdfd;
+    --card-dark: #222222;
+    --primary-color: #6eb0e8;
+    --secondary-color: #c541d2;
     --text-light: #fff;
     --text-dark: #171717;
     --bg-gradient: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
@@ -35,7 +37,8 @@ a {
     text-decoration: none;
     color: var(--text-dark);
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         color: var(--secondary-color) !important;
     }
 }
@@ -46,7 +49,19 @@ ul {
     list-style: none;
 }
 
-// CONTAINER FOR CONTENT AFTER HERO
-.container {
+// General padding for sections
+section {
     padding: var(--section-padding);
+}
+
+// General Dark mode
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--bg-dark);
+        color: var(--text-light);
+    }
+
+    a {
+        color: var(--text-light);
+    }
 }

@@ -24,8 +24,13 @@
     transition: color .20s ease-in-out, background-color .20s ease-in-out, border-color .20s ease-in-out;
 
     &:hover, &:focus {
-        color: var(--text-light);
+        color: var(--text-light) !important;
         background-color: var(--secondary-color);
-        border-color: var(--text-light);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .btn-dark {
+        color: var(--text-light);
     }
 }

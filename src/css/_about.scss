@@ -1,6 +1,6 @@
 .about-section {
-    padding: var(--section-padding);
     display: flex;
+    flex-direction: column;
     align-items: center;
     background-image: var(--bg-gradient);
     color: var(--text-light);
@@ -9,8 +9,10 @@
     }
 
     .image {
-        display: none;
+        height: 150px;
+        img {
+            height: 100%;
+        }
     }
-
 
 }

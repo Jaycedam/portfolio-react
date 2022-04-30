@@ -1,82 +1,74 @@
 import React, { useEffect } from "react";
-import { FaGithub } from "react-icons/fa";
 import { MdMenu } from "react-icons/md";
 
 function navToggle() {
-    const primaryNav = document.querySelector(".primary-navigation");
-    const visible = primaryNav.getAttribute("data-visible");
+    const nav = document.querySelector(".primary-header");
+    const visible = nav.getAttribute("data-visible");
 
     if (visible === "false") {
-        primaryNav.setAttribute("data-visible", "true")
+        nav.setAttribute("data-visible", "true")
     }
     else if (visible === "true") {
-        primaryNav.setAttribute("data-visible", "false")
+        nav.setAttribute("data-visible", "false")
     }
 }
 
 export default function Navbar() {
 
-    // useEffect(() => {
-    //     const primaryNav = document.querySelector(".primary-navigation");
-    //     const navLinks = document.querySelector(".nav-item");
-    //     navLinks.addEventListener("click", () => {
-    //         primaryNav.setAttribute("data-visible", "false")
-    //     }, [])
-
+    // Event to close navbar when a link is clicked
     useEffect(() => {
-        const primaryNav = document.querySelector(".primary-navigation");
+        const nav = document.querySelector(".primary-header");
         const navLinks = document.querySelectorAll(".nav-item");
-        
+
         navLinks.forEach(link => link.addEventListener("click", () => {
-            primaryNav.setAttribute("data-visible", "false")
+            nav.setAttribute("data-visible", "false")
         }))
-
-
-        
     }, [])
 
 
 
     return (
-        <header className="primary-header">
-            <div className="logo">
-                jordancortes<strong>.dev</strong>
-            </div>
-
+        <>
             <button onClick={navToggle} className="nav-toggle">
                 <MdMenu />
             </button>
 
+            <header className="primary-header" data-visible="false">
+                <div className="logo">
+                    jordancortes<strong>.dev</strong>
+                </div>
 
-            <nav data-visible="false" className="primary-navigation">
-                <ul>
-                    <li className="nav-item">
-                        <a href="#top">
-                            Inicio
-                        </a>
-                    </li>
+                <nav className="primary-navigation">
+                    <ul>
+                        <li className="nav-item">
+                            <a href="#top">
+                                Inicio
+                            </a>
+                        </li>
 
-                    <li className="nav-item">
-                        <a href="#about">
-                            Acerca
-                        </a>
-                    </li>
+                        <li className="nav-item">
+                            <a href="#about">
+                                Acerca
+                            </a>
+                        </li>
 
-                    <li className="nav-item">
-                        <a href="#projects">
-                            Proyectos
-                        </a>
-                    </li>
+                        <li className="nav-item">
+                            <a href="#projects">
+                                Proyectos
+                            </a>
+                        </li>
 
-                    <li className="nav-item">
-                        <a href="#projects">
-                            Tecnologías
-                        </a>
-                    </li>
+                        <li className="nav-item">
+                            <a href="#technologies">
+                                Conocimientos
+                            </a>
+                        </li>
 
-                </ul>
-            </nav>
-        </header>
+                    </ul>
+                </nav>
+            </header>
+        </>
+
 
     )
 }

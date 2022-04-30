@@ -11,12 +11,16 @@ export default function About() {
 
             <div className="text">
                 <h2>Acerca de</h2>
+                <p>Analista Programador Computacional, titulación en Duoc UC (6,7).</p>
+
                 <p>
-                    Esta página ha sido creada con React, SCSS y react-icons. 
-                    Los proyectos son mostrados a través de una API, 
-                    desde una aplicación creada con Java Spring Boot.
+                    Esta página ha sido creada con React, SCSS y react-icons.
                     Diseño acorde a las guías "Mobile first" para un mejor diseño responsivo.
-                    Además incluye dark mode automático acorde al tema de tu dispositivo. 
+                    Además incluye dark mode automático acorde al tema del dispositivo.
+                </p>
+
+                <p>
+                    Los proyectos son entregados desde otra app utilizando Java Spring Boot a través de una API.
                 </p>
             </div>
         </section>

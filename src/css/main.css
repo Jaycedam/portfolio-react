@@ -24,9 +24,26 @@
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 .btn-dark:hover, .btn-dark:focus {
-  color: var(--text-light);
+  color: var(--text-light) !important;
   background-color: var(--secondary-color);
-  border-color: var(--text-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  .btn-dark {
+    color: var(--text-light);
+  }
+}
+.nav-toggle {
+  z-index: 9999;
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  display: flex;
+  font-size: 2em;
+  color: var(--text-dark);
+  background-color: rgba(250, 250, 250, 0.3568627451);
+  border: 0;
+  border-radius: 10px;
 }
 
 .primary-header {
@@ -37,18 +54,9 @@
   top: 0;
   right: 0;
   z-index: 10;
-}
-.primary-header .nav-toggle {
-  z-index: 9999;
-  position: fixed;
-  top: 5%;
-  right: 5%;
-  display: flex;
-  font-size: 2em;
-  color: var(--text-dark);
-  background-color: rgba(250, 250, 250, 0.3568627451);
-  border: 0;
-  border-radius: 10%;
+  background-color: var(--bg-light);
+  transform: translateX(100%);
+  transition: transform 400ms ease-in-out;
 }
 .primary-header .logo {
   display: none;
@@ -57,15 +65,11 @@
   color: var(--primary-color);
 }
 .primary-header .primary-navigation {
-  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  background-color: var(--bg-light);
   height: 100%;
-  transform: translateX(100%);
-  transition: transform 400ms ease-in-out;
 }
 .primary-header .primary-navigation ul {
   display: flex;
@@ -73,23 +77,27 @@
   gap: 2em;
   text-align: center;
 }
-.primary-header .primary-navigation[data-visible=true] {
+
+.primary-header[data-visible=true] {
   transform: translateX(0);
 }
 
+@media (prefers-color-scheme: dark) {
+  .primary-header {
+    background-color: var(--bg-dark);
+  }
+}
 .hero {
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 4em 0;
+  padding: 3em 0;
 }
 .hero .hero-text {
-  color: var(--text-dark);
   text-align: center;
   font-weight: 700;
-  margin-bottom: 30px;
 }
 .hero .hero-text h1 {
   font-size: 2.5em;
@@ -108,10 +116,16 @@
 .hero .hero-logo img {
   width: 100%;
 }
+.hero .call-to-action {
+  margin: 2em 0 4em 0;
+}
+.hero .down-icon {
+  font-size: 1.5em;
+}
 
 .about-section {
-  padding: var(--section-padding);
   display: flex;
+  flex-direction: column;
   align-items: center;
   background-image: var(--bg-gradient);
   color: var(--text-light);
@@ -120,7 +134,10 @@
   text-align: justify;
 }
 .about-section .image {
-  display: none;
+  height: 150px;
+}
+.about-section .image img {
+  height: 100%;
 }
 
 .projects-section .project-list {
@@ -129,6 +146,7 @@
   gap: 3em;
 }
 .projects-section .project-list .project {
+  background-color: var(--card-light);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -155,14 +173,37 @@
   padding: 2em;
 }
 
+@media (prefers-color-scheme: dark) {
+  .project {
+    background-color: var(--card-dark) !important;
+  }
+}
+.technology-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+.technology-list .technology {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+.technology-list .technology p {
+  font-weight: 300;
+  font-size: 0.8em;
+}
+
 footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: var(--bg-dark);
+  background-color: var(--card-dark);
   color: var(--text-light);
   height: 100px;
-  margin-top: 3em;
 }
 footer a {
   color: var(--text-light);
@@ -175,8 +216,10 @@ html {
 :root {
   --bg-light: #fafafa;
   --bg-dark: #171717;
-  --primary-color: #7623f8;
-  --secondary-color: #fb56b9;
+  --card-light: #fdfdfd;
+  --card-dark: #222222;
+  --primary-color: #6eb0e8;
+  --secondary-color: #c541d2;
   --text-light: #fff;
   --text-dark: #171717;
   --bg-gradient: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
@@ -205,6 +248,17 @@ ul {
   list-style: none;
 }
 
-.container {
+section {
   padding: var(--section-padding);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+  }
+
+  a {
+    color: var(--text-light);
+  }
 }/*# sourceMappingURL=main.css.map */
