@@ -34,12 +34,5 @@ export default function ProjectList() {
                 {projectElements}
             </div>
         </section>
-        // <div className="container pt-5 project-list" id="projects">
-        //     <h2 className="pb-4 pt-5 title">Proyectos</h2>
-
-        //     <div className="row">
-        //         {projectElements}
-        //     </div>
-        // </div>
     )
 }

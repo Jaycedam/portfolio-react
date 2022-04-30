@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithub } from "react-icons/fa"
 
 export default function Project(props) {
     return (
@@ -14,23 +15,9 @@ export default function Project(props) {
 
             <div className="link">
                 <a href={props.url} className="btn-dark">
-                    Link proyecto
+                    GitHub <FaGithub/>
                 </a>
             </div>
         </div>
-        // <div className="col-12 col-md-6 col-lg-4 project-container">
-        //     <div className="row ">
-        //         <div className="col-12 image">
-        //             <img src={props.imageUrl} alt="Project" />
-        //         </div>
-        //         <div className="col-12 content px-3">
-        //             <h4>{props.name}</h4>
-        //             <p>{props.about}</p>
-        //             <a href={props.url} className="btn btn-outline-dark">
-        //                 Link proyecto
-        //             </a>
-        //         </div>
-        //     </div>
-        // </div >
     )
 }

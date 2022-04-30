@@ -1,7 +1,7 @@
 import React from "react";
 import { VscBracketDot } from 'react-icons/vsc';
 import abstract from '../images/abstract.svg'
-import { FaHandPointDown } from "react-icons/fa"
+
 export default function Hero() {
     return (
         <div className="hero-container">
@@ -25,10 +25,6 @@ export default function Hero() {
                     Contactar
                 </a>
 
-            </div>
-
-            <div className="icon-down">
-                <FaHandPointDown />
             </div>
         </div>
     )

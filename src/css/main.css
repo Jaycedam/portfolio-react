@@ -3,6 +3,7 @@
   padding: 15px 30px;
   text-align: center;
   border: 1px solid var(--text-light);
+  font-weight: 700;
   color: var(--text-light);
   border-radius: 10px;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
@@ -17,6 +18,7 @@
   padding: 15px 30px;
   text-align: center;
   border: 1px solid var(--secondary-color);
+  font-weight: 700;
   color: var(--text-dark);
   border-radius: 10px;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
@@ -52,21 +54,22 @@
 }
 
 .hero-container {
-  height: 80vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 80px 0;
 }
 .hero-container .hero-text {
   color: var(--text-dark);
   text-align: center;
   font-weight: 700;
-  margin-bottom: 3em;
+  margin-bottom: 30px;
 }
 .hero-container .hero-text h1 {
-  margin: 0;
   font-size: 2.5em;
+  line-height: 1em;
 }
 .hero-container .hero-text p {
   margin: 0;
@@ -76,17 +79,10 @@
   color: var(--primary-color);
 }
 .hero-container .hero-logo {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 40%;
+  width: 80%;
 }
 .hero-container .hero-logo img {
-  height: 100%;
-}
-.hero-container .icon-down {
-  font-size: 1.5em;
-  margin-top: 2em;
+  width: 100%;
 }
 
 .about-container {
@@ -102,9 +98,6 @@
 .about-container .image {
   display: none;
 }
-.about-container .image img {
-  width: 100%;
-}
 
 .projects-section {
   margin-top: 4em;
@@ -118,8 +111,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  height: 400px;
+  height: auto;
   width: 100%;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -127,7 +119,7 @@
 }
 .projects-section .container .project .image {
   overflow: hidden;
-  height: 40%;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,9 +131,7 @@
   padding: 0 0.5em;
 }
 .projects-section .container .project .link {
-  padding: 0 2em;
-  position: absolute;
-  bottom: 10%;
+  padding: 2em;
 }
 
 footer {

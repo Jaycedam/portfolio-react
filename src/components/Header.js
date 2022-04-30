@@ -1,5 +1,4 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa"
 
 export default function Navbar() {
     return (
@@ -25,12 +24,6 @@ export default function Navbar() {
                     <li>
                         <a href="#projects">
                             Proyectos
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://github.com/Jaycedam">
-                            <FaGithub/>
                         </a>
                     </li>
 
