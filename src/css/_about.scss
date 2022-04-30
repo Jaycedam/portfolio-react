@@ -1,5 +1,5 @@
-.about-container {
-    padding: 2em;
+.about-section {
+    padding: var(--section-padding);
     display: flex;
     align-items: center;
     background-image: var(--bg-gradient);

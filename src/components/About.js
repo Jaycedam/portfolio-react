@@ -4,7 +4,7 @@ import image from "../images/hero-image.svg"
 export default function About() {
     return (
 
-        <section id="about" className="about-container">
+        <section id="about" className="about-section">
             <div className="image">
                 <img src={image} alt="about img" />
             </div>

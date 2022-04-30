@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Technologies() {
     return (
-        <section id="technologies" className="technologies-container">
+        <section id="technologies" className="technologies-section">
             <div className="image">
                 {/* add image */}
             </div>

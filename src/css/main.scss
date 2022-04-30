@@ -13,14 +13,13 @@ html {
 }
 
 :root {
-    --bg-light: #f6f6f6;
+    --bg-light: #fafafa;
     --bg-dark: #171717;
     --primary-color: #7623f8;
     --secondary-color: #fb56b9;
     --text-light: #fff;
     --text-dark: #171717;
     --bg-gradient: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-    --header-height: 80px;
     --section-padding: 2em;
 }
 
@@ -36,8 +35,8 @@ a {
     text-decoration: none;
     color: var(--text-dark);
 
-    &:hover {
-        color: var(--secondary-color);
+    &:hover, &:focus {
+        color: var(--secondary-color) !important;
     }
 }
 
@@ -48,6 +47,6 @@ ul {
 }
 
 // CONTAINER FOR CONTENT AFTER HERO
-.main-container {
-    padding: 0 2em;
+.container {
+    padding: var(--section-padding);
 }

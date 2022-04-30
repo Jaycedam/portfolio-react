@@ -30,7 +30,7 @@ export default function ProjectList() {
         <section id="projects" className="projects-section">
             <h2>Proyectos</h2>
 
-            <div className="container">
+            <div className="project-list">
                 {projectElements}
             </div>
         </section>

@@ -4,7 +4,7 @@ import abstract from '../images/abstract.svg'
 
 export default function Hero() {
     return (
-        <div className="hero-container">
+        <div className="hero">
             <div className="hero-logo">
                 <img src={abstract} alt="logo" />
             </div>

@@ -30,16 +30,25 @@
 }
 
 .primary-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: var(--bg-light);
-  height: var(--header-height);
-  width: 100%;
+  background-color: unset;
+  height: 100%;
+  width: 70%;
   position: fixed;
-  bottom: 0;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  z-index: 100;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+.primary-header .nav-toggle {
+  z-index: 9999;
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  display: flex;
+  font-size: 2em;
+  color: var(--text-dark);
+  background-color: rgba(250, 250, 250, 0.3568627451);
+  border: 0;
+  border-radius: 10%;
 }
 .primary-header .logo {
   display: none;
@@ -48,12 +57,27 @@
   color: var(--primary-color);
 }
 .primary-header .primary-navigation {
+  z-index: 100;
   display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 700;
-  gap: 1em;
+  background-color: var(--bg-light);
+  height: 100%;
+  transform: translateX(100%);
+  transition: transform 400ms ease-in-out;
+}
+.primary-header .primary-navigation ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  text-align: center;
+}
+.primary-header .primary-navigation[data-visible=true] {
+  transform: translateX(0);
 }
 
-.hero-container {
+.hero {
   height: auto;
   display: flex;
   flex-direction: column;
@@ -61,53 +85,50 @@
   justify-content: center;
   padding: 4em 0;
 }
-.hero-container .hero-text {
+.hero .hero-text {
   color: var(--text-dark);
   text-align: center;
   font-weight: 700;
   margin-bottom: 30px;
 }
-.hero-container .hero-text h1 {
+.hero .hero-text h1 {
   font-size: 2.5em;
   line-height: 1em;
 }
-.hero-container .hero-text p {
+.hero .hero-text p {
   margin: 0;
   font-weight: 300;
 }
-.hero-container .hero-text strong {
+.hero .hero-text strong {
   color: var(--primary-color);
 }
-.hero-container .hero-logo {
+.hero .hero-logo {
   width: 80%;
 }
-.hero-container .hero-logo img {
+.hero .hero-logo img {
   width: 100%;
 }
 
-.about-container {
-  padding: 2em;
+.about-section {
+  padding: var(--section-padding);
   display: flex;
   align-items: center;
   background-image: var(--bg-gradient);
   color: var(--text-light);
 }
-.about-container .text {
+.about-section .text {
   text-align: justify;
 }
-.about-container .image {
+.about-section .image {
   display: none;
 }
 
-.projects-section {
-  padding: 2em;
-}
-.projects-section .container {
+.projects-section .project-list {
   display: flex;
   flex-direction: column;
   gap: 3em;
 }
-.projects-section .container .project {
+.projects-section .project-list .project {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,20 +138,20 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   text-align: center;
 }
-.projects-section .container .project .image {
+.projects-section .project-list .project .image {
   overflow: hidden;
   height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.projects-section .container .project .image img {
+.projects-section .project-list .project .image img {
   height: 80%;
 }
-.projects-section .container .project .text {
+.projects-section .project-list .project .text {
   padding: 0 0.5em;
 }
-.projects-section .container .project .link {
+.projects-section .project-list .project .link {
   padding: 2em;
 }
 
@@ -142,14 +163,9 @@ footer {
   color: var(--text-light);
   height: 100px;
   margin-top: 3em;
-  margin-bottom: var(--header-height);
 }
 footer a {
   color: var(--text-light);
-}
-
-.technologies-container {
-  padding: 2em;
 }
 
 html {
@@ -157,14 +173,13 @@ html {
 }
 
 :root {
-  --bg-light: #f6f6f6;
+  --bg-light: #fafafa;
   --bg-dark: #171717;
   --primary-color: #7623f8;
   --secondary-color: #fb56b9;
   --text-light: #fff;
   --text-dark: #171717;
   --bg-gradient: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-  --header-height: 80px;
   --section-padding: 2em;
 }
 
@@ -180,8 +195,8 @@ a {
   text-decoration: none;
   color: var(--text-dark);
 }
-a:hover {
-  color: var(--secondary-color);
+a:hover, a:focus {
+  color: var(--secondary-color) !important;
 }
 
 ul {
@@ -190,6 +205,6 @@ ul {
   list-style: none;
 }
 
-.main-container {
-  padding: 0 2em;
+.container {
+  padding: var(--section-padding);
 }/*# sourceMappingURL=main.css.map */
