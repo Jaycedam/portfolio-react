@@ -11,9 +11,9 @@
 :root {
     scroll-behavior: smooth;
     --bg-light: #fafafa;
-    --bg-dark: #171717;
-    --card-light: #fdfdfd;
-    --card-dark: #222222;
+    --bg-dark: #121212;
+    --card-light: #fff;
+    --card-dark: #161616;
     --primary-color: #6eb0e8;
     --secondary-color: #c541d2;
     --text-light: #fff;
@@ -93,6 +93,10 @@ section {
             background-color: var(--bg-light);
         }
     }
+
+    .project-list .project {
+        background-color: var(--card-dark) !important;
+    }
 }
 
 // Responsive Queries
@@ -132,12 +136,7 @@ section {
 
         .image {
             width: 50%;
-            height: 150px;
-
-            img {
-                width: 80%;
-                object-fit: scale-down;
-            }
+            height: 200px;
         }
     }
 
@@ -153,6 +152,14 @@ section {
         padding-top: 5em;
         padding-bottom: 5em;
         flex-direction: row-reverse;
+
+        .hero-text {
+            width: 50%;
+
+            h1 {
+                font-size: 5em !important;
+            }
+        }
     }
 
     .nav-toggle {
