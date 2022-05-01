@@ -28,10 +28,12 @@ export default function ProjectList() {
 
     return (
         <section id="projects" className="projects-section">
-            <h2>Proyectos</h2>
+            <div className="container">
+                <h2>Proyectos</h2>
 
-            <div className="project-list">
-                {projectElements}
+                <div className="project-list">
+                    {projectElements}
+                </div>
             </div>
         </section>
     )

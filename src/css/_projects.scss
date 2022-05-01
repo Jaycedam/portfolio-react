@@ -1,19 +1,26 @@
 .projects-section {
+    h2 {
+        text-align: center;
+    }
+
     .project-list {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         gap: 3em;
+        flex-wrap: wrap;
 
         .project {
-            background-color: var(--card-light);
             display: flex;
             flex-direction: column;
             align-items: center;
             height: auto;
             width: 100%;
             border-radius: 25px;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
             text-align: center;
+            max-width: 300px;
 
             .image {
                 overflow: hidden;
@@ -34,8 +41,8 @@
             }
 
             .link {
-                padding:2em 0;
-             
+                padding: 2em 0;
+
             }
         }
     }

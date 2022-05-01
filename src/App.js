@@ -13,7 +13,7 @@ function App() {
       <Hero />
       <About />
       <ProjectList />
-      <Technologies/>
+      <Technologies />
       <Footer />
     </>
   );

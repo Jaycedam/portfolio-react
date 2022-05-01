@@ -1,19 +1,25 @@
 .about-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: var(--bg-gradient);
-    color: var(--text-light);
-    .text {
-        text-align: justify;
-    }
+    // background-image: var(--bg-gradient);
 
-    .image {
-        height: 150px;
+    .container {
         display: flex;
-        img {
-            height: 100%;
+        flex-direction: column;
+        align-items: center;
+        // color: var(--text-light);
+
+        .text {
+            text-align: start;
+        }
+
+        .image {
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: 100%;
+            }
         }
     }
-
 }

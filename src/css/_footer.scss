@@ -1,12 +1,15 @@
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     background-color: var(--card-dark);
-    color: var(--text-light);
-    height: 100px;
 
-    a {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         color: var(--text-light);
+        height: 100px;
+
+        a {
+            color: var(--text-light);
+        }
     }
 }

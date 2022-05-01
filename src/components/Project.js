@@ -14,7 +14,7 @@ export default function Project(props) {
             </div>
 
             <div className="link">
-                <a href={props.url} className="btn-dark">
+                <a href={props.url} className="btn-color">
                     GitHub <FaGithub/>
                 </a>
             </div>

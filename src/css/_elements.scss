@@ -1,30 +1,47 @@
-.btn-light {
-    padding: 15px 30px;
+.btn-dark {
+    padding: 10px 20px;
     text-align: center;
-    border: 1px solid var(--text-light);
-    font-weight: 700;
-    color: var(--text-light);
+    font-weight: 400;
     border-radius: 10px;
     transition: color .20s ease-in-out, background-color .20s ease-in-out, border-color .20s ease-in-out;
+    border: 2px solid var(--bg-dark);
+    color: var(--text-dark) !important;
 
-    &:hover, &:focus {
-        color: var(--text-dark);
-        background-color: var(--text-light);
-        border-color: var(--text-dark);
+    &:hover,
+    &:focus {
+        color: var(--text-light) !important;
+        background-color: var(--bg-dark);
     }
 }
 
-.btn-dark {
-    padding: 15px 30px;
+.btn-color {
+    padding: 10px 20px;
     text-align: center;
-    border: 1px solid var(--secondary-color);
-    font-weight: 700;
-    color: var(--text-dark);
+    font-weight: 400;
     border-radius: 10px;
     transition: color .20s ease-in-out, background-color .20s ease-in-out, border-color .20s ease-in-out;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color) !important;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         color: var(--text-light) !important;
-        background-color: var(--secondary-color);
+        background-color: var(--primary-color);
+    }
+}
+
+.btn-light {
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 400;
+    border-radius: 10px;
+    transition: color .20s ease-in-out, background-color .20s ease-in-out, border-color .20s ease-in-out;
+    border: 2px solid var(--bg-light);
+    color: var(--text-light) !important;
+
+    &:hover,
+    &:focus {
+        color: var(--text-dark) !important;
+        background-color: var(--bg-light);
     }
 }
