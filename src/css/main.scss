@@ -54,7 +54,7 @@ section {
     padding: var(--section-padding);
 }
 
-// General Dark mode
+// Dark mode
 @media (prefers-color-scheme: dark) {
     body {
         background-color: var(--bg-dark);
@@ -64,4 +64,167 @@ section {
     a {
         color: var(--text-light);
     }
+
+    .primary-header {
+        background-color: var(--bg-dark);
+    }
+
+    .project {
+        background-color: var(--card-dark) !important;
+    }
+
+    .btn-dark {
+        color: var(--text-light);
+    }
+}
+
+// Responsive Queries
+@media (min-width:700px) {
+    .hero {
+        .hero-logo {
+            width: 70%;
+        }
+    }
+
+    section,
+    .hero {
+        padding: 3em 5em;
+    }
+
+    .project-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row !important;
+
+        .project {
+            width: 40% !important;
+        }
+    }
+
+}
+
+@media (min-width:960px) {
+    .hero {
+        margin-top: 80px;
+
+        .hero-logo {
+            width: 50%;
+        }
+    }
+
+    section,
+    .hero {
+        padding: 3em 8em;
+    }
+
+    .about-section {
+        flex-direction: row;
+
+        .image {
+            height: 200px;
+            padding: 2em;
+        }
+    }
+
+    .project-list {
+        flex-wrap: wrap;
+        gap: unset !important;
+        justify-content: space-around;
+        flex-direction: row !important;
+
+        .project {
+            width: 30% !important;
+        }
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .primary-header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        width: 100%;
+        position: fixed;
+        z-index: 10;
+        transform: translateX(0);
+
+        .logo {
+            display: block;
+
+            strong {
+                color: var(--primary-color);
+            }
+        }
+
+        .primary-navigation {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            height: 100%;
+
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                gap: 2em;
+                text-align: center;
+            }
+
+        }
+    }
+}
+
+@media (min-width:1025px) {
+    .hero {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row-reverse;
+        margin-top: 80px;
+
+        .hero-logo {
+            width: 40%;
+        }
+
+        .hero-text {
+            width: 60%;
+
+            h1 {
+                margin: .3em 0;
+            }
+        }
+
+        .call-to-action {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    section,
+    .hero {
+        padding: 3em 20%;
+    }
+
+    .about-section {
+        flex-direction: row;
+
+        .image {
+            height: 200px;
+            padding: 2em;
+        }
+    }
+
+
+    .project {
+        max-width: 400px !important;
+    }
+
+    .technology-list {
+        justify-content: flex-start;
+    }
+
 }

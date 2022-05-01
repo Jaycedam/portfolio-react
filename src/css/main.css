@@ -28,11 +28,6 @@
   background-color: var(--secondary-color);
 }
 
-@media (prefers-color-scheme: dark) {
-  .btn-dark {
-    color: var(--text-light);
-  }
-}
 .nav-toggle {
   z-index: 9999;
   position: fixed;
@@ -47,7 +42,6 @@
 }
 
 .primary-header {
-  background-color: unset;
   height: 100%;
   width: 70%;
   position: fixed;
@@ -57,6 +51,7 @@
   background-color: var(--bg-light);
   transform: translateX(100%);
   transition: transform 400ms ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .primary-header .logo {
   display: none;
@@ -82,25 +77,21 @@
   transform: translateX(0);
 }
 
-@media (prefers-color-scheme: dark) {
-  .primary-header {
-    background-color: var(--bg-dark);
-  }
-}
 .hero {
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 3em 0;
+  padding: 2em 0;
+  margin-bottom: 2em;
 }
 .hero .hero-text {
   text-align: center;
   font-weight: 700;
 }
 .hero .hero-text h1 {
-  font-size: 2.5em;
+  font-size: clamp(3em, 1em + 10vw, 5em);
   line-height: 1em;
 }
 .hero .hero-text p {
@@ -108,19 +99,13 @@
   font-weight: 300;
 }
 .hero .hero-text strong {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 .hero .hero-logo {
   width: 80%;
 }
 .hero .hero-logo img {
   width: 100%;
-}
-.hero .call-to-action {
-  margin: 2em 0 4em 0;
-}
-.hero .down-icon {
-  font-size: 1.5em;
 }
 
 .about-section {
@@ -135,6 +120,7 @@
 }
 .about-section .image {
   height: 150px;
+  display: flex;
 }
 .about-section .image img {
   height: 100%;
@@ -168,16 +154,12 @@
 }
 .projects-section .project-list .project .text {
   padding: 0 0.5em;
+  font-size: small;
 }
 .projects-section .project-list .project .link {
-  padding: 2em;
+  padding: 2em 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  .project {
-    background-color: var(--card-dark) !important;
-  }
-}
 .technology-list {
   display: flex;
   justify-content: center;
@@ -260,5 +242,144 @@ section {
 
   a {
     color: var(--text-light);
+  }
+
+  .primary-header {
+    background-color: var(--bg-dark);
+  }
+
+  .project {
+    background-color: var(--card-dark) !important;
+  }
+
+  .btn-dark {
+    color: var(--text-light);
+  }
+}
+@media (min-width: 700px) {
+  .hero .hero-logo {
+    width: 70%;
+  }
+
+  section,
+.hero {
+    padding: 3em 5em;
+  }
+
+  .project-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row !important;
+  }
+  .project-list .project {
+    width: 40% !important;
+  }
+}
+@media (min-width: 960px) {
+  .hero {
+    margin-top: 80px;
+  }
+  .hero .hero-logo {
+    width: 50%;
+  }
+
+  section,
+.hero {
+    padding: 3em 8em;
+  }
+
+  .about-section {
+    flex-direction: row;
+  }
+  .about-section .image {
+    height: 200px;
+    padding: 2em;
+  }
+
+  .project-list {
+    flex-wrap: wrap;
+    gap: unset !important;
+    justify-content: space-around;
+    flex-direction: row !important;
+  }
+  .project-list .project {
+    width: 30% !important;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .primary-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    transform: translateX(0);
+  }
+  .primary-header .logo {
+    display: block;
+  }
+  .primary-header .logo strong {
+    color: var(--primary-color);
+  }
+  .primary-header .primary-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    height: 100%;
+  }
+  .primary-header .primary-navigation ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    text-align: center;
+  }
+}
+@media (min-width: 1025px) {
+  .hero {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-top: 80px;
+  }
+  .hero .hero-logo {
+    width: 40%;
+  }
+  .hero .hero-text {
+    width: 60%;
+  }
+  .hero .hero-text h1 {
+    margin: 0.3em 0;
+  }
+  .hero .call-to-action {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  section,
+.hero {
+    padding: 3em 20%;
+  }
+
+  .about-section {
+    flex-direction: row;
+  }
+  .about-section .image {
+    height: 200px;
+    padding: 2em;
+  }
+
+  .project {
+    max-width: 400px !important;
+  }
+
+  .technology-list {
+    justify-content: flex-start;
   }
 }/*# sourceMappingURL=main.css.map */

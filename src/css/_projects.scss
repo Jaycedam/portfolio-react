@@ -29,19 +29,14 @@
 
             .text {
                 padding: 0 .5em;
+                font-size: small;
 
             }
 
             .link {
-                padding:2em;
+                padding:2em 0;
              
             }
         }
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    .project {
-        background-color: var(--card-dark) !important;
     }
 }

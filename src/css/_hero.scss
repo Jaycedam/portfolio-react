@@ -4,13 +4,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 3em 0;
+    padding: 2em 0;
+    margin-bottom: 2em;
 
     .hero-text {
         text-align: center;
         font-weight: 700;
         h1 {
-            font-size: 2.5em;
+            font-size: unquote($string: "clamp(3em, 1em + 10vw, 5em)");
             line-height: 1em;
         }
 
@@ -20,7 +21,7 @@
         }
 
         strong {
-            color: var(--primary-color);
+            color: var(--secondary-color);
         }
     }
 
@@ -30,14 +31,6 @@
         img {
             width: 100%;
         }
-    }
-
-    .call-to-action {
-        margin: 2em 0 4em 0;
-    }
-
-    .down-icon {
-        font-size: 1.5em;
     }
     
 }

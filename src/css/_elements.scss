@@ -28,9 +28,3 @@
         background-color: var(--secondary-color);
     }
 }
-
-@media (prefers-color-scheme: dark) {
-    .btn-dark {
-        color: var(--text-light);
-    }
-}
