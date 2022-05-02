@@ -85,7 +85,7 @@ section {
 }
 
 // Transition dark mode
-body, .primary-header, .project, footer, a, .theme-toggle {
+body, .project, footer, a, .theme-toggle {
     transition: color .40s ease-in-out, background-color .40s ease-in-out;
 
 }
