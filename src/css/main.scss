@@ -21,8 +21,6 @@
     --bg-gradient: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     --section-padding: 1em;
     --nav-height: 80px;
-    // add padding to anchor to prevent content behind navbar in large screens
-    scroll-padding-top: var(--nav-height);
 }
 
 body {
@@ -39,7 +37,7 @@ h2 {
     font-weight: 700;
 }
 
-hr{ 
+hr {
     width: 80%;
 }
 
@@ -126,6 +124,7 @@ section {
 
         .text {
             width: 50%;
+
             .call-to-action {
                 text-align: left;
             }
@@ -141,6 +140,11 @@ section {
 
 // Full navbar
 @media (min-width:992px) {
+    :root {
+        // add padding to anchor to prevent content behind navbar in large screens
+        scroll-padding-top: var(--nav-height);
+    }
+
     .container {
         width: 960px;
     }

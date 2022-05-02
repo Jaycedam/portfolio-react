@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { MdMenu } from "react-icons/md";
+import { VscGithub } from "react-icons/vsc"
 
 function navToggle() {
     const nav = document.querySelector(".primary-header");
@@ -58,6 +59,11 @@ export default function Navbar() {
                             </a>
                         </li>
 
+                        <li className="nav-item">
+                            <a href="https://github.com/Jaycedam">
+                                GitHub <VscGithub/>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </header>

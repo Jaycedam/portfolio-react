@@ -188,7 +188,6 @@
 }
 .projects-section .project-list .project .text {
   padding: 0 0.5em;
-  font-size: small;
 }
 .projects-section .project-list .project .link {
   padding: 2em 0;
@@ -241,7 +240,6 @@ footer .container a {
   --bg-gradient: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   --section-padding: 1em;
   --nav-height: 80px;
-  scroll-padding-top: var(--nav-height);
 }
 
 body {
@@ -343,6 +341,10 @@ section {
   }
 }
 @media (min-width: 992px) {
+  :root {
+    scroll-padding-top: var(--nav-height);
+  }
+
   .container {
     width: 960px;
   }
