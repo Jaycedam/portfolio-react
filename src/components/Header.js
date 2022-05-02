@@ -47,20 +47,14 @@ export default function Navbar() {
                         </li>
 
                         <li className="nav-item">
-                            <a href="#about">
-                                Acerca
-                            </a>
-                        </li>
-
-                        <li className="nav-item">
                             <a href="#projects">
                                 Proyectos
                             </a>
                         </li>
 
                         <li className="nav-item">
-                            <a href="#technologies">
-                                Conocimientos
+                            <a href="#about">
+                                Acerca
                             </a>
                         </li>
 

@@ -1,6 +1,5 @@
 .hero {
-
-    // background-image: var(--bg-gradient);
+    // background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
     .container {
         height: auto;
         display: flex;
@@ -9,11 +8,12 @@
         justify-content: center;
 
         .hero-text {
+            // color: var(--text-light);
             text-align: center;
             font-weight: 700;
 
             h1 {
-                font-size: 3em;
+                font-size: 2.5em;
                 line-height: 1em;
                 margin: 0;
             }
@@ -24,7 +24,7 @@
             }
 
             strong {
-                color: var(--secondary-color);
+                color: var(--primary-color);
             }
         }
 

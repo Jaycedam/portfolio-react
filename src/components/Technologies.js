@@ -7,7 +7,7 @@ export default function Technologies() {
     return (
         <section id="technologies" className="technologies-section">
             <div className="container">
-                <h2>Conocimientos</h2>
+                {/* <h2>Conocimientos</h2> */}
                 <div className="technology-list">
                     <div className="technology">
                         <FaPython />

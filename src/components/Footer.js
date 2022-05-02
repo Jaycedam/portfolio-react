@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
     return (
-        <footer>
+         <footer>
             <div className="container">
                 <p>2022</p>
                 <a href="mailto:jaycedam@gmail.com">
@@ -10,5 +10,6 @@ export default function Footer() {
                 </a>
             </div>
         </footer>
+       
     )
 }

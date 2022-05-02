@@ -10,17 +10,19 @@
 
 :root {
     scroll-behavior: smooth;
-    --bg-light: #fafafa;
-    --bg-dark: #121212;
+    --bg-light: #fbfbfd;
+    --bg-dark: #111111;
     --card-light: #fff;
-    --card-dark: #161616;
-    --primary-color: #6eb0e8;
-    --secondary-color: #c541d2;
-    --text-light: #fff;
-    --text-dark: #171717;
+    --card-dark: #181818;
+    --primary-color: #ee2e5e;
+    --secondary-color: #00b3c0;
+    --text-light: #ffffff;
+    --text-dark: #1d1d1f;
     --bg-gradient: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     --section-padding: 1em;
     --nav-height: 80px;
+    // add padding to anchor to prevent content behind navbar in large screens
+    scroll-padding-top: var(--nav-height);
 }
 
 body {
@@ -37,6 +39,9 @@ h2 {
     font-weight: 700;
 }
 
+hr{ 
+    width: 80%;
+}
 
 a {
     text-decoration: none;
@@ -80,18 +85,7 @@ section {
     }
 
     .primary-header {
-        background-color: var(--bg-dark);
-    }
-
-    .btn-dark {
-        border: 2px solid var(--bg-light);
-        color: var(--text-light) !important;
-
-        &:hover,
-        &:focus {
-            color: var(--text-dark) !important;
-            background-color: var(--bg-light);
-        }
+        background-color: var(--card-dark);
     }
 
     .project-list .project {
@@ -132,6 +126,9 @@ section {
 
         .text {
             width: 50%;
+            .call-to-action {
+                text-align: left;
+            }
         }
 
         .image {
@@ -142,6 +139,7 @@ section {
 
 }
 
+// Full navbar
 @media (min-width:992px) {
     .container {
         width: 960px;
@@ -175,6 +173,7 @@ section {
         position: fixed;
         z-index: 10;
         transform: translateX(0);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
         .logo {
             display: block;

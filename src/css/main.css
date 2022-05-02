@@ -1,28 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
-.btn-dark {
-  padding: 10px 20px;
-  text-align: center;
-  font-weight: 400;
-  border-radius: 10px;
-  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-  border: 2px solid var(--bg-dark);
-  color: var(--text-dark) !important;
-}
-.btn-dark:hover, .btn-dark:focus {
-  color: var(--text-light) !important;
-  background-color: var(--bg-dark);
-}
-
 .btn-color {
   padding: 10px 20px;
   text-align: center;
-  font-weight: 400;
+  font-weight: 700;
   border-radius: 10px;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-  border: 2px solid var(--primary-color);
-  color: var(--primary-color) !important;
+  color: var(--text-dark) !important;
+  border: 2px solid var(--bg-dark);
 }
 .btn-color:hover, .btn-color:focus {
+  border: 2px solid var(--primary-color);
   color: var(--text-light) !important;
   background-color: var(--primary-color);
 }
@@ -30,7 +17,7 @@
 .btn-light {
   padding: 10px 20px;
   text-align: center;
-  font-weight: 400;
+  font-weight: 700;
   border-radius: 10px;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   border: 2px solid var(--bg-light);
@@ -41,6 +28,22 @@
   background-color: var(--bg-light);
 }
 
+@media (prefers-color-scheme: dark) {
+  .btn-color {
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    color: var(--text-light) !important;
+    border: 2px solid var(--bg-light);
+  }
+  .btn-color:hover, .btn-color:focus {
+    border: 2px solid var(--primary-color);
+    color: var(--text-light) !important;
+    background-color: var(--primary-color);
+  }
+}
 .nav-toggle {
   z-index: 9999;
   position: fixed;
@@ -61,7 +64,7 @@
   top: 0;
   right: 0;
   z-index: 10;
-  background-color: var(--bg-light);
+  background-color: var(--card-light);
   transform: translateX(100%);
   transition: transform 400ms ease-in-out;
 }
@@ -69,7 +72,7 @@
   display: none;
 }
 .primary-header .logo strong {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 .primary-header .primary-navigation {
   display: flex;
@@ -101,7 +104,7 @@
   font-weight: 700;
 }
 .hero .container .hero-text h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   line-height: 1em;
   margin: 0;
 }
@@ -110,7 +113,7 @@
   font-weight: 300;
 }
 .hero .container .hero-text strong {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 .hero .container .hero-logo {
   height: 300px;
@@ -133,6 +136,9 @@
 }
 .about-section .container .text {
   text-align: start;
+}
+.about-section .container .text .call-to-action {
+  text-align: center;
 }
 .about-section .container .image {
   height: 100px;
@@ -166,7 +172,7 @@
   height: auto;
   width: 100%;
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   text-align: center;
   max-width: 300px;
 }
@@ -215,6 +221,7 @@ footer .container {
   align-items: center;
   justify-content: space-between;
   color: var(--text-light);
+  font-size: smaller;
   height: 100px;
 }
 footer .container a {
@@ -223,17 +230,18 @@ footer .container a {
 
 :root {
   scroll-behavior: smooth;
-  --bg-light: #fafafa;
-  --bg-dark: #121212;
+  --bg-light: #fbfbfd;
+  --bg-dark: #111111;
   --card-light: #fff;
-  --card-dark: #161616;
-  --primary-color: #6eb0e8;
-  --secondary-color: #c541d2;
-  --text-light: #fff;
-  --text-dark: #171717;
+  --card-dark: #181818;
+  --primary-color: #ee2e5e;
+  --secondary-color: #00b3c0;
+  --text-light: #ffffff;
+  --text-dark: #1d1d1f;
   --bg-gradient: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   --section-padding: 1em;
   --nav-height: 80px;
+  scroll-padding-top: var(--nav-height);
 }
 
 body {
@@ -248,6 +256,10 @@ h1,
 h2 {
   margin-top: 0.5em;
   font-weight: 700;
+}
+
+hr {
+  width: 80%;
 }
 
 a {
@@ -287,16 +299,7 @@ section {
   }
 
   .primary-header {
-    background-color: var(--bg-dark);
-  }
-
-  .btn-dark {
-    border: 2px solid var(--bg-light);
-    color: var(--text-light) !important;
-  }
-  .btn-dark:hover, .btn-dark:focus {
-    color: var(--text-dark) !important;
-    background-color: var(--bg-light);
+    background-color: var(--card-dark);
   }
 
   .project-list .project {
@@ -330,6 +333,9 @@ section {
   }
   .about-section .container .text {
     width: 50%;
+  }
+  .about-section .container .text .call-to-action {
+    text-align: left;
   }
   .about-section .container .image {
     width: 50%;
@@ -367,6 +373,7 @@ section {
     position: fixed;
     z-index: 10;
     transform: translateX(0);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   }
   .primary-header .logo {
     display: block;
