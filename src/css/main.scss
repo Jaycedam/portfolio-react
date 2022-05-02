@@ -8,25 +8,38 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
-:root {
+:root,
+:root.light {
     scroll-behavior: smooth;
-    --bg-light: #fbfbfd;
-    --bg-dark: #111111;
-    --card-light: #fff;
-    --card-dark: #181818;
+    --bg: #fbfbfd;
+    --card: #fff;
     --primary-color: #ee2e5e;
     --secondary-color: #00b3c0;
+    --text: #1d1d1f;
     --text-light: #ffffff;
-    --text-dark: #1d1d1f;
     --bg-gradient: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     --section-padding: 1em;
     --nav-height: 80px;
 }
 
+[data-theme="light"] {
+    --bg: #fbfbfd !important;
+    --text: #1d1d1f !important;
+    --card: #fff !important;
+}
+
+
+[data-theme="dark"] {
+    --bg: #111111 !important;
+    --text: #ffffff;
+    --card: #181818 !important;
+}
+
+
 body {
     margin: 0;
-    background-color: var(--bg-light);
-    color: var(--text-dark);
+    background-color: var(--bg);
+    color: var(--text);
     font-family: 'Poppins', arial;
     font-weight: 400;
 }
@@ -43,7 +56,7 @@ hr {
 
 a {
     text-decoration: none;
-    color: var(--text-dark);
+    color: var(--text);
 
     &:hover,
     &:focus {
@@ -71,23 +84,18 @@ section {
     box-sizing: border-box;
 }
 
+// Transition dark mode
+body, .primary-header, .project, footer, a, .theme-toggle {
+    transition: color .40s ease-in-out, background-color .40s ease-in-out;
+
+}
+
 // Dark mode
 @media (prefers-color-scheme: dark) {
-    body {
-        background-color: var(--bg-dark);
-        color: var(--text-light);
-    }
-
-    a {
-        color: var(--text-light);
-    }
-
-    .primary-header {
-        background-color: var(--card-dark);
-    }
-
-    .project-list .project {
-        background-color: var(--card-dark) !important;
+    :root {
+        --bg: #111111;
+        --text: #ffffff;
+        --card: #181818;
     }
 }
 

@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 .btn-color {
+  background-color: transparent;
   padding: 10px 20px;
   text-align: center;
   font-weight: 700;
   border-radius: 10px;
-  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-  color: var(--text-dark) !important;
-  border: 2px solid var(--bg-dark);
+  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+  color: var(--text) !important;
+  border: 2px solid var(--text);
 }
 .btn-color:hover, .btn-color:focus {
   border: 2px solid var(--primary-color);
@@ -14,29 +15,26 @@
   background-color: var(--primary-color);
 }
 
-.btn-light {
-  padding: 10px 20px;
-  text-align: center;
+.theme-toggle {
+  cursor: pointer;
   font-weight: 700;
-  border-radius: 10px;
-  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-  border: 2px solid var(--bg-light);
-  color: var(--text-light) !important;
+  width: auto;
+  text-align: justify;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  color: var(--text);
 }
-.btn-light:hover, .btn-light:focus {
-  color: var(--text-dark) !important;
-  background-color: var(--bg-light);
+.theme-toggle:hover {
+  color: var(--primary-color) !important;
 }
 
 @media (prefers-color-scheme: dark) {
   .btn-color {
-    padding: 10px 20px;
-    text-align: center;
-    font-weight: 700;
-    border-radius: 10px;
-    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-    color: var(--text-light) !important;
-    border: 2px solid var(--bg-light);
+    color: var(--text) !important;
+    border: 2px solid var(--text);
   }
   .btn-color:hover, .btn-color:focus {
     border: 2px solid var(--primary-color);
@@ -51,7 +49,7 @@
   right: 5%;
   display: flex;
   font-size: 2em;
-  color: var(--text-dark);
+  color: var(--text);
   background-color: rgba(250, 250, 250, 0.3568627451);
   border: 0;
   border-radius: 10px;
@@ -64,7 +62,7 @@
   top: 0;
   right: 0;
   z-index: 10;
-  background-color: var(--card-light);
+  background-color: var(--card);
   transform: translateX(100%);
   transition: transform 400ms ease-in-out;
 }
@@ -84,12 +82,23 @@
 .primary-header .primary-navigation ul {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2em;
   text-align: center;
 }
 
 .primary-header[data-visible=true] {
   transform: translateX(0);
+}
+
+.d-block-light,
+.d-block-dark {
+  display: none;
+}
+
+[data-theme=light] .d-block-light,
+[data-theme=dark] .d-block-dark {
+  display: block !important;
 }
 
 .hero .container {
@@ -165,7 +174,7 @@
   flex-wrap: wrap;
 }
 .projects-section .project-list .project {
-  background-color: var(--card-light);
+  background-color: var(--card);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -213,39 +222,50 @@
 }
 
 footer {
-  background-color: var(--card-dark);
+  background-color: var(--card);
 }
 footer .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: var(--text-light);
+  color: var(--text);
   font-size: smaller;
   height: 100px;
 }
 footer .container a {
-  color: var(--text-light);
+  color: var(--text);
 }
 
-:root {
+:root,
+:root.light {
   scroll-behavior: smooth;
-  --bg-light: #fbfbfd;
-  --bg-dark: #111111;
-  --card-light: #fff;
-  --card-dark: #181818;
+  --bg: #fbfbfd;
+  --card: #fff;
   --primary-color: #ee2e5e;
   --secondary-color: #00b3c0;
+  --text: #1d1d1f;
   --text-light: #ffffff;
-  --text-dark: #1d1d1f;
   --bg-gradient: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   --section-padding: 1em;
   --nav-height: 80px;
 }
 
+[data-theme=light] {
+  --bg: #fbfbfd !important;
+  --text: #1d1d1f !important;
+  --card: #fff !important;
+}
+
+[data-theme=dark] {
+  --bg: #111111 !important;
+  --text: #ffffff;
+  --card: #181818 !important;
+}
+
 body {
   margin: 0;
-  background-color: var(--bg-light);
-  color: var(--text-dark);
+  background-color: var(--bg);
+  color: var(--text);
   font-family: "Poppins", arial;
   font-weight: 400;
 }
@@ -262,7 +282,7 @@ hr {
 
 a {
   text-decoration: none;
-  color: var(--text-dark);
+  color: var(--text);
 }
 a:hover, a:focus {
   color: var(--primary-color) !important;
@@ -286,22 +306,15 @@ section {
   box-sizing: border-box;
 }
 
+body, .primary-header, .project, footer, a, .theme-toggle {
+  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+}
+
 @media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--bg-dark);
-    color: var(--text-light);
-  }
-
-  a {
-    color: var(--text-light);
-  }
-
-  .primary-header {
-    background-color: var(--card-dark);
-  }
-
-  .project-list .project {
-    background-color: var(--card-dark) !important;
+  :root {
+    --bg: #111111;
+    --text: #ffffff;
+    --card: #181818;
   }
 }
 @media (min-width: 576px) {

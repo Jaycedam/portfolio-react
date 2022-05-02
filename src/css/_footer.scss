@@ -1,16 +1,16 @@
 footer {
-    background-color: var(--card-dark);
+    background-color: var(--card);
 
     .container {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        color: var(--text-light);
+        color: var(--text);
         font-size: smaller;
         height: 100px;
 
         a {
-            color: var(--text-light);
+            color: var(--text);
         }
     }
 }
