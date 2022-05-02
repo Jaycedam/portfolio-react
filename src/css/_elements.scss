@@ -34,27 +34,29 @@
 
 }
 
-// .btn-light {
-//     padding: 10px 20px;
-//     text-align: center;
-//     font-weight: 700;
-//     border-radius: 10px;
-//     transition: color .40s ease-in-out, background-color .40s ease-in-out, border-color .40s ease-in-out;
-//     border: 2px solid var(--bg);
-//     color: var(--text) !important;
+.btn-light {
+    background-color: transparent;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: color .4s ease-in-out, background-color .4s ease-in-out, border-color .4s ease-in-out;
+    color: var(--text-light) !important;
+    border: 2px solid var(--text-light);
 
-//     &:hover,
-//     &:focus {
-//         color: var(--text) !important;
-//         background-color: var(--bg);
-//     }
-// }
+    &:hover,
+    &:focus {
+        border: 2px solid var(--primary-color);
+        color: var(--text-light) !important;
+        background-color: var(--primary-color);
+    }
+}
 
 @media (prefers-color-scheme: dark) {
     .btn-color {
         color: var(--text) !important;
         border: 2px solid var(--text);
-    
+
         &:hover,
         &:focus {
             border: 2px solid var(--primary-color);

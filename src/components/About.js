@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../images/hero-image.svg"
+import image from "../images/circles.svg"
 
 export default function About() {
     return (

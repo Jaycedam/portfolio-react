@@ -1,12 +1,12 @@
 import React from "react";
-import abstract from '../images/abstract.svg'
+import laptop from '../images/laptop.svg'
 
 export default function Hero() {
     return (
         <section className="hero">
             <div className="container">
                 <div className="hero-logo">
-                    <img src={abstract} alt="logo" />
+                    <img id="hero-logo" src={laptop} alt="hero logo"/>
                 </div>
 
                 <div className="hero-text">
@@ -19,7 +19,7 @@ export default function Hero() {
                     </h1>
 
                     <div className="call-to-action">
-                        <a href="mailto:jaycedam@gmail.com" className="btn-color">
+                        <a id="mail-button" href="mailto:jaycedam@gmail.com" className="btn-light">
                             Contactar
                         </a>
                     </div>

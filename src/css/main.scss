@@ -12,8 +12,9 @@
 :root.light {
     scroll-behavior: smooth;
     --bg: #fbfbfd;
+    --card-dark: #181818;
     --card: #fff;
-    --primary-color: #ee2e5e;
+    --primary-color: #ff0a52; //ee2e5e
     --secondary-color: #00b3c0;
     --text: #1d1d1f;
     --text-light: #ffffff;
@@ -30,7 +31,7 @@
 
 
 [data-theme="dark"] {
-    --bg: #111111 !important;
+    --bg: #131313 !important;
     --text: #ffffff;
     --card: #181818 !important;
 }
@@ -84,11 +85,41 @@ section {
     box-sizing: border-box;
 }
 
-// Transition dark mode
-body, .project, footer, a, .theme-toggle {
-    transition: color .4s ease-in-out, background-color .4s ease-in-out;
-
+// All transitions
+body,
+.project,
+footer,
+a,
+.theme-toggle,
+.primary-header {
+    transition: all .4s ease-in-out;
 }
+
+// Animation in for sections
+section {
+    animation: opacityin 1s ease;
+}
+
+@keyframes opacityin {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slidein {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
 
 // Dark mode
 @media (prefers-color-scheme: dark) {
@@ -212,6 +243,11 @@ body, .project, footer, a, .theme-toggle {
     .technology-list {
         justify-content: space-between;
     }
+
+    // nav animation for big screens
+    .primary-header {
+        animation: slidein 1s ease;
+    }
 }
 
 @media (min-width:1200px) {
@@ -233,143 +269,3 @@ body, .project, footer, a, .theme-toggle {
         width: 1320px;
     }
 }
-
-// @media (min-width:576px) {
-//     .hero {
-//         .hero-logo {
-//             width: 70%;
-//         }
-//     }
-
-//     .project-list {
-//         flex-wrap: wrap;
-//         justify-content: center;
-//         flex-direction: row !important;
-
-//         .project {
-//             width: 40% !important;
-//         }
-//     }
-
-// }
-
-// @media (min-width:768px) {
-//     .hero {
-//         margin-top: 80px;
-
-//         .hero-logo {
-//             width: 50%;
-//         }
-//     }
-
-//     .about-section {
-//         flex-direction: row;
-
-//         .image {
-//             height: 200px;
-//             padding: 2em;
-//         }
-//     }
-
-//     .project-list {
-//         flex-wrap: wrap;
-//         gap: unset !important;
-//         justify-content: space-around;
-//         flex-direction: row !important;
-
-//         .project {
-//             width: 30% !important;
-//         }
-//     }
-
-//     .nav-toggle {
-//         display: none;
-//     }
-
-//     .primary-header {
-//         display: flex;
-//         justify-content: space-around;
-//         align-items: center;
-//         height: 80px;
-//         width: 100%;
-//         position: fixed;
-//         z-index: 10;
-//         transform: translateX(0);
-
-//         .logo {
-//             display: block;
-
-//             strong {
-//                 color: var(--primary-color);
-//             }
-//         }
-
-//         .primary-navigation {
-//             display: flex;
-//             align-items: center;
-//             justify-content: center;
-//             font-weight: 700;
-//             height: 100%;
-
-
-//             ul {
-//                 display: flex;
-//                 flex-direction: row;
-//                 gap: 2em;
-//                 text-align: center;
-//             }
-
-//         }
-//     }
-// }
-
-// @media (min-width:1025px) {
-//     .hero {
-//         flex-wrap: wrap;
-//         justify-content: center;
-//         flex-direction: row-reverse;
-//         margin-top: 80px;
-
-//         .hero-logo {
-//             width: 40%;
-//         }
-
-//         .hero-text {
-//             width: 60%;
-
-//             h1 {
-//                 margin: .3em 0;
-//             }
-//         }
-
-//         .call-to-action {
-//             width: 100%;
-//             display: flex;
-//             justify-content: center;
-//         }
-//     }
-
-//     section,
-//     .hero {
-//         padding: 3em 20%;
-//     }
-
-//     .about-section {
-//         flex-direction: row;
-
-//         .image {
-//             height: 200px;
-//             padding: 2em;
-//         }
-//     }
-
-
-//     .project {
-//         max-width: 400px !important;
-//     }
-
-//     .technology-list {
-//         justify-content: flex-start;
-//     }
-
-// }

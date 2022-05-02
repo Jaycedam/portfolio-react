@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { MdMenu, MdDarkMode, MdLightMode } from "react-icons/md";
-// import { VscGithub } from "react-icons/vsc"
 
 function navToggle() {
     const nav = document.querySelector(".primary-header");
