@@ -1,6 +1,6 @@
 import './css/main.css';
 import Hero from './components/Hero';
-import ProjectList from './components/ProjectList';
+import Projects from './components/Projects';
 import Footer from './components/Footer';
 import About from './components/About';
 import Header from './components/Header';
@@ -32,7 +32,7 @@ function App() {
     <>
       <Header />
       <Hero />
-      <ProjectList />
+      <Projects />
       <About />
       <Technologies />
       <Footer />

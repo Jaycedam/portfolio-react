@@ -11,7 +11,7 @@ export default function About() {
                 </div>
 
                 <div className="text">
-                    <h2>Acerca de</h2>
+                    <h1>Acerca de</h1>
                     <p>Analista Programador Computacional, titulación en Duoc UC.
                         <br />
                         Front-end construído con React y SCSS.
