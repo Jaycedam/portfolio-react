@@ -1,15 +1,24 @@
 import React, { useEffect } from "react";
 import { MdMenu, MdDarkMode, MdLightMode } from "react-icons/md";
+import { AiOutlineClose } from "react-icons/ai";
+
 
 function navToggle() {
     const nav = document.querySelector(".primary-header");
     const visible = nav.getAttribute("data-visible");
+    const menuicon = document.getElementById("menuicon")
+    const closeicon = document.getElementById("closeicon")
 
     if (visible === "false") {
         nav.setAttribute("data-visible", "true")
+        closeicon.style.display = "flex"
+        menuicon.style.display = "none"
+
     }
     else if (visible === "true") {
         nav.setAttribute("data-visible", "false")
+        closeicon.style.display = "none"
+        menuicon.style.display = "flex"
     }
 }
 
@@ -42,18 +51,21 @@ export default function Navbar() {
         // Click on link closes nav
         const nav = document.querySelector(".primary-header");
         const navLinks = document.querySelectorAll(".nav-item");
+        const menuicon = document.getElementById("menuicon")
+        const closeicon = document.getElementById("closeicon")
 
         navLinks.forEach(link => link.addEventListener("click", () => {
             nav.setAttribute("data-visible", "false")
+            closeicon.style.display = "none"
+            menuicon.style.display = "flex"
         }))
     }, [])
-
-
 
     return (
         <>
             <button onClick={navToggle} className="nav-toggle">
-                <MdMenu />
+                <span id="menuicon" className="menuicon"><MdMenu /></span>
+                <span id="closeicon" className="closeicon"><AiOutlineClose /></span>
             </button>
 
             <header className="primary-header" data-visible="false">

@@ -3,12 +3,17 @@
   position: fixed;
   top: 5%;
   right: 5%;
-  display: flex;
   font-size: 2em;
-  color: var(--text);
-  background-color: #fafafa5b;
+  color: var(--text-light);
+  background-color: #3a3a3aab;
   border: 0;
   border-radius: 10px;
+}
+
+.menuicon, .closeicon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .primary-header {
@@ -20,7 +25,7 @@
   z-index: 10;
   background-color: var(--card);
   transform: translateX(100%);
-
+  
   .logo {
     display: none;
 
@@ -62,4 +67,9 @@
 [data-theme='light'] .d-block-light,
 [data-theme='dark'] .d-block-dark {
   display: block !important;
+}
+
+// hides close menu toggle for mobile
+.closeicon {
+  display: none;
 }
