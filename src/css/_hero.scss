@@ -1,7 +1,7 @@
 .hero {
     background: url("../images/hero-nodots.svg") center center / cover no-repeat, var(--card-dark);
     .container {
-        min-height: 80vh;
+        min-height: 100vh;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -9,43 +9,32 @@
         justify-content: center;
 
         .hero-text {
-            color: var(--text-light);
-            text-align: center;
-            font-weight: 700;
-
-            h1 {
-                font-size: 2.5em;
-                line-height: 1em;
-                margin: 0;
-            }
-
-            p {
-                margin: 0;
-                font-weight: 300;
-            }
-
-            strong {
-                color: var(--secondary-color);
-            }
+            width: 90%;
+            max-height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         .hero-logo {
-            height: 300px;
-            margin: 0 auto;
+            width: 90%;
+            max-height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-            img, svg {
-                height: 100%;
-                max-width: 100%;
-                object-fit: scale-down;
-            }
+        img, svg {
+            height: 100%;
+            max-width: 100%;
+            object-fit: scale-down;
         }
 
         .call-to-action {
-            margin-top: 3em;
+            text-align: center;
+            margin: 2em 0;
+            width: 100%;
         }
     }
 }
-
-#dots, #line1, #line2 {
-    fill: none !important;
-} 

@@ -5,7 +5,7 @@ import { DiDjango } from "react-icons/di"
 
 export default function Technologies() {
     return (
-        <section id="technologies" className="technologies-section">
+        <section id="technologies" className="technologies-section observer">
             <div className="container">
                 {/* <h2>Conocimientos</h2> */}
                 <div className="technology-list">

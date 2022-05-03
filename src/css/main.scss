@@ -71,11 +71,23 @@ ul {
     list-style: none;
 }
 
-// Section width and padding for its child container
+// General section width, used later for responsive Queries
 section {
     width: 100%;
     overflow: hidden;
 }
+
+// Classes for IntersectionObserver (animation on scroll)
+.observer {
+    transform: translateY(5%);
+    opacity: 0;
+    transition: 1s ease;
+}
+.observer.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 
 .container {
     width: 100%;
@@ -95,21 +107,7 @@ a,
     transition: all .4s ease-in-out;
 }
 
-// Animation in for sections
-section {
-    animation: opacityin 1s ease;
-}
-
-@keyframes opacityin {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
+// Slide in animation for navbar on desktop
 @keyframes slidein {
     from {
         transform: translateY(-100%);
@@ -135,23 +133,11 @@ section {
     .container {
         width: 540px;
     }
-
-    .hero {
-        .hero-logo {
-            height: 400px !important;
-        }
-    }
 }
 
 @media (min-width:768px) {
     .container {
         width: 720px;
-    }
-
-    .hero {
-        h1 {
-            font-size: 4em !important;
-        }
     }
 
     .project-list {
@@ -193,13 +179,15 @@ section {
         padding-top: 5em;
         padding-bottom: 5em;
         flex-direction: row-reverse;
+        // min height is 100vh minus desktop navbar
+        min-height: calc(100vh - var(--nav-height)) !important;
 
         .hero-text {
             width: 50%;
+        }
 
-            h1 {
-                font-size: 5em !important;
-            }
+        .hero-logo {
+            width: 50%;
         }
     }
 

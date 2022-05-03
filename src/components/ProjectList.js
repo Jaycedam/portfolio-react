@@ -27,7 +27,7 @@ export default function ProjectList() {
     );
 
     return (
-        <section id="projects" className="projects-section">
+        <section id="projects" className="projects-section observer">
             <div className="container">
                 <h2>Proyectos destacados</h2>
 

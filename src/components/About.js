@@ -4,7 +4,7 @@ import image from "../images/circles.svg"
 export default function About() {
     return (
 
-        <section id="about" className="about-section">
+        <section id="about" className="about-section observer">
             <div className="container">
                 <div className="image">
                     <img src={image} alt="about img" />
