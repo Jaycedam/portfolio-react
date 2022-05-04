@@ -284,6 +284,7 @@ footer .container a {
   --bg: #0f1214 !important;
   --text: #ffffff;
   --card: #181b1f !important;
+  --swiper-pagination-bullet-inactive-color: white;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -291,6 +292,7 @@ footer .container a {
     --bg: #0f1214;
     --text: #ffffff;
     --card: #181b1f;
+    --swiper-pagination-bullet-inactive-color: white;
   }
 }
 body {
