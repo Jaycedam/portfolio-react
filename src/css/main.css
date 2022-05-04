@@ -5,7 +5,7 @@
   text-align: center;
   font-weight: 700;
   border-radius: 10px;
-  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+  transition: color 0.8s ease-in-out, background-color 0.8s ease-in-out, border-color 0.8s ease-in-out;
   color: var(--text) !important;
   border: 2px solid var(--text);
 }
@@ -37,7 +37,7 @@
   text-align: center;
   font-weight: 700;
   border-radius: 10px;
-  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+  transition: color 0.8s ease-in-out, background-color 0.8s ease-in-out, border-color 0.8s ease-in-out;
   color: var(--text-light) !important;
   border: 2px solid var(--text-light);
 }
@@ -163,16 +163,23 @@
   width: 100%;
 }
 
+.about-section {
+  margin-bottom: 3em;
+}
 .about-section .container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .about-section .container .text {
-  text-align: start;
+  text-align: justify;
 }
 .about-section .container .text .call-to-action {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   text-align: center;
+  gap: 1em;
 }
 .about-section .container .image {
   height: 100px;
@@ -224,25 +231,6 @@
   background-color: #0f1214;
 }
 
-.technology-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-wrap: wrap;
-  gap: 1.5em;
-}
-.technology-list .technology {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5em;
-}
-.technology-list .technology p {
-  font-weight: 300;
-  font-size: 0.8em;
-}
-
 footer {
   background-color: var(--card);
 }
@@ -256,6 +244,9 @@ footer .container {
 }
 footer .container a {
   color: var(--text);
+}
+footer .container img {
+  height: 80%;
 }
 
 :root,
@@ -336,7 +327,7 @@ section {
 .observer {
   transform: translateY(5%);
   opacity: 0;
-  transition: 1s ease;
+  transition: 0.8s ease;
 }
 
 .observer.show {
@@ -357,7 +348,7 @@ footer,
 a,
 .theme-toggle,
 .primary-header {
-  transition: all 0.4s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 @-webkit-keyframes slidein {

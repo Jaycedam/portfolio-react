@@ -1,0 +1,45 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+	<title>4897895-ai</title>
+	<defs>
+		<radialGradient id="g1" cx="136.4" cy="346.8" r="390.2" gradientUnits="userSpaceOnUse">
+			<stop offset=".2" stop-color="#ad0536"/>
+			<stop offset="1" stop-color="#89052b"/>
+		</radialGradient>
+		<linearGradient id="g2" x1="196.1" y1="57" x2="689.3" y2="57" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#c30d42"/>
+			<stop offset=".8" stop-color="#ff0a52"/>
+		</linearGradient>
+		<linearGradient id="g3" x1="876.5" y1="714.3" x2="523.6" y2="714.3" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#0099a4"/>
+			<stop offset="1" stop-color="#00686f"/>
+		</linearGradient>
+		<linearGradient id="g4" x1="803.9" y1="935.4" x2="310.7" y2="935.4" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#00b3c0"/>
+			<stop offset="1" stop-color="#0098a3"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { fill: url(#g1) } 
+		.s1 { fill: url(#g2) } 
+		.s2 { fill: url(#g3) } 
+		.s3 { fill: url(#g4) } 
+		.s4 { fill: #a3a3a3 } 
+		.s5 { fill: #ffffff } 
+	</style>
+	<g id="OBJECTS">
+		<g id="&lt;Group&gt;">
+			<g id="&lt;Group&gt;">
+				<g id="&lt;Group&gt;">
+					<path id="&lt;Path&gt;" class="s0" d="m268.6 542.1l-130.6-130.3c-28.5-28.5-28.5-74.7 0-103.1 28.4-28.5 74.6-28.5 103.1 0l220.8 220.8c28.5 28.5 28.5 74.7 0 103.1-28.4 28.5-74.6 28.5-103.1 0z"/>
+					<path id="&lt;Path&gt;" class="s1" d="m461.9 190.8l-169.3 169.4v-0.1q-94.1 111.9-24 182l-130.3-130.1q-0.2-0.2-0.3-0.3-0.2-0.2-0.3-0.4l-1.5-1.4-1.1-1.2c-26.8-28.6-25-72.3 2.9-100.2l220.8-220.8c28.5-28.5 74.7-28.5 103.1 0 28.5 28.5 28.5 74.6 0 103.1z"/>
+				</g>
+				<g id="&lt;Group&gt;">
+					<path id="&lt;Path&gt;" class="s2" d="m731.4 450.4l130.6 130.3c28.5 28.5 28.5 74.6 0 103.1-28.4 28.5-74.6 28.5-103.1 0l-220.8-220.8c-28.5-28.5-28.5-74.7 0-103.2 28.4-28.4 74.6-28.4 103.1 0z"/>
+					<path id="&lt;Path&gt;" class="s3" d="m538.1 801.7l169.3-169.4q94.1-111.8 24-181.9l130.3 130.1c0.1 0.1 0.2 0.2 0.3 0.3q0.2 0.2 0.3 0.4l1.5 1.4 1.1 1.2c26.8 28.6 25 72.3-2.9 100.1l-220.8 220.9c-28.5 28.5-74.7 28.5-103.1 0-28.5-28.5-28.5-74.7 0-103.1z"/>
+				</g>
+				<path id="&lt;Path&gt;" class="s4" d="m464.3 885.2c-11.7 37.2-51.3 57.9-88.5 46.3-37.2-11.7-57.9-51.3-46.3-88.5l228.4-718c11.7-37.2 51.3-58 88.5-46.3 37.2 11.6 58 51.2 46.3 88.4z"/>
+				<path id="&lt;Path&gt; copy" class="s5" d="m454.8 875.7c-11.6 37.2-51.2 58-88.4 46.3-37.2-11.6-58-51.2-46.3-88.4l228.4-718.1c11.6-37.2 51.3-57.9 88.5-46.3 37.2 11.7 57.9 51.3 46.3 88.5z"/>
+			</g>
+		</g>
+	</g>
+</svg>

@@ -12,19 +12,19 @@ export default function About() {
 
                 <div className="text">
                     <h1>Acerca de</h1>
-                    <p>Analista Programador Computacional, titulación en Duoc UC.
-                        <br />
-                        Front-end construído con React y SCSS.
-                        <br />
-                        Backend: Spring Boot para la entrega de proyectos a través de API.
-                        <br />
-                        Diseño responsivo "mobile first" y dark mode automático.
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                     </p>
 
                     <br />
 
                     <div className="call-to-action">
-                        <a href="https://drive.google.com/file/d/1EwUWO2H98wCTPYqCkNQG8r_nfj05Ts2N/view?usp=sharing" className="btn-color">Certificado título</a>
+                        <a href="#soon" className="btn-color">CV</a>
+                        <a href="https://drive.google.com/file/d/1EwUWO2H98wCTPYqCkNQG8r_nfj05Ts2N/view?usp=sharing" className="btn-color">Título</a>
                     </div>
 
                 </div>

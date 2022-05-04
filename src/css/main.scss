@@ -3,7 +3,6 @@
 @use "_hero";
 @use "_about";
 @use "_projects";
-@use "_technologies";
 @use "_footer";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
@@ -94,7 +93,7 @@ section {
 .observer {
     transform: translateY(5%);
     opacity: 0;
-    transition: 1s ease;
+    transition: .8s ease;
 }
 
 .observer.show {
@@ -118,7 +117,7 @@ footer,
 a,
 .theme-toggle,
 .primary-header {
-    transition: all .4s ease-in-out;
+    transition: all .8s ease-in-out;
 }
 
 // Slide in animation for navbar on desktop
