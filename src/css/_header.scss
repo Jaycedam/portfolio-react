@@ -28,9 +28,10 @@
   
   .logo {
     display: none;
+    height: 50%;
 
-    strong {
-      color: var(--secondary-color);
+    img {
+      height: 100%;
     }
   }
 

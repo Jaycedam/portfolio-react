@@ -10,40 +10,50 @@
 :root,
 :root.light {
     scroll-behavior: smooth;
-    --bg: #fbfbfd;
-    --card-dark: #181b1f;
-    --card: #fff;
+    --bg: #f8f8f8;
+    --card-dark: #181818;
+    --card: #fcfcfc;
     --primary-color: #ff0a52; //ee2e5e
     --secondary-color: #00b3c0;
     --text: #1d1d1f;
     --text-light: #ffffff;
-    --bg-gradient: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     --section-padding: 1em;
     --nav-height: 80px;
-    --swiper-theme-color: var(--primary-color) !important; 
+    --swiper-theme-color: var(--primary-color) !important;
+    --swiper-pagination-bullet-inactive-color: var(--primary-color) !important;
 }
 
 [data-theme="light"] {
-    --bg: #fbfbfd !important;
+    --bg: #f8f8f8 !important;
     --text: #1d1d1f !important;
-    --card: #fff !important;
+    --card: #fcfcfc !important;
+
+    .hero {
+        background-image: url("../images/bg-light.svg");
+    }
 }
 
 
 [data-theme="dark"] {
-    --bg: #0f1214 !important;
+    --bg: #12151a !important;
     --text: #ffffff;
-    --card: #181b1f !important;
-    --swiper-pagination-bullet-inactive-color: white;
+    --card: #13181d !important;
+
+    .hero {
+        background-image: url("../images/bg-dark.svg");
+    }
 }
 
 // Dark mode
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg: #0f1214;
+        --bg: #12151a;
         --text: #ffffff;
-        --card: #181b1f;
-        --swiper-pagination-bullet-inactive-color: white;
+        --card: #13181d;
+    }
+
+    .hero {
+        background-image: url("../images/bg-dark.svg");
     }
 }
 
@@ -116,8 +126,9 @@ body,
 footer,
 a,
 .theme-toggle,
-.primary-header {
-    transition: all .8s ease-in-out;
+.primary-header,
+.hero {
+    transition: all .8s ease;
 }
 
 // Slide in animation for navbar on desktop

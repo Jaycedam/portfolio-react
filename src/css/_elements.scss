@@ -4,7 +4,7 @@
     text-align: center;
     font-weight: 700;
     border-radius: 10px;
-    transition: color .8s ease-in-out, background-color .8s ease-in-out, border-color .8s ease-in-out;
+    transition: all .8s ease;
     color: var(--text) !important;
     border: 2px solid var(--text);
 
@@ -40,7 +40,7 @@
     text-align: center;
     font-weight: 700;
     border-radius: 10px;
-    transition: color .8s ease-in-out, background-color .8s ease-in-out, border-color .8s ease-in-out;
+    transition: all .8s ease;
     color: var(--text-light) !important;
     border: 2px solid var(--text-light);
 

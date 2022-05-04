@@ -1,5 +1,9 @@
 .hero {
-    background: url("../images/hero-nodots.svg") center center / cover no-repeat, var(--card-dark);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/bg-light.svg");
+
     .container {
         min-height: 100vh;
         height: auto;
@@ -14,7 +18,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-wrap: wrap;
+            flex-direction: column;
+            flex-wrap: wrap;     
+            fill: var(--text);
         }
 
         .hero-logo {
@@ -25,7 +31,8 @@
             justify-content: center;
         }
 
-        img, svg {
+        img,
+        svg {
             height: 100%;
             max-width: 100%;
             object-fit: scale-down;

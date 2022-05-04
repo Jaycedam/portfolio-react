@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { MdMenu, MdDarkMode, MdLightMode } from "react-icons/md";
 import { AiOutlineClose } from "react-icons/ai";
-
+import logo from "../images/logo.svg"
 
 function navToggle() {
     const nav = document.querySelector(".primary-header");
@@ -70,7 +70,8 @@ export default function Navbar() {
 
             <header className="primary-header" data-visible="false">
                 <div className="logo">
-                    jordancortes<strong>.dev</strong>
+                    <img src={logo} alt="logo"/>
+                    {/* jordancortes<strong>.dev</strong> */}
                 </div>
 
                 <nav className="primary-navigation">
