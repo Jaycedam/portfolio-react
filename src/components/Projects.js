@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Navigation } from 'swiper';
+import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 import { FaGithub } from "react-icons/fa"
 
 export default function Projects() {
@@ -28,10 +30,11 @@ export default function Projects() {
 
                 {/* Card carousel */}
                 <Swiper
-                    modules={[Navigation]}
+                    modules={[Navigation, Pagination]}
                     spaceBetween={20}
                     slidesPerView={1.2}
-                    navigation
+                    navigation={true}
+                    pagination={{ dynamicBullets: true, }}
                     centeredSlides
                     breakpoints={{
                         // when window width is >= 768px
