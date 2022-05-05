@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Navigation, Pagination } from 'swiper';
+import { Navigation, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+
 
 import { FaGithub } from "react-icons/fa"
 
@@ -30,11 +30,16 @@ export default function Projects() {
 
                 {/* Card carousel */}
                 <Swiper
-                    modules={[Navigation, Pagination]}
+                    modules={[Navigation, Autoplay]}
+                    effect={"cards"}
+                    grabCursor={true}
                     spaceBetween={20}
-                    slidesPerView={1.2}
+                    slidesPerView={1}
                     navigation={true}
-                    pagination={{ dynamicBullets: true, }}
+                    autoplay={{
+                        delay: 5000,
+                        disableOnInteraction: false,  
+                    }}
                     centeredSlides
                     breakpoints={{
                         // when window width is >= 768px
@@ -54,12 +59,12 @@ export default function Projects() {
                     {projects.map((item) => (
                         <SwiperSlide key={item.id}>
                             <div className="project">
-                                <div className="image">
-                                    <p className="text-image">{item.about}</p>
-                                    <img src={item.imageUrl} alt="" />
-                                </div>
+                                {/* <div className="image">
+
+                                </div> */}
 
                                 <h3>{item.name}</h3>
+                                <p>{item.about}</p>
                                 <a href={item.url} className="btn-color link">
                                     GitHub <FaGithub />
                                 </a>

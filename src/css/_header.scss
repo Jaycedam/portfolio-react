@@ -23,12 +23,17 @@
   top: 0;
   right: 0;
   z-index: 10;
-  background-color: var(--card);
+  background-color: var(--bg);
   transform: translateX(100%);
   
   .logo {
     display: none;
     height: 50%;
+    font-weight: 700;
+
+    strong {
+      color: var(--primary-color);
+    }
 
     img {
       height: 100%;

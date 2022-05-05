@@ -10,12 +10,12 @@
 :root,
 :root.light {
     scroll-behavior: smooth;
-    --bg: #f8f8f8;
-    --card-dark: #181818;
-    --card: #fcfcfc;
+    --bg: #fafafa;
+    --card-dark: #131313;
+    --card: #f5f5f5;
     --primary-color: #ff0a52; //ee2e5e
     --secondary-color: #00b3c0;
-    --text: #1d1d1f;
+    --text: #080808;
     --text-light: #ffffff;
     --section-padding: 1em;
     --nav-height: 80px;
@@ -24,37 +24,37 @@
 }
 
 [data-theme="light"] {
-    --bg: #f8f8f8 !important;
-    --text: #1d1d1f !important;
-    --card: #fcfcfc !important;
+    --bg: #fafafa !important;
+    --text: #080808 !important;
+    --card: #f5f5f5 !important;
 
-    .hero {
-        background-image: url("../images/bg-light.svg");
-    }
+    // .hero {
+    //     background-image: url("../images/bg-light.svg");
+    // }
 }
 
 
 [data-theme="dark"] {
-    --bg: #12151a !important;
+    --bg: #111111 !important;
     --text: #ffffff;
-    --card: #13181d !important;
+    --card: #181818 !important;
 
-    .hero {
-        background-image: url("../images/bg-dark.svg");
-    }
+    // .hero {
+    //     background-image: url("../images/bg-dark.svg");
+    // }
 }
 
 // Dark mode
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg: #12151a;
+        --bg: #111111;
         --text: #ffffff;
-        --card: #13181d;
+        --card: #181818;
     }
 
-    .hero {
-        background-image: url("../images/bg-dark.svg");
-    }
+    // .hero {
+    //     background-image: url("../images/bg-dark.svg");
+    // }
 }
 
 
@@ -69,12 +69,12 @@ body {
 h1,
 h2,
 h3 {
-    margin-top: .5em;
+    margin: 0;
     font-weight: 700;
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 3em;
 }
 
 a {
@@ -115,7 +115,7 @@ section {
 .container {
     width: 100%;
     margin: 0 auto;
-    padding: 2em 1em;
+    padding: 3em 1em;
     // prevents overflow with padding
     box-sizing: border-box;
 }
@@ -164,9 +164,9 @@ a,
         .text {
             width: 50%;
 
-            .call-to-action {
-                text-align: left;
-            }
+            // .call-to-action {
+            //     text-align: left;
+            // }
         }
 
         .image {
@@ -215,10 +215,10 @@ a,
         align-items: center;
         height: var(--nav-height);
         width: 100%;
-        position: fixed;
+        position: absolute;
         z-index: 10;
         transform: translateX(0);
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        // box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
         .logo {
             display: block;
