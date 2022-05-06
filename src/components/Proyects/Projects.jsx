@@ -6,8 +6,6 @@ import 'swiper/css/navigation';
 import './assets/css/projects.css';
 import Button from "../Button/Button";
 
-import { FaGithub } from "react-icons/fa"
-
 export default function Projects() {
 
     const [projects, setProjects] = useState([]);
