@@ -1,6 +1,7 @@
 import React from "react";
 // import image from "./assets/images/circles.svg"
 import './assets/css/about.css';
+import Button from "../Button/Button";
 
 export default function About() {
     return (
@@ -24,9 +25,17 @@ export default function About() {
 
                     <br />
 
+
+
                     <div className="call-to-action">
-                        <a href="#soon" className="btn-color">CV</a>
-                        <a href="https://drive.google.com/file/d/1EwUWO2H98wCTPYqCkNQG8r_nfj05Ts2N/view?usp=sharing" className="btn-color">Título</a>
+                        <Button
+                            link= "#soon"
+                            text= "CV"
+                        />
+                        <Button
+                            link= "https://drive.google.com/file/d/1EwUWO2H98wCTPYqCkNQG8r_nfj05Ts2N/view?usp=sharing"
+                            text= "Título"
+                        />
                     </div>
 
                 </div>

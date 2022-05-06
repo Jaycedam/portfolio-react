@@ -1,0 +1,16 @@
+.btn-container {
+    margin-top: 1em;
+}
+
+.button {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 10px;
+    color: white !important;
+}
+
+.button:hover {
+    color: white !important;
+}

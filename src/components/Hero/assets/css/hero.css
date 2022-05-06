@@ -13,8 +13,14 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    /* changes color of hero text on dark mode */
+}
+
+.hero .container .text #regular {
     fill: var(--text);
+}
+
+.hero .container .text #color {
+    fill: var(--text-secondary);
 }
 
 .hero .container .logo {
@@ -39,7 +45,7 @@
 /* Large ≥992px / desktop navbar */
 @media (min-width:960px) {
     .hero .container {
-        height: calc(100vh - var(--nav-height)) !important;
+        /* height: calc(100vh - var(--nav-height)) !important; */
         flex-direction: row-reverse;
     }
 

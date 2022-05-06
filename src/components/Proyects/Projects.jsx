@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import './assets/css/projects.css';
-
+import Button from "../Button/Button";
 
 import { FaGithub } from "react-icons/fa"
 
@@ -62,15 +62,15 @@ export default function Projects() {
                     {projects.map((item) => (
                         <SwiperSlide key={item.id}>
                             <div className="project">
-                                {/* <div className="image">
-
-    </div> */}
-
                                 <h3>{item.name}</h3>
                                 <p>{item.about}</p>
-                                <a href={item.url} className="btn-color link">
+                                <Button
+                                    link = {item.url}
+                                    text = "GitHub"
+                                />
+                                {/* <a href={item.url} className="btn-color link">
                                     GitHub <FaGithub />
-                                </a>
+                                </a> */}
                             </div>
                         </SwiperSlide>
                     ))}

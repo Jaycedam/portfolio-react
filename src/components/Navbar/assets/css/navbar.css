@@ -21,7 +21,7 @@
     background-color: var(--bg);
     /* navbar starts offscreen */
     transform: translateX(100%);
-    transition: all 1s ease;
+    transition: all .5s ease;
 }
 
 .primary-header .logo {
@@ -67,12 +67,12 @@
 
 /* responsive media queries */
 /* Small ≥576px */
-@media (min-width:576px) {
-}
+/* @media (min-width:576px) {
+} */
 
 /* Medium ≥768px */
-@media (min-width:768px) {
-}
+/* @media (min-width:768px) {
+} */
 
 /* Large ≥992px / desktop navbar */
 @media (min-width:960px) {
@@ -86,7 +86,7 @@
         align-items: center;
         height: var(--nav-height);
         width: 100%;
-        position: relative;
+        position: fixed;
         z-index: 10;
         transform: translateX(0);
         animation: slide-in 1s ease;
@@ -102,9 +102,9 @@
 }
 
 /* X-Large ≥1200px */
-@media (min-width:1200px) {
-}
+/* @media (min-width:1200px) {
+} */
 
 /* XX-Large ≥1400px */
-@media (min-width:1400px) {
-}
+/* @media (min-width:1400px) {
+} */

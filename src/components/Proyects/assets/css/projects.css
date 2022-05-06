@@ -6,7 +6,7 @@
     align-items: flex-start;
     justify-content: center;
     margin-top: 2em;
-    padding: 3em 1em;
+    padding: 2em;
     border-radius: 18px;
     box-shadow: 2px 4px 12px rgba(0,0,0,.08);
     background-color: var(--card);
