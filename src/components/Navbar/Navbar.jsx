@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { MdMenu, MdDarkMode, MdLightMode } from "react-icons/md";
 import { AiOutlineClose } from "react-icons/ai";
-// import logo from "../images/logo.svg"
+import './assets/css/navbar.css';
 
 function navToggle() {
     const nav = document.querySelector(".primary-header");
@@ -110,6 +110,7 @@ export default function Navbar() {
 
                     </ul>
                 </nav>
+
             </header>
         </>
 

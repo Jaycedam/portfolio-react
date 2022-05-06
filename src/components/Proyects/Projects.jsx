@@ -3,6 +3,7 @@ import { Navigation, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import './assets/css/projects.css';
 
 
 import { FaGithub } from "react-icons/fa"
@@ -25,7 +26,10 @@ export default function Projects() {
 
     return (
         <section id="projects" className="projects-section observer">
+
             <div className="container">
+
+
                 <h1>Proyectos</h1>
 
                 {/* Card carousel */}
@@ -34,23 +38,22 @@ export default function Projects() {
                     effect={"cards"}
                     grabCursor={true}
                     spaceBetween={20}
-                    slidesPerView={1}
+                    slidesPerView={1.1}
                     navigation={true}
                     autoplay={{
                         delay: 5000,
-                        disableOnInteraction: false,  
+                        disableOnInteraction: false,
                     }}
                     centeredSlides
                     breakpoints={{
-                        // when window width is >= 768px
-                        768: {
-                            //   width: 640,
-                            slidesPerView: 2.2,
+                        // when window width is >= 600px
+                        600: {
+                            slidesPerView: 2.1,
                             centeredSlides: false
                         },
                         // when window width is >= 992px
-                        992: {
-                            slidesPerView: 3,
+                        900: {
+                            slidesPerView: 3.1,
                             centeredSlides: false
                         }
                     }}
@@ -61,7 +64,7 @@ export default function Projects() {
                             <div className="project">
                                 {/* <div className="image">
 
-                                </div> */}
+    </div> */}
 
                                 <h3>{item.name}</h3>
                                 <p>{item.about}</p>
@@ -73,7 +76,10 @@ export default function Projects() {
                     ))}
 
                 </Swiper>
+
             </div>
+
+
         </section>
     )
 }

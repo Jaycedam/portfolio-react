@@ -1,15 +1,18 @@
 import React from "react";
-import hero from '../images/abstract.svg';
+import hero from './assets/images/abstract.svg';
+import './assets/css/hero.css';
+import ArrowDown from "../ArrowDown/ArrowDown";
 
 export default function Hero() {
     return (
         <section className="hero observer">
+
             <div className="container">
-                <div className="hero-logo">
+                <div className="logo">
                     <img id="hero-logo" src={hero} alt="hero logo" />
                 </div>
 
-                <div className="hero-text">
+                <div className="text">
                     <svg xmlns="http://www.w3.org/2000/svg" width="536.73" height="276.84" viewBox="0 0 536.73 276.84">
                         <g id="text">
                             <path d="M11.75,117.88Q3.5,111.94,2.8,100.43H26.4c.34,4.07,2.13,6.1,5.4,6.1a5.26,5.26,0,0,0,3.05-.85A3,3,0,0,0,36.1,103a4.61,4.61,0,0,0-2.7-4A54.86,54.86,0,0,0,25,95.43a90.12,90.12,0,0,1-11.25-4.7A21.65,21.65,0,0,1,6.1,84Q2.91,79.63,3,72.73A19.34,19.34,0,0,1,6.55,61a22,22,0,0,1,9.7-7.35,36.44,36.44,0,0,1,13.85-2.5q13,0,20.65,6t8,16.9H34.9a6,6,0,0,0-1.5-4.3,4.84,4.84,0,0,0-3.4-1.3,3,3,0,0,0-2.3.95A3.72,3.72,0,0,0,26.8,72q0,2.4,2.65,4a59.75,59.75,0,0,0,8.45,3.75A96.57,96.57,0,0,1,49,84.53a23.49,23.49,0,0,1,7.55,6.4,16.21,16.21,0,0,1,3.2,10.3,21,21,0,0,1-12.5,19.7,33.37,33.37,0,0,1-14.5,2.9Q20,123.83,11.75,117.88Z" />
@@ -55,10 +58,9 @@ export default function Hero() {
                     </div>
                 </div>
 
-                <svg className="arrows">
-                    <path strokeLinecap="round" className="a1" d="M0 0 L20 22 L40 0"></path>
-                </svg>
+                <ArrowDown />
             </div>
+
         </section>
     )
 }

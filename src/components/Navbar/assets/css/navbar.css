@@ -1,0 +1,128 @@
+/* mobile toggle for navbar */
+.nav-toggle {
+    z-index: 9999;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    font-size: 2em;
+    color: var(--text-light);
+    background-color: transparent;
+    border: 0;
+    border-radius: 10px;
+}
+
+.primary-header {
+    height: 100%;
+    width: 60%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background-color: var(--bg);
+    /* navbar starts offscreen */
+    transform: translateX(100%);
+    transition: all 1s ease;
+}
+
+.primary-header .logo {
+    display: none;
+}
+
+.primary-header .primary-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    height: 100%;
+}
+
+.primary-header .primary-navigation ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    text-align: center;
+}
+
+.theme-toggle {
+    background-color: transparent;
+    border: none;
+    color: var(--text);
+    font-size: 1.5em;
+    cursor: pointer;
+}
+/* navbar animation when toggled */
+.primary-header[data-visible="true"] {
+    transform: translateX(0);
+}
+
+/* Hides dark/light mode toggles */
+.d-block-light,
+.d-block-dark {
+    display: none;
+}
+
+/* Shows theme toggles by data-theme */
+[data-theme='light'] .d-block-light,
+[data-theme='dark'] .d-block-dark {
+    display: block !important;
+}
+
+/* hides close menu toggle for mobile */
+.closeicon {
+    display: none;
+}
+
+/* Slide in animation for navbar on desktop */
+@keyframes slide-in {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* responsive media queries */
+/* sm, small: 600px */
+@media (min-width:600px) {
+    /*  */
+}
+
+/* md, medium: 900px / full navbar */
+@media (min-width:900px) {
+    .nav-toggle {
+        display: none;
+    }
+
+    .primary-header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: var(--nav-height);
+        width: 100%;
+        position: relative;
+        z-index: 10;
+        transform: translateX(0);
+        animation: slide-in 1s ease;
+    }
+
+    .primary-header .logo {
+        display: block;
+    }
+
+    .primary-header .primary-navigation ul {
+        flex-direction: row;
+    }
+}
+
+/* lg, large: 1200px */
+@media (min-width:1200px) {
+    /*  */
+}
+
+/* xl, extra-large: 1536px */
+@media (min-width:1536px) {
+    /*  */
+}

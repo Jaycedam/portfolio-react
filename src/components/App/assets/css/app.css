@@ -1,0 +1,129 @@
+/* bring in normalize.css styles */
+@import-normalize;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+:root,
+:root.light {
+    scroll-behavior: smooth;
+    --bg: #f5f5f7;
+    --card: #ffffff;
+    --primary-color: #ff0a52;
+    --secondary-color: #00b3c0;
+    --text: #1d1d1f;
+    --section-padding: 1em;
+    --nav-height: 80px;
+    --swiper-theme-color: var(--primary-color) !important;
+    --swiper-pagination-bullet-inactive-color: var(--text-color) !important;
+    --swiper-navigation-size: 2em;
+}
+
+[data-theme="light"] {
+    --bg: #f5f5f7 !important;
+    --text: #1d1d1f !important;
+    --card: #ffffff !important;
+}
+
+
+[data-theme="dark"] {
+    --bg: #000000 !important;
+    --text: #f5f5f7;
+    --card: #111111 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #000000;
+        --text: #f5f5f7;
+        --card: #111111;
+    }
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Poppins', arial;
+    font-weight: 400;
+    transition: all 1s ease;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+h1, h2 {
+    font-weight: 700;
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+a:hover, a:focus {
+    color: var(--primary-color) !important;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+svg,
+img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* General section width, used later for responsive Queries */
+section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 4em 2em;
+    max-width: 1530px;
+     /* prevents overflow with padding */
+    box-sizing: border-box;
+}
+
+/* Classes for IntersectionObserver (animation on scroll) */
+.observer {
+    transform: translateY(5%);
+    opacity: 0;
+    transition: .8s ease;
+}
+
+.observer.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* responsive media queries */
+/* sm, small: 600px */
+@media (min-width:600px) {
+
+}
+
+/* md, medium: 900px */
+@media (min-width:900px) {
+
+}
+
+/* lg, large: 1200px */
+@media (min-width:1200px) {
+
+}
+
+/* xl, extra-large: 1536px */
+@media (min-width:1536px) {
+
+}
