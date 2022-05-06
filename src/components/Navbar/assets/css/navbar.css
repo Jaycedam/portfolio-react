@@ -85,13 +85,16 @@
 }
 
 /* responsive media queries */
-/* sm, small: 600px */
-@media (min-width:600px) {
-    /*  */
+/* Small ≥576px */
+@media (min-width:576px) {
 }
 
-/* md, medium: 900px / full navbar */
-@media (min-width:900px) {
+/* Medium ≥768px */
+@media (min-width:768px) {
+}
+
+/* Large ≥992px / desktop navbar */
+@media (min-width:960px) {
     .nav-toggle {
         display: none;
     }
@@ -117,12 +120,10 @@
     }
 }
 
-/* lg, large: 1200px */
+/* X-Large ≥1200px */
 @media (min-width:1200px) {
-    /*  */
 }
 
-/* xl, extra-large: 1536px */
-@media (min-width:1536px) {
-    /*  */
+/* XX-Large ≥1400px */
+@media (min-width:1400px) {
 }

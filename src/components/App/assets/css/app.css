@@ -53,7 +53,8 @@ h3 {
     margin: 0;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-weight: 700;
     font-size: 2em;
 }
@@ -63,11 +64,13 @@ a {
     color: var(--text);
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
     color: var(--primary-color) !important;
 }
 
-ul, ol {
+ul,
+ol {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -90,8 +93,7 @@ section {
     width: 100%;
     margin: 0 auto;
     padding: 4em 2em;
-    max-width: 1530px;
-     /* prevents overflow with padding */
+    /* prevents overflow with padding */
     box-sizing: border-box;
 }
 
@@ -108,22 +110,37 @@ section {
 }
 
 /* responsive media queries */
-/* sm, small: 600px */
-@media (min-width:600px) {
-
+/* Small ≥576px */
+@media (min-width:576px) {
+    .container {
+        width: 540px;
+    }
 }
 
-/* md, medium: 900px */
-@media (min-width:900px) {
-
+/* Medium ≥768px */
+@media (min-width:768px) {
+    .container {
+        width: 720px;
+    }
 }
 
-/* lg, large: 1200px */
+/* Large ≥992px / desktop navbar */
+@media (min-width:992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+/* X-Large ≥1200px */
 @media (min-width:1200px) {
-
+    .container {
+        width: 1140px;
+    }
 }
 
-/* xl, extra-large: 1536px */
-@media (min-width:1536px) {
-
+/* XX-Large ≥1400px */
+@media (min-width:1400px) {
+    .container {
+        width: 1320px;
+    }
 }
