@@ -64,7 +64,8 @@ export default function Projects() {
                                 <p>{item.about}</p>
                                 <Button
                                     link = {item.url}
-                                    text = "GitHub"
+                                    text = "Link"
+                                    type = "btn"
                                 />
                                 {/* <a href={item.url} className="btn-color link">
                                     GitHub <FaGithub />

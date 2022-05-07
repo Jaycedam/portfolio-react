@@ -1,8 +1,13 @@
-.btn-container {
-    margin-top: 1em;
+.btn {
+    background-color: var(--text);
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 10px;
+    color: var(--bg) !important;
 }
 
-.button {
+.btn-color {
     background-color: var(--primary-color);
     padding: 10px 20px;
     text-align: center;
@@ -11,6 +16,10 @@
     color: white !important;
 }
 
-.button:hover {
+.btn-color:hover {
     color: white !important;
+}
+
+.btn:hover {
+    color: var(--bg) !important;
 }

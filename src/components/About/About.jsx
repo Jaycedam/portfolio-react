@@ -31,10 +31,12 @@ export default function About() {
                         <Button
                             link= "#soon"
                             text= "CV"
+                            type="btn"
                         />
                         <Button
                             link= "https://drive.google.com/file/d/1EwUWO2H98wCTPYqCkNQG8r_nfj05Ts2N/view?usp=sharing"
                             text= "Título"
+                            type="btn"
                         />
                     </div>
 

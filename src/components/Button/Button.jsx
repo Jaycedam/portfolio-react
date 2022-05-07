@@ -17,9 +17,9 @@ const variant = {
     }
 }
 
+// Button Types: "btn", "btn-color"
 export default function Button(props) {
     return (
-
         <motion.div
             variants={variant}
             viewport={{ once: true }}
@@ -34,13 +34,8 @@ export default function Button(props) {
                     borderRadius: "100%"
                 }}
             >
-                <a className="button" href={props.link}>{props.text}</a>
+                <a className={props.type} href={props.link}>{props.text}</a>
             </motion.div>
-
         </motion.div>
-
-
-
-
     )
 }

@@ -75,12 +75,6 @@ export default function Navbar() {
                         </li>
 
                         <li className="nav-item">
-                            <a href="https://github.com/Jaycedam">
-                                GitHub
-                            </a>
-                        </li>
-
-                        <li className="nav-item">
                             <ThemeToggle/>
                         </li>
                     </ul>
