@@ -86,10 +86,16 @@
         align-items: center;
         height: var(--nav-height);
         width: 100%;
-        position: fixed;
+        position: inherit;
         z-index: 10;
         transform: translateX(0);
         animation: slide-in 1s ease;
+        background-color: black;
+        color: white;
+    }
+
+    #theme-toggle {
+        color: white !important;
     }
 
     .primary-header .logo {
@@ -98,6 +104,10 @@
 
     .primary-header .primary-navigation ul {
         flex-direction: row;
+    }
+
+    .primary-header .primary-navigation ul li a {
+        color: white;
     }
 }
 

@@ -6,6 +6,26 @@
     border-radius: 10px;
     color: var(--bg) !important;
 }
+.btn:hover {
+    color: var(--bg) !important;
+}
+
+/*  */
+
+.btn-light {
+    background-color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 10px;
+    color: black !important;
+}
+
+.btn-light:hover {
+    color: black !important;
+}
+
+/*  */
 
 .btn-color {
     background-color: var(--primary-color);
@@ -18,8 +38,4 @@
 
 .btn-color:hover {
     color: white !important;
-}
-
-.btn:hover {
-    color: var(--bg) !important;
 }

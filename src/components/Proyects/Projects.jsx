@@ -3,6 +3,7 @@ import { Navigation, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import "swiper/css/autoplay";
 import './assets/css/projects.css';
 import Button from "../Button/Button";
 
@@ -38,10 +39,6 @@ export default function Projects() {
                     spaceBetween={20}
                     slidesPerView={1.1}
                     navigation={true}
-                    autoplay={{
-                        delay: 5000,
-                        disableOnInteraction: false,
-                    }}
                     centeredSlides
                     breakpoints={{
                         // when window width is >= 600px
@@ -64,7 +61,7 @@ export default function Projects() {
                                 <p>{item.about}</p>
                                 <Button
                                     link = {item.url}
-                                    text = "Link"
+                                    text = "Repositorio"
                                     type = "btn"
                                 />
                                 {/* <a href={item.url} className="btn-color link">

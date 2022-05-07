@@ -1,3 +1,7 @@
+.hero {
+    background-color: black;
+}
+
 .hero .container {
     height: 100vh;
     display: flex;
@@ -7,7 +11,7 @@
 }
 
 .hero .container .text {
-    height: 50%;
+    height: 60%;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -16,15 +20,15 @@
 }
 
 .hero .container .text #regular {
-    fill: var(--text);
+    fill: white;
 }
 
 .hero .container .text #color {
-    fill: var(--text-secondary);
+    fill: rgb(190, 190, 190);
 }
 
 .hero .container .logo {
-    height: 50%;
+    height: 40%;
     width: 100%;
     display: flex;
     align-items: flex-end;
@@ -38,19 +42,19 @@
 
 /* responsive media queries */
 /* Small ≥576px */
-@media (min-width:576px) {
+/* @media (min-width:576px) {
 
-}
+} */
 
 /* Medium ≥768px */
-@media (min-width:768px) {
+/* @media (min-width:768px) {
 
-}
+} */
 
 /* Large ≥992px / desktop navbar */
 @media (min-width:960px) {
     .hero .container {
-        /* height: calc(100vh - var(--nav-height)) !important; */
+        height: calc(100vh - var(--nav-height)) !important;
         flex-direction: row-reverse;
     }
 
@@ -68,11 +72,11 @@
 }
 
 /* X-Large ≥1200px */
-@media (min-width:1200px) {
+/* @media (min-width:1200px) {
 
-}
+} */
 
 /* XX-Large ≥1400px */
-@media (min-width:1400px) {
+/* @media (min-width:1400px) {
 
-}
+} */

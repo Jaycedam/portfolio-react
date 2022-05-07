@@ -1,5 +1,5 @@
 import React from "react";
-import hero from './assets/images/laptop.svg';
+import hero from './assets/images/laptop.png';
 import './assets/css/hero.css';
 import ArrowDown from "../ArrowDown/ArrowDown";
 import Button from "../Button/Button";
@@ -27,7 +27,7 @@ export default function Hero() {
                         <Button
                             link="https://github.com/Jaycedam"
                             text="GitHub"
-                            type="btn"
+                            type="btn-light"
                         />
 
                         <Button
