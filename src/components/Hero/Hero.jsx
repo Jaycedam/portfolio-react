@@ -1,45 +1,87 @@
 import React from "react";
-import hero from './assets/images/laptop.png';
+import hero from './assets/images/laptop.svg';
 import './assets/css/hero.css';
 import ArrowDown from "../ArrowDown/ArrowDown";
 import Button from "../Button/Button";
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
+import { AiFillGithub, AiFillBehanceCircle, AiFillLinkedin, AiFillCaretRight } from "react-icons/ai"
 
 export default function Hero() {
     return (
         <section className="hero">
 
-            <div className="container">
+            <motion.div
+                className="fluid-container"
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{
+                    delay: .2,
+                    duration: 1,
+                    stiffness: 260,
+                    damping: 20
+                }}
+            >
+
                 <div className="logo">
                     <img id="hero-logo" src={hero} alt="hero logo" />
                 </div>
 
                 <div className="text">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="536.73" height="276.84" viewBox="0 0 536.73 276.84">
-                        <g id="Layer_1" data-name="Layer 1">
-                            <text id="regular" transform="translate(0 123.13)" fontSize="100.01" fontFamily="Poppins-Black, Poppins" fontWeight="800">Software<tspan x="0" y="91">Developer</tspan></text>
-                            <text id="color" transform="translate(3 30.69)" fontSize="36" fontFamily="Poppins-Bold, Poppins" fontWeight="700">import slogan</text>
-                        </g>
-                    </svg>
+                    <p>SOFTWARE DEVELOPER / MOTION GRAPHICS</p>
+                    <h1>JORDAN<br />CORTÉS</h1>
 
                     <div
                         className="call-to-action">
                         <Button
-                            link="https://github.com/Jaycedam"
-                            text="GitHub"
-                            type="btn-light"
-                        />
-
-                        <Button
-                            link="mailto:jaycedam@gmail.com"
-                            text="Contactar"
+                            link="#projects"
+                            text="Proyectos"
                             type="btn-color"
+                            icon={<AiFillCaretRight />}
                         />
                     </div>
+
                 </div>
 
+                <div className="social-icons">
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{
+                            scale: 0.8,
+                            borderRadius: "100%"
+                        }}
+                    >
+                        <a href="https://www.linkedin.com/in/jaycedam/">
+                            <AiFillLinkedin />
+                        </a>
+                    </motion.div>
+
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{
+                            scale: 0.8,
+                            borderRadius: "100%"
+                        }}
+                    >
+                        <a href="https://www.behance.net/jaycedam">
+                            <AiFillBehanceCircle />
+                        </a>
+                    </motion.div>
+
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{
+                            scale: 0.8,
+                            borderRadius: "100%"
+                        }}
+                    >
+                        <a href="https://github.com/Jaycedam">
+                            <AiFillGithub />
+                        </a>
+                    </motion.div>
+
+                </div>
                 <ArrowDown />
-            </div>
+            </motion.div>
 
         </section>
     )

@@ -1,6 +1,6 @@
 /* bring in normalize.css styles */
 @import-normalize;
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&display=swap');
 
 :root {
     scroll-behavior: smooth;
@@ -15,38 +15,42 @@
 }
 
 [data-theme="light"] {
-    --bg: #f5f5f7 !important;
+    --bg: #fbfbfd !important;
     --text: #1d1d1f !important;
-    --text-secondary: #797979 !important;
+    --text-secondary: #999 !important;
     --card: #ffffff !important;
 }
 
 [data-theme="dark"] {
-    --bg: #111111 !important;
-    --text: #f5f5f7;
+    --bg: #0e0e0e !important;
+    --text: #fff;
     --text-secondary: #b8b8b8 !important;
-    --card: #000000 !important;
+    --card: #1a1a1a !important;
 }
 
 body {
     margin: 0;
     background-color: var(--bg);
     color: var(--text);
-    font-family: 'Poppins', arial;
+    font-family: 'Nunito', arial;
     font-weight: 400;
     transition: all .5s ease;
 }
 
-h1,
-h2,
-h3 {
-    margin: 0;
+p {
+    color: var(--text-secondary);
 }
 
 h1,
-h2 {
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+h2,
+h3 {
     font-weight: 700;
-    font-size: 2em;
 }
 
 a {
@@ -63,13 +67,6 @@ ol {
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-svg,
-img {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
 }
 
 /* General section width, used later for responsive Queries */

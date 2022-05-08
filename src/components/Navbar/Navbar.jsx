@@ -51,7 +51,7 @@ export default function Navbar() {
             <header className="primary-header" data-visible="false">
                 <div className="logo">
                     {/* <img src={logo} alt="logo"/> */}
-                    jordancortes<strong>.dev</strong>
+                    LOGO <strong>PLACEHOLDER</strong>
                 </div>
 
                 <nav className="primary-navigation">

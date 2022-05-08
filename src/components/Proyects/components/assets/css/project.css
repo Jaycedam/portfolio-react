@@ -1,0 +1,55 @@
+.project {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    width: 100%
+}
+
+.project .image {
+    grid-column: span 2;
+    aspect-ratio: 4/3;
+    border-radius: 18px;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, .08);
+    background-color: var(--card);
+    overflow: hidden;
+}
+
+.project .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project .text {
+    grid-column: span 2;
+    display: grid;
+    place-content: center;
+    justify-content: start;
+    gap: 1.5em;
+}
+
+/* responsive media queries */
+/* Small ≥576px */
+@media (min-width:576px) {}
+
+/* Medium ≥768px */
+@media (min-width:768px) {
+    .project .image {
+        grid-column: span 1;
+    }
+
+    .project .text {
+        grid-column: span 1;
+        padding-left: 2em;
+    }
+
+}
+
+/* Large ≥992px / desktop navbar */
+@media (min-width:992px) {}
+
+/* X-Large ≥1200px */
+@media (min-width:1200px) {}
+
+/* XX-Large ≥1400px */
+@media (min-width:1400px) {}

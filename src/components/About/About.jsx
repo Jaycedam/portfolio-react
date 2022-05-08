@@ -2,6 +2,7 @@ import React from "react";
 // import image from "./assets/images/circles.svg"
 import './assets/css/about.css';
 import Button from "../Button/Button";
+import {GrMail} from "react-icons/gr"
 
 export default function About() {
     return (
@@ -10,11 +11,11 @@ export default function About() {
 
             <div className="container">
                 <div className="image">
-                    <img src="" alt="PLACEHOLDER" />
+                    {/* <img src="" alt="PLACEHOLDER" /> */}
                 </div>
 
                 <div className="text">
-                    <h1>Acerca de</h1>
+                    <h2>Acerca de mí</h2>
                     <p>
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -25,8 +26,6 @@ export default function About() {
 
                     <br />
 
-
-
                     <div className="call-to-action">
                         <Button
                             link= "#soon"
@@ -34,9 +33,10 @@ export default function About() {
                             type="btn"
                         />
                         <Button
-                            link= "https://drive.google.com/file/d/1EwUWO2H98wCTPYqCkNQG8r_nfj05Ts2N/view?usp=sharing"
-                            text= "Título"
-                            type="btn"
+                            link= "mailto:jaycedam@gmail.com"
+                            text= "Contactar"
+                            type="btn-color"
+                            icon={<GrMail/>}
                         />
                     </div>
 

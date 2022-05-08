@@ -15,8 +15,8 @@
     height: 200px;
     width: 100%;
     margin: 2em;
-    background: var(--secondary-color);
-    color: white;
+    /* background: var(--secondary-color); */
+    /* color: white; */
     border-radius: 18px;
 }
 
@@ -38,7 +38,7 @@
 /* Large ≥992px / desktop navbar */
 @media (min-width:992px) {
     .about-section .container {
-        flex-direction: row;
+        flex-direction: row-reverse;
     }
 
     .about-section .container .text {

@@ -1,3 +1,12 @@
+.btn-section {
+    width: fit-content;
+}
+
+.btn-container {
+    width: fit-content;
+    height: fit-content;
+}
+
 .btn {
     background-color: var(--text);
     padding: 10px 20px;

@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Navigation, Autoplay } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import "swiper/css/autoplay";
 import './assets/css/projects.css';
-import Button from "../Button/Button";
+// import Button from "../Button/Button";
+// import { FaGithub } from "react-icons/fa"
+import Project from "./components/Project"
 
 export default function Projects() {
 
@@ -22,6 +19,16 @@ export default function Projects() {
         fetchApi()
     }, [])
 
+    const projectElements = projects.map(n => {
+        return <Project key={n.id}
+            imageUrl={n.imageUrl}
+            name={n.name}
+            about={n.about}
+            url={n.url}
+        />
+        }
+    );
+
 
     return (
         <section id="projects" className="projects-section observer">
@@ -29,10 +36,14 @@ export default function Projects() {
             <div className="container">
 
 
-                <h1>Proyectos</h1>
+                <h2>Proyectos destacados</h2>
+
+                <div className="project-list">
+                    {projectElements}
+                </div>
 
                 {/* Card carousel */}
-                <Swiper
+                {/* <Swiper
                     modules={[Navigation, Autoplay]}
                     effect={"cards"}
                     grabCursor={true}
@@ -56,26 +67,29 @@ export default function Projects() {
 
                     {projects.map((item) => (
                         <SwiperSlide key={item.id}>
-                            <div className="project">
-                                <h3>{item.name}</h3>
-                                <p>{item.about}</p>
-                                <Button
-                                    link = {item.url}
-                                    text = "Repositorio"
-                                    type = "btn"
-                                />
-                                {/* <a href={item.url} className="btn-color link">
-                                    GitHub <FaGithub />
-                                </a> */}
+                            <div className="project"
+                            >
+                                <div className="image">
+                                    <img src={item.imageUrl} alt="" />
+                                </div>
+
+                                <div className="text">
+                                    <h3>{item.name}</h3>
+                                    <p>{item.about}</p>
+                                    <Button
+                                        link={item.url}
+                                        text="GitHub"
+                                        type="btn"
+                                        icon={<FaGithub />}
+                                    />
+                                </div>
+
+
                             </div>
                         </SwiperSlide>
                     ))}
-
-                </Swiper>
-
+                </Swiper> */}
             </div>
-
-
         </section>
     )
 }
