@@ -17,7 +17,7 @@ function App() {
         })
       },
       {
-        threshold: .4
+        threshold: .2
       }
     )
 

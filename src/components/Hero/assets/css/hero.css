@@ -1,7 +1,4 @@
 .hero {
-    background-color: var(--hero-bg);
-    display: grid;
-    place-items: center;
     background-image: url("../images/bg.svg");
     background-position: bottom;
     background-repeat: no-repeat;
@@ -20,6 +17,7 @@
     box-sizing: border-box;
     max-width: 2000px;
     max-height: 1500px;
+    gap: 2em;
 }
 
 .hero .text h1 {
@@ -34,7 +32,7 @@
 }
 
 .hero .fluid-container .text {
-    height: 50%;
+    height: 40%;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -58,7 +56,10 @@
 }
 
 .hero .fluid-container .social-icons {
-    display: none;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    font-size: 20px;
 }
 
 
@@ -95,10 +96,9 @@
     }
 
     .hero .fluid-container .social-icons {
-        display: flex;
         flex-direction: column;
         width: 10%;
-        font-size: 2em;
+        font-size: 25px;
         gap: 1em;
     }
 

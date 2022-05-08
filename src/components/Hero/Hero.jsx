@@ -1,10 +1,11 @@
 import React from "react";
 import hero from './assets/images/laptop.svg';
 import './assets/css/hero.css';
-import ArrowDown from "../ArrowDown/ArrowDown";
+// import ArrowDown from "../ArrowDown/ArrowDown";
 import Button from "../Button/Button";
 import { motion } from "framer-motion";
-import { AiFillGithub, AiFillBehanceCircle, AiFillLinkedin, AiFillCaretRight } from "react-icons/ai"
+import { AiFillGithub, AiFillBehanceCircle, AiFillLinkedin, AiFillCaretDown } from "react-icons/ai"
+import {MdEmail} from "react-icons/md"
 
 export default function Hero() {
     return (
@@ -36,7 +37,7 @@ export default function Hero() {
                             link="#projects"
                             text="Proyectos"
                             type="btn-color"
-                            icon={<AiFillCaretRight />}
+                            icon={<AiFillCaretDown />}
                         />
                     </div>
 
@@ -79,8 +80,21 @@ export default function Hero() {
                         </a>
                     </motion.div>
 
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{
+                            scale: 0.8,
+                            borderRadius: "100%"
+                        }}
+                    >
+                        <a href="mailto:jaycedam@gmail.com">
+                            <MdEmail />
+                        </a>
+                    </motion.div>
+
                 </div>
-                <ArrowDown />
+
+                {/* <ArrowDown /> */}
             </motion.div>
 
         </section>
