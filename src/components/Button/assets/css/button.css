@@ -14,6 +14,8 @@
     font-weight: 700;
     border-radius: 10px;
     color: var(--bg) !important;
+    display: flex;
+    align-items: center;
 }
 .btn:hover {
     color: var(--bg) !important;
@@ -28,6 +30,8 @@
     font-weight: 700;
     border-radius: 10px;
     color: black !important;
+    display: flex;
+    align-items: center;
 }
 
 .btn-light:hover {
@@ -43,6 +47,8 @@
     font-weight: 700;
     border-radius: 10px;
     color: white !important;
+    display: flex;
+    align-items: center;
 }
 
 .btn-color:hover {

@@ -1,10 +1,33 @@
 import React from "react";
 import "./assets/css/project.css"
 import Button from "../../Button/Button";
+import { motion } from "framer-motion";
+
+// animation for project (framer motion)
+const project = {
+    hidden: {
+        y: 30,
+        opacity: 0
+    },
+    visible: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            delay: .5,
+            duration: 1,
+        }
+    }
+}
 
 export default function Project(props) {
     return (
-        <div className="project">
+        <motion.div
+            variants={project}
+            viewport={{ once: true }}
+            initial="hidden"
+            whileInView="visible"
+            className="project"
+        >
             <div className="image">
                 <img src={props.imageUrl} alt="Project" />
             </div>
@@ -15,9 +38,9 @@ export default function Project(props) {
                 <Button
                     text="Link"
                     type="btn"
-                    link={props.url} 
+                    link={props.url}
                 />
             </div>
-        </div>
+        </motion.div>
     )
 }

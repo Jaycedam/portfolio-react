@@ -12,6 +12,7 @@
     --swiper-theme-color: var(--text) !important;
     --swiper-pagination-bullet-inactive-color: var(--text) !important;
     --swiper-navigation-size: 2em;
+    scroll-padding-top: var(--nav-height);
 }
 
 [data-theme="light"] {
@@ -81,18 +82,6 @@ section {
     padding: 4em 2em;
     /* prevents overflow with padding */
     box-sizing: border-box;
-}
-
-/* Classes for IntersectionObserver (animation on scroll) */
-.observer {
-    transform: translateY(5%);
-    opacity: 0;
-    transition: .5s ease;
-}
-
-.observer.show {
-    transform: translateY(0);
-    opacity: 1;
 }
 
 /* responsive media queries */

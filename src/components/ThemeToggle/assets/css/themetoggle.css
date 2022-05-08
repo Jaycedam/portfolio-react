@@ -5,3 +5,7 @@
     font-size: 1.2em;
     color: var(--text);
 }
+
+#theme-toggle:hover {
+    color: var(--primary-color);
+}

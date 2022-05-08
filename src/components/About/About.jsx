@@ -2,14 +2,37 @@ import React from "react";
 // import image from "./assets/images/circles.svg"
 import './assets/css/about.css';
 import Button from "../Button/Button";
-import {GrMail} from "react-icons/gr"
+import { motion } from "framer-motion";
+
+// animation for project (framer motion)
+const about = {
+    hidden: {
+        y: 30,
+        opacity: 0
+    },
+    visible: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            delay: .5,
+            duration: 1,
+        }
+    }
+}
+
 
 export default function About() {
     return (
 
-        <section id="about" className="about-section observer">
+        <section id="about" className="about-section">
 
-            <div className="container">
+            <motion.div
+                variants={about}
+                viewport={{ once: true }}
+                initial="hidden"
+                whileInView="visible"
+                className="container"
+            >
                 <div className="image">
                     {/* <img src="" alt="PLACEHOLDER" /> */}
                 </div>
@@ -28,20 +51,13 @@ export default function About() {
 
                     <div className="call-to-action">
                         <Button
-                            link= "#soon"
-                            text= "CV"
+                            link="#soon"
+                            text="CV"
                             type="btn"
                         />
-                        <Button
-                            link= "mailto:jaycedam@gmail.com"
-                            text= "Contactar"
-                            type="btn-color"
-                            icon={<GrMail/>}
-                        />
                     </div>
-
                 </div>
-            </div>
+            </motion.div>
 
         </section>
     )

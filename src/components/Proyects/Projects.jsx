@@ -31,7 +31,7 @@ export default function Projects() {
 
 
     return (
-        <section id="projects" className="projects-section observer">
+        <section id="projects" className="projects-section">
 
             <div className="container">
                 <h2>Proyectos destacados</h2>

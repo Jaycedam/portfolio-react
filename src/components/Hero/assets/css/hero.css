@@ -79,7 +79,6 @@
 /* Large ≥992px / desktop navbar */
 @media (min-width:960px) {
     .hero .fluid-container {
-        height: calc(100vh - var(--nav-height)) !important;
         flex-direction: row-reverse;
     }
 

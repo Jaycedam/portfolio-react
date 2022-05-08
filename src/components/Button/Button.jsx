@@ -35,7 +35,7 @@ export default function Button(props) {
                     borderRadius: "100%"
                 }}
             >
-                <a className={props.type} href={props.link}>{props.text} {props.icon}</a>
+                <a className={props.type} href={props.link}>{props.text}&nbsp;{props.icon}</a>
             </motion.div>
         </motion.div>
     )
