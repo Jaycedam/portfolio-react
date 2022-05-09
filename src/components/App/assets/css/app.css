@@ -12,7 +12,6 @@
     --swiper-theme-color: var(--text) !important;
     --swiper-pagination-bullet-inactive-color: var(--text) !important;
     --swiper-navigation-size: 2em;
-    scroll-padding-top: var(--nav-height);
 }
 
 [data-theme="light"] {
@@ -103,6 +102,9 @@ section {
 @media (min-width:992px) {
     .container {
         width: 960px;
+    }
+    :root {
+        scroll-padding-top: var(--nav-height);
     }
 }
 
