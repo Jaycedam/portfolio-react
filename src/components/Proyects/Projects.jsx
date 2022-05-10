@@ -7,7 +7,7 @@ import Project from "./components/Project"
 export default function Projects() {
 
     const [projects, setProjects] = useState([]);
-    const url = "https://jordan-cortes-admin.herokuapp.com/api/v1/projects"
+    const url = "https://jordancortes-admin.herokuapp.com/api/projects"
 
     const fetchApi = async () => {
         const response = await fetch(url)
