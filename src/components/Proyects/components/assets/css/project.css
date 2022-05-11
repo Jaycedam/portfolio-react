@@ -25,7 +25,15 @@
     display: grid;
     place-content: center;
     justify-content: start;
-    gap: 1.5em;
+    gap: 10px;
+}
+
+.project .text h5 {
+    color: var(--text-secondary);
+}
+
+.project .text p {
+    margin: 1em 0;
 }
 
 /* responsive media queries */

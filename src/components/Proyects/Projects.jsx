@@ -23,6 +23,7 @@ export default function Projects() {
         return <Project key={n.id}
             imageUrl={n.imageUrl}
             name={n.name}
+            technology={n.technology}
             about={n.about}
             url={n.url}
         />

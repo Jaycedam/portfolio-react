@@ -22,7 +22,6 @@
 }
 
 .hero .text h1 {
-    font-weight: 900;
     font-size: clamp(3em, 5vw, 8em);
     margin-bottom: 30px;
 }
