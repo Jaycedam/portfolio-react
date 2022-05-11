@@ -67,6 +67,10 @@
     text-align: center;
 }
 
+#logo-svg #letters {
+    fill: var(--text);
+}
+
 /* navbar animation when toggled */
 .primary-header[data-visible="true"] {
     transform: translateX(0);
@@ -123,6 +127,14 @@
 
     .primary-header .logo {
         display: block;
+        /* place-content: center; */
+        height: 50%;
+        width: fit-content;
+    }
+
+    .primary-header .logo svg {
+        height: 100%;
+        width: auto;
     }
 
     .primary-header .primary-navigation ul {
