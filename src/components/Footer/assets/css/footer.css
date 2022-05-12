@@ -5,7 +5,7 @@ footer {
 footer  .container {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     color: var(--text);
     font-size: smaller;
     height: 100px;

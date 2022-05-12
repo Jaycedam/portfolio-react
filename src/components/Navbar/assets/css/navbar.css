@@ -12,7 +12,8 @@
 }
 
 .mail-btn-mobile {
-    display: inline-block;
+    display: grid;
+    align-items: center;
     padding: 10px;
     width: 30px;
     height: 30px;
