@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
 import './assets/css/projects.css';
-// import Button from "../Button/Button";
-// import { FaGithub } from "react-icons/fa"
 import Project from "./components/Project"
 
 export default function Projects() {
 
     const [projects, setProjects] = useState([]);
-    const url = "https://jordancortes-admin.herokuapp.com/api/projects"
+    const url = "https://jordancortes-admin.herokuapp.com/api/projects/starred"
 
     const fetchApi = async () => {
         const response = await fetch(url)

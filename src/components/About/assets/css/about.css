@@ -7,9 +7,15 @@
 .about-section .container .image {
     height: 200px;
     width: 100%;
-    background: var(--secondary-color);
     border-radius: 18px;
     grid-column: span 2;
+    overflow: hidden;
+}
+
+.about-section .container .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .about-section .container .text {
@@ -41,7 +47,7 @@
     }
 
     .about-section .container .image {
-        height: 300px;
+        height: auto;
         grid-column: 2;
     }
 }

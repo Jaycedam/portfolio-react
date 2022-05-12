@@ -5,9 +5,11 @@ export default function Footer() {
     return (
         <footer>
             <div className="container">
-                <a href="mailto:jaycedam@gmail.com">
-                    jaycedam@gmail.com
+
+                <a href="#top">
+                    Volver al inicio
                 </a>
+
             </div>
         </footer>
 

@@ -1,5 +1,5 @@
 import React from "react";
-// import image from "./assets/images/circles.svg"
+import laptop from "./assets/images/laptop.jpg"
 import './assets/css/about.css';
 import Button from "../Button/Button";
 import { motion } from "framer-motion";
@@ -34,7 +34,7 @@ export default function About() {
                 className="container"
             >
                 <div className="image">
-                    {/* <img src="" alt="PLACEHOLDER" /> */}
+                    <img src={laptop} alt="about" />
                 </div>
 
                 <div className="text">
