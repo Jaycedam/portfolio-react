@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useState, useEffect } from "react";
 import './assets/css/projects.css';
 import Project from "./components/Project"
@@ -5,16 +6,12 @@ import Project from "./components/Project"
 export default function Projects() {
 
     const [projects, setProjects] = useState([]);
-    const url = "https://jordancortes-admin.herokuapp.com/api/projects/starred"
-
-    const fetchApi = async () => {
-        const response = await fetch(url)
-        const responseJSON = await response.json()
-        setProjects(responseJSON)
-    }
 
     useEffect(() => {
-        fetchApi()
+        axios.get("https://jordancortes-admin.herokuapp.com/api/projects/starred").then(res => {
+            setProjects(res.data);
+        });
+
     }, [])
 
     const projectElements = projects.map(n => {
@@ -25,9 +22,8 @@ export default function Projects() {
             about={n.about}
             url={n.url}
         />
-        }
+    }
     );
-
 
     return (
         <section id="projects" className="projects-section">
