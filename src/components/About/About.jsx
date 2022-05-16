@@ -51,7 +51,7 @@ export default function About() {
 
                     <div className="call-to-action">
                         <Button
-                            link="#soon"
+                            link="https://drive.google.com/file/d/1eo-acjbs20EX7KdWSa3KiDFfZ5n4tlF7/view?usp=sharing"
                             text="CV"
                             type="btn"
                         />
