@@ -11,7 +11,7 @@ export default function Projects() {
     });
 
     const [url, setUrl] = useState(() => {
-        return "https://jordancortes-admin.herokuapp.com/api/projects/starred"
+        return "https://jordancortes-admin.herokuapp.com/api/projects/software"
     })
 
 
@@ -29,12 +29,12 @@ export default function Projects() {
         moreProjectsBtn.addEventListener("click", () => {
             moreProjectsBtn.style.display = "none";
             lessProjectsBtn.style.display = "block";
-            setUrl("https://jordancortes-admin.herokuapp.com/api/projects");
+            setUrl("https://jordancortes-admin.herokuapp.com/api/projects/motion");
         })
         lessProjectsBtn.addEventListener("click", () => {
             lessProjectsBtn.style.display = "none";
             moreProjectsBtn.style.display = "block";
-            setUrl("https://jordancortes-admin.herokuapp.com/api/projects/starred");
+            setUrl("https://jordancortes-admin.herokuapp.com/api/projects/software");
         })
 
     }, [url])
@@ -56,8 +56,8 @@ export default function Projects() {
             <div className="container">
                 <div className="title">
                     <h2>Proyectos</h2>
-                    <button className="moreProjectsBtn"><BsFillGrid1X2Fill /> Ver más</button>
-                    <button className="lessProjectsBtn"><BsFillGrid1X2Fill /> Ver destacados</button>
+                    <button className="moreProjectsBtn"><BsFillGrid1X2Fill /> Ver proyectos de Motion</button>
+                    <button className="lessProjectsBtn"><BsFillGrid1X2Fill /> Ver proyectos de Software</button>
                 </div>
                 
                 <AnimatePresence>
