@@ -14,27 +14,33 @@ const project = {
         y: 0,
         opacity: 1,
         transition: {
-            delay: .5,
-            duration: 1,
+            delay: .3,
+            duration: .8,
         }
+    },
+    exit: {
+        opacity: 0
     }
 }
 
 export default function Project(props) {
     return (
         <motion.div
+            key={props.id}
             variants={project}
             viewport={{ once: true }}
             initial="hidden"
             whileInView="visible"
+            exit="exit"
             className="project"
+            id="project"
         >
             <div className="image">
                 <img src={props.imageUrl} alt="Project" />
             </div>
 
             <div className="text">
-                <h3>{props.name}</h3>
+                <h3>{props.name} - {props.area}</h3>
                 {/* if the prop is passed, show, else null */}
                 {props.technology ? (
                     <h5><strong>{props.technology}</strong></h5>

@@ -1,6 +1,41 @@
+.projects-section .container .title {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
 .project-list {
     margin-top: 2em;
     display: grid;
-    place-items: center;
+    align-items: start;
+    justify-items: center;
     gap: 5em;
+    grid-template-columns: 1fr;
+    transition: all 1s;
+}
+
+.lessProjectsBtn, .moreProjectsBtn {
+    display: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* data to show all projects, changes layout */
+.project-list[data-all-projects="true"] {
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.project-list[data-all-projects="true"] .project {
+    grid-template-columns: 1fr;
+}
+
+/* Medium ≥768px */
+@media (min-width:768px) {
+    .moreProjectsBtn {
+        display: block;
+    }
 }

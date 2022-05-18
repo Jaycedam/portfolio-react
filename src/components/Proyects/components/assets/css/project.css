@@ -36,10 +36,6 @@
     margin: 1em 0;
 }
 
-/* responsive media queries */
-/* Small ≥576px */
-@media (min-width:576px) {}
-
 /* Medium ≥768px */
 @media (min-width:768px) {
     .project .image {
@@ -50,14 +46,4 @@
         grid-column: span 1;
         padding-left: 2em;
     }
-
 }
-
-/* Large ≥992px / desktop navbar */
-@media (min-width:992px) {}
-
-/* X-Large ≥1200px */
-@media (min-width:1200px) {}
-
-/* XX-Large ≥1400px */
-@media (min-width:1400px) {}
