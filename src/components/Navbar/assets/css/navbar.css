@@ -11,36 +11,6 @@
     border-radius: 10px;
 }
 
-.mail-btn-mobile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    position: fixed;
-    bottom: 5%;
-    right: 5%;
-    background-color: var(--primary-color);
-    z-index: 100;
-}
-
-.mail-btn-mobile a {
-    width: 100%;
-    height: 100%;
-    font-size: 30px;
-    color: white;
-}
-
-.mail-btn-mobile a:hover {
-    color: white !important;
-}
-
-.mail-btn-desktop {
-    display: none;
-}
-
 .primary-header {
     height: 100%;
     width: 60%;
@@ -100,13 +70,6 @@
 }
 
 /* responsive media queries */
-/* Small ≥576px */
-/* @media (min-width:576px) {
-} */
-
-/* Medium ≥768px */
-/* @media (min-width:768px) {
-} */
 
 /* Large ≥992px / desktop navbar */
 @media (min-width:960px) {
@@ -114,9 +77,6 @@
         display: none;
     }
 
-    .mail-btn-mobile {
-        display: none;
-    }
     .mail-btn-desktop {
         display: flex;
     }
@@ -148,11 +108,3 @@
         flex-direction: row;
     }
 }
-
-/* X-Large ≥1200px */
-/* @media (min-width:1200px) {
-} */
-
-/* XX-Large ≥1400px */
-/* @media (min-width:1400px) {
-} */

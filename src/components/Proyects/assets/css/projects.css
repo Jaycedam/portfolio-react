@@ -13,18 +13,14 @@
     grid-template-columns: 1fr;
 }
 
-.lessProjectsBtn, .moreProjectsBtn {
+.swProjectsBtn {
     display: none;
+}
+
+.swProjectsBtn, .mgProjectsBtn {
     border: none;
     background-color: transparent;
     cursor: pointer;
     font-weight: 700;
     color: var(--secondary-color);
-}
-
-/* Medium ≥768px */
-@media (min-width:768px) {
-    .moreProjectsBtn {
-        display: block;
-    }
 }

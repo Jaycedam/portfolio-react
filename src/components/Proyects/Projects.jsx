@@ -22,18 +22,18 @@ export default function Projects() {
         });
 
         // toggle all/starred projects
-        const moreProjectsBtn = document.querySelector(".moreProjectsBtn");
-        const lessProjectsBtn = document.querySelector(".lessProjectsBtn");
+        const mgProjectsBtn = document.querySelector(".mgProjectsBtn");
+        const swProjectsBtn = document.querySelector(".swProjectsBtn");
 
         // on btn click, hide opposite btn, set new URL
-        moreProjectsBtn.addEventListener("click", () => {
-            moreProjectsBtn.style.display = "none";
-            lessProjectsBtn.style.display = "block";
+        mgProjectsBtn.addEventListener("click", () => {
+            mgProjectsBtn.style.display = "none";
+            swProjectsBtn.style.display = "block";
             setUrl("https://jordancortes-admin.herokuapp.com/api/projects/motion");
         })
-        lessProjectsBtn.addEventListener("click", () => {
-            lessProjectsBtn.style.display = "none";
-            moreProjectsBtn.style.display = "block";
+        swProjectsBtn.addEventListener("click", () => {
+            swProjectsBtn.style.display = "none";
+            mgProjectsBtn.style.display = "block";
             setUrl("https://jordancortes-admin.herokuapp.com/api/projects/software");
         })
 
@@ -55,9 +55,9 @@ export default function Projects() {
         <section id="projects" className="projects-section">
             <div className="container">
                 <div className="title">
-                    <h2>Proyectos</h2>
-                    <button className="moreProjectsBtn"><BsFillGrid1X2Fill /> Ver proyectos de Motion</button>
-                    <button className="lessProjectsBtn"><BsFillGrid1X2Fill /> Ver proyectos de Software</button>
+                    <h2>Proyectos destacados</h2>
+                    <button className="mgProjectsBtn"><BsFillGrid1X2Fill /> Ver proyectos de Motion</button>
+                    <button className="swProjectsBtn"><BsFillGrid1X2Fill /> Ver proyectos de Software</button>
                 </div>
                 
                 <AnimatePresence>

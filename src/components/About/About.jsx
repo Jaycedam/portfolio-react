@@ -3,6 +3,8 @@ import laptop from "./assets/images/laptop.jpg"
 import './assets/css/about.css';
 import Button from "../Button/Button";
 import { motion } from "framer-motion";
+import { MdEmail } from "react-icons/md";
+import {GrDocumentText} from "react-icons/gr";
 
 // animation for project (framer motion)
 const about = {
@@ -20,10 +22,8 @@ const about = {
     }
 }
 
-
 export default function About() {
     return (
-
         <section id="about" className="about-section">
 
             <motion.div
@@ -51,9 +51,17 @@ export default function About() {
 
                     <div className="call-to-action">
                         <Button
-                            link="https://drive.google.com/file/d/1eo-acjbs20EX7KdWSa3KiDFfZ5n4tlF7/view?usp=sharing"
+                            text="Contactar"
+                            link="mailto:jaycedam@gmail.com"
+                            type="btn-color"
+                            icon={<MdEmail />}
+                        />
+
+                        <Button
                             text="CV"
+                            link="https://drive.google.com/file/d/1eo-acjbs20EX7KdWSa3KiDFfZ5n4tlF7/view?usp=sharing"
                             type="btn"
+                            icon={<GrDocumentText />}
                         />
                     </div>
                 </div>

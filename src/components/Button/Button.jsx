@@ -7,7 +7,7 @@ export default function Button(props) {
     return (
         <motion.div
             className="btn-container"
-            whileHover={{ scale: 1.1 }}
+            whileHover={{ scale: 1.2 }}
             whileTap={{
                 scale: 0.8,
                 borderRadius: "100%"
