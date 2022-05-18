@@ -17,6 +17,13 @@ const project = {
             delay: .3,
             duration: .8,
         }
+    },
+    exit: {
+        y: 10,
+        opacity: 0,
+        transition: {
+            duration: .5
+        }
     }
 }
 
@@ -28,7 +35,7 @@ export default function Project(props) {
             viewport={{ once: true }}
             initial="hidden"
             whileInView="visible"
-            exit="hidden"
+            exit="exit"
             className="project"
             id="project"
         >

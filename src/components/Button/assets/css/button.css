@@ -1,7 +1,3 @@
-.btn-section {
-    width: fit-content;
-}
-
 .btn-container {
     width: fit-content;
     height: fit-content;
@@ -16,6 +12,7 @@
     color: var(--bg) !important;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .btn:hover {
     color: var(--bg) !important;
@@ -32,6 +29,7 @@
     color: black !important;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .btn-light:hover {
@@ -49,6 +47,7 @@
     color: white !important;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .btn-color:hover {
