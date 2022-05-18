@@ -2,7 +2,7 @@ import React from "react";
 import "./assets/css/project.css"
 import Button from "../../Button/Button";
 import { motion } from "framer-motion";
-import {AiOutlineLink} from "react-icons/ai"
+import { AiOutlineLink } from "react-icons/ai"
 
 // animation for project (framer motion)
 const project = {
@@ -17,9 +17,6 @@ const project = {
             delay: .3,
             duration: .8,
         }
-    },
-    exit: {
-        opacity: 0
     }
 }
 
@@ -31,12 +28,20 @@ export default function Project(props) {
             viewport={{ once: true }}
             initial="hidden"
             whileInView="visible"
-            exit="exit"
+            exit="hidden"
             className="project"
             id="project"
         >
             <div className="image">
-                <img src={props.imageUrl} alt="Project" />
+                <motion.img
+                    whileHover={{ scale: 1.2 }}
+                    transition={{
+                        type: "spring",
+                        damping: 25,
+                        stiffness: 120
+                    }}
+                    src={props.imageUrl} alt="Project"
+                />
             </div>
 
             <div className="text">
@@ -53,7 +58,7 @@ export default function Project(props) {
                     text="Link"
                     type="btn"
                     link={props.url}
-                    icon={<AiOutlineLink/>}
+                    icon={<AiOutlineLink />}
                 />
             </div>
         </motion.div>

@@ -11,7 +11,6 @@
     justify-items: center;
     gap: 5em;
     grid-template-columns: 1fr;
-    transition: all 1s;
 }
 
 .lessProjectsBtn, .moreProjectsBtn {
@@ -31,6 +30,10 @@
 
 .project-list[data-all-projects="true"] .project {
     grid-template-columns: 1fr;
+}
+
+.project-list[data-all-projects="true"] .project .text {
+    padding-left: .5em;
 }
 
 /* Medium ≥768px */

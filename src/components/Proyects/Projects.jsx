@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import './assets/css/projects.css';
 import Project from "./components/Project"
 import { BsFillGrid1X2Fill } from "react-icons/bs";
-import { AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Projects() {
     const [projects, setProjects] = useState(() => {
@@ -62,11 +62,11 @@ export default function Projects() {
                     <button className="lessProjectsBtn"><BsFillGrid1X2Fill /> Ver destacados</button>
                 </div>
 
-                <div className="project-list" data-all-projects="false">
+                <motion.div className="project-list" data-all-projects="false">
                     <AnimatePresence>
                         {projectElements}
                     </AnimatePresence>
-                </div>
+                </motion.div>
             </div>
         </section>
     )
