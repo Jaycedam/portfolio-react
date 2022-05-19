@@ -12,6 +12,7 @@
     box-shadow: 2px 4px 12px rgba(0, 0, 0, .08);
     background-color: var(--card);
     overflow: hidden;
+    z-index: 1;
 }
 
 .project .image img {
