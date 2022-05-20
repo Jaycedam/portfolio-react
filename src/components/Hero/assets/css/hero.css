@@ -32,7 +32,7 @@
 }
 
 .hero .fluid-container .text {
-    height: 40%;
+    height: 50%;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -56,28 +56,6 @@
     object-fit: contain;
 }
 
-.hero .fluid-container .social-icons {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2em;
-    font-size: 20px;
-}
-
-
-/* responsive media queries */
-/* Small ≥576px */
-@media (min-width:576px) {
-
-}
-
-/* Medium ≥768px */
-@media (min-width:768px) {
-
-}
-
 /* Large ≥992px / desktop navbar */
 @media (min-width:960px) {
     .hero .fluid-container {
@@ -89,8 +67,8 @@
         width: 40%;
         height: 100%;
         justify-content: center;
-        align-items: flex-start;
-        text-align: start;
+        align-items: center;
+        text-align: center;
     }
 
     .hero .fluid-container .logo {
@@ -98,25 +76,4 @@
         height: 100%;
         align-items: center;
     }
-
-    .hero .fluid-container .social-icons {
-        flex-direction: column;
-        width: 10%;
-        font-size: 25px;
-        gap: 1em;
-    }
-
-    .hero .fluid-container .social-icons div {
-        width: fit-content;
-    }
-}
-
-/* X-Large ≥1200px */
-@media (min-width:1200px) {
-
-}
-
-/* XX-Large ≥1400px */
-@media (min-width:1400px) {
-
 }

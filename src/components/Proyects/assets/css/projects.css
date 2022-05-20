@@ -1,7 +1,13 @@
 .projects-section .container .title {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 1em;
+}
+
+.projects-section .container .title a {
+    color: var(--secondary-color);
+    font-weight: 700;
 }
 
 .project-list {
@@ -11,16 +17,4 @@
     justify-items: center;
     gap: 5em;
     grid-template-columns: 1fr;
-}
-
-.swProjectsBtn {
-    display: none;
-}
-
-.swProjectsBtn, .mgProjectsBtn {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    font-weight: 700;
-    color: var(--secondary-color);
 }

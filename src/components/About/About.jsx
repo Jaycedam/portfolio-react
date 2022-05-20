@@ -4,7 +4,7 @@ import './assets/css/about.css';
 import Button from "../Button/Button";
 import { motion } from "framer-motion";
 import { MdEmail } from "react-icons/md";
-import {GrDocumentText} from "react-icons/gr";
+import {HiDocumentText} from "react-icons/hi";
 
 // animation for project (framer motion)
 const about = {
@@ -61,7 +61,7 @@ export default function About() {
                             text="CV"
                             link="https://drive.google.com/file/d/1eo-acjbs20EX7KdWSa3KiDFfZ5n4tlF7/view?usp=sharing"
                             type="btn"
-                            icon={<GrDocumentText />}
+                            icon={<HiDocumentText />}
                         />
                     </div>
                 </div>

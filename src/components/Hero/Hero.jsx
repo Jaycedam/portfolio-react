@@ -3,7 +3,7 @@ import hero from './assets/images/laptop.svg';
 import './assets/css/hero.css';
 import Button from "../Button/Button";
 import { motion } from "framer-motion";
-import { AiFillGithub, AiFillBehanceCircle, AiFillLinkedin, AiFillCaretDown } from "react-icons/ai"
+import { AiFillCaretDown } from "react-icons/ai"
 
 export default function Hero() {
     return (
@@ -26,7 +26,7 @@ export default function Hero() {
                 </div>
 
                 <div className="text">
-                    <p>SOFTWARE DEVELOPER / MOTION GRAPHICS</p>
+                    <p>SOFTWARE DEVELOPER</p>
                     <h1>JORDAN<br />CORTÉS</h1>
 
                     <div
@@ -38,24 +38,6 @@ export default function Hero() {
                             icon={<AiFillCaretDown />}
                         />
                     </div>
-
-                </div>
-
-                <div className="social-icons">
-                    <Button
-                        link="https://www.linkedin.com/in/jaycedam"
-                        icon={<AiFillLinkedin />}
-                    />
-
-                    <Button
-                        link="https://www.behance.net/jaycedam"
-                        icon={<AiFillBehanceCircle />}
-                    />
-
-                    <Button
-                        link="https://github.com/Jaycedam"
-                        icon={<AiFillGithub />}
-                    />
 
                 </div>
 
