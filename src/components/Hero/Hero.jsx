@@ -5,20 +5,30 @@ import Button from "../Button/Button";
 import { motion } from "framer-motion";
 import { AiFillCaretDown } from "react-icons/ai"
 
+// animation for hero (framer motion)
+const variant = {
+    hidden: {
+        y: 30,
+        opacity: 0
+    },
+    visible: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            duration: .8,
+        }
+    }
+}
+
 export default function Hero() {
     return (
         <section className="hero">
 
             <motion.div
                 className="fluid-container"
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{
-                    delay: .2,
-                    duration: 1,
-                    stiffness: 260,
-                    damping: 20
-                }}
+                variants={variant}
+                initial="hidden"
+                animate="visible"
             >
 
                 <div className="logo">
@@ -38,11 +48,9 @@ export default function Hero() {
                             icon={<AiFillCaretDown />}
                         />
                     </div>
-
                 </div>
 
             </motion.div>
-
         </section>
     )
 }

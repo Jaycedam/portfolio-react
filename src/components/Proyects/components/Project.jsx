@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { AiOutlineLink } from "react-icons/ai"
 
 // animation for project (framer motion)
-const project = {
+const variant = {
     hidden: {
         y: 30,
         opacity: 0
@@ -17,13 +17,6 @@ const project = {
             delay: .3,
             duration: .8,
         }
-    },
-    exit: {
-        y: 10,
-        opacity: 0,
-        transition: {
-            duration: .5
-        }
     }
 }
 
@@ -31,11 +24,10 @@ export default function Project(props) {
     return (
         <motion.div
             key={props.id}
-            variants={project}
+            variants={variant}
             viewport={{ once: true }}
             initial="hidden"
             whileInView="visible"
-            exit="exit"
             className="project"
             id="project"
         >
