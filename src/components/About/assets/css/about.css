@@ -32,11 +32,6 @@
 }
 
 /* responsive media queries */
-/* Small ≥576px */
-/* @media (min-width:576px) {} */
-
-/* Medium ≥768px */
-/* @media (min-width:768px) {} */
 
 /* Large ≥992px / desktop navbar */
 @media (min-width:992px) {
@@ -51,9 +46,3 @@
         grid-column: 2;
     }
 }
-
-/* X-Large ≥1200px */
-/* @media (min-width:1200px) {} */
-
-/* XX-Large ≥1400px */
-/* @media (min-width:1400px) {} */

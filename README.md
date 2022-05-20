@@ -4,3 +4,9 @@
 > - Mobile first responsive design, automatic dark mode.
 
 ![1](https://user-images.githubusercontent.com/45575946/168676970-1acceb24-3bfc-4479-b887-1d73b3bf56fc.png)
+
+## Steps for local setup
+``` 
+npm install
+npm start
+```
