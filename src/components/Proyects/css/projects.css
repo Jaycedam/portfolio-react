@@ -1,0 +1,8 @@
+.project-list {
+    margin-top: 2em;
+    display: grid;
+    align-items: start;
+    justify-items: center;
+    gap: 5em;
+    grid-template-columns: 1fr;
+}

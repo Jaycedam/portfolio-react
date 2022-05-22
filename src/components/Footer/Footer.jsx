@@ -1,5 +1,7 @@
 import React from "react";
-import './assets/css/footer.css';
+import './css/footer.css';
+import { SiMinutemailer, SiGithub, SiBehance, SiLinkedin } from "react-icons/si";
+import { HiDocumentText } from "react-icons/hi";
 
 export default function Footer() {
     return (
@@ -17,9 +19,28 @@ export default function Footer() {
                     </svg>
                 </div>
 
-                <a href="#top">
-                    Volver al inicio
-                </a>
+                <div className="social-icons">
+                    <a href="mailto:jaycedam@gmail.com">
+                        <SiMinutemailer />
+                        Email
+                    </a>
+                    <a href="https://github.com/Jaycedam">
+                        <SiGithub />
+                        GitHub
+                    </a>
+                    <a href="https://www.behance.net/jaycedam">
+                        <SiBehance />
+                        Behance
+                    </a>
+                    <a href="https://www.linkedin.com/in/jaycedam/">
+                        <SiLinkedin />
+                        LinkedIn
+                    </a>
+                    <a href="https://drive.google.com/file/d/1eo-acjbs20EX7KdWSa3KiDFfZ5n4tlF7/view?usp=sharing">
+                        <HiDocumentText />
+                        Curriculum
+                    </a>
+                </div>
 
             </div>
         </footer>

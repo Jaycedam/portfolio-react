@@ -1,9 +1,8 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-import './assets/css/projects.css';
+import './css/projects.css';
 import Project from "./components/Project"
 import LoadingIcon from "../LoadingIcon/LoadingIcon";
-import {FiGithub} from "react-icons/fi";
 
 export default function Projects() {
     const [loading, setLoading] = useState(true)
@@ -34,18 +33,13 @@ export default function Projects() {
     return (
         <section id="projects" className="projects-section">
             <div className="container">
-                <div className="title">
-                    <h2>Proyectos destacados</h2>
-                    <a href="https://github.com/Jaycedam">
-                        <FiGithub /> GitHub
-                    </a>
-                </div>
+                <h2>Proyectos destacados</h2>
 
                 {
                     loading ? <LoadingIcon /> :
-                            <div className="project-list">
-                                {projectElements}
-                            </div>
+                        <div className="project-list">
+                            {projectElements}
+                        </div>
                 }
             </div>
         </section>

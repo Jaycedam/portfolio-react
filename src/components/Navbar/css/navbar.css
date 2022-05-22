@@ -12,6 +12,11 @@
 }
 
 .primary-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
     height: 100%;
     width: 60%;
     position: fixed;
@@ -25,7 +30,13 @@
 }
 
 .primary-header .logo {
-    display: none;
+    height: 30px;
+}
+
+.primary-header .logo svg {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 .primary-header .primary-navigation {
@@ -33,7 +44,6 @@
     align-items: center;
     justify-content: center;
     font-weight: 700;
-    height: 100%;
 }
 
 .primary-header .primary-navigation ul {
@@ -77,30 +87,20 @@
         display: none;
     }
 
-    .mail-btn-desktop {
-        display: flex;
-    }
-
     .primary-header {
-        display: flex;
-        justify-content: space-around;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
         height: var(--nav-height);
         width: 100%;
-        z-index: 10;
         transform: translateX(0);
         animation: slide-in 1s ease;
+        padding: 0 4em;
     }
 
     .primary-header .logo {
-        display: block;
         /* place-content: center; */
         height: 50%;
-        width: fit-content;
-    }
-
-    .primary-header .logo svg {
-        height: 100%;
         width: auto;
     }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "./assets/css/project.css"
+import "./css/project.css"
 import Button from "../../Button/Button";
 import { motion } from "framer-motion";
 import { AiOutlineLink } from "react-icons/ai"

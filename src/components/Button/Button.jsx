@@ -1,5 +1,5 @@
 import React from "react";
-import "./assets/css/button.css"
+import "./css/button.css"
 import { motion } from "framer-motion";
 
 // Button Types: "btn", "btn-color", "btn-light"

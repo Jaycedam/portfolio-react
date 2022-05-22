@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { MdMenu } from "react-icons/md";
 import { AiOutlineClose } from "react-icons/ai";
-import './assets/css/navbar.css';
+import './css/navbar.css';
 import ThemeToggle from "../ThemeToggle/ThemeToggle"
 
 // enamble/disable navbar on mobile when toggled
@@ -73,12 +73,6 @@ export default function Navbar() {
                         <li className="nav-item">
                             <a href="#projects">
                                 Proyectos
-                            </a>
-                        </li>
-
-                        <li className="nav-item">
-                            <a href="#about">
-                                Acerca
                             </a>
                         </li>
 

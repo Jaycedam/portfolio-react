@@ -1,9 +1,10 @@
 import React from "react";
-import hero from './assets/images/laptop.svg';
-import './assets/css/hero.css';
+import hero from './images/laptop.svg';
+import './css/hero.css';
 import Button from "../Button/Button";
 import { motion } from "framer-motion";
 import { AiFillCaretDown } from "react-icons/ai"
+import { SiMinutemailer } from "react-icons/si";
 
 // animation for hero (framer motion)
 const variant = {
@@ -39,12 +40,18 @@ export default function Hero() {
                     <p>SOFTWARE DEVELOPER</p>
                     <h1>JORDAN<br />CORTÉS</h1>
 
-                    <div
-                        className="call-to-action">
+                    <div className="call-to-action">
+                        <Button
+                            link="mailto:jaycedam@gmail.com"
+                            text="Contactar"
+                            type="btn-color"
+                            icon={<SiMinutemailer />}
+                        />
+
                         <Button
                             link="#projects"
                             text="Proyectos"
-                            type="btn-color"
+                            type="btn"
                             icon={<AiFillCaretDown />}
                         />
                     </div>
