@@ -104,6 +104,10 @@
         width: auto;
     }
 
+    .primary-header .logo svg {
+        width: auto;
+    }
+
     .primary-header .primary-navigation ul {
         flex-direction: row;
     }
