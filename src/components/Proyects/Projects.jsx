@@ -12,7 +12,7 @@ export default function Projects() {
     });
 
     useEffect(() => {
-        axios.get("https://jordancortes-admin.herokuapp.com/api/projects/software").then(res => {
+        axios.get("https://jordancortes-admin.herokuapp.com/api/projects/starred").then(res => {
             setProjects(res.data);
             setLoading(false)
         });
