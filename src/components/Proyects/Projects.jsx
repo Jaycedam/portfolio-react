@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import './css/projects.css';
 import Project from "./components/Project"
 import LoadingIcon from "../LoadingIcon/LoadingIcon";

@@ -1,4 +1,3 @@
-import React from "react";
 import hero from './images/laptop.svg';
 import './css/hero.css';
 import Button from "../Button/Button";

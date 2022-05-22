@@ -1,4 +1,3 @@
-import React from "react";
 import "./css/project.css"
 import Button from "../../Button/Button";
 import { motion } from "framer-motion";

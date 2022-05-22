@@ -1,6 +1,6 @@
-import React, { useEffect} from "react";
+import { useEffect } from "react";
 import "./css/themetoggle.css"
-import {BsCircleHalf} from "react-icons/bs"
+import { BsCircleHalf } from "react-icons/bs"
 
 export default function ThemeToggle() {
 
@@ -9,7 +9,7 @@ export default function ThemeToggle() {
         var toggle = document.getElementById("theme-toggle");
 
         // get system theme or override from user in local storage
-        var storedTheme = localStorage.getItem('theme') 
+        var storedTheme = localStorage.getItem('theme')
             || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
         if (storedTheme)
             document.documentElement.setAttribute('data-theme', storedTheme)
@@ -31,7 +31,7 @@ export default function ThemeToggle() {
 
     return (
         <button id="theme-toggle">
-            <BsCircleHalf/>
+            <BsCircleHalf />
         </button>
     )
 }

@@ -1,4 +1,3 @@
-import React from "react";
 import "./css/button.css"
 import { motion } from "framer-motion";
 

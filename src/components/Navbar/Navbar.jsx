@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { MdMenu } from "react-icons/md";
 import { AiOutlineClose } from "react-icons/ai";
 import './css/navbar.css';
