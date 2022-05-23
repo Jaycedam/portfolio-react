@@ -35,7 +35,7 @@ export default function Footer() {
                         <SiLinkedin />
                         LinkedIn
                     </a>
-                    <a href="https://drive.google.com/file/d/1eo-acjbs20EX7KdWSa3KiDFfZ5n4tlF7/view?usp=sharing">
+                    <a href="https://drive.google.com/file/d/1VjSfWn0HnkU4L5RkofvKKXUNrxxri1hI/view?usp=sharing">
                         <HiDocumentText />
                         Curriculum
                     </a>
