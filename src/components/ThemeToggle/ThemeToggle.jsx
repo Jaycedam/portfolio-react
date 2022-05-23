@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import "./css/themetoggle.css"
+import "./themetoggle.css"
 import { BsCircleHalf } from "react-icons/bs"
 
 export default function ThemeToggle() {

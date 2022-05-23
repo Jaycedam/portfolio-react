@@ -1,5 +1,5 @@
 import hero from './images/laptop.svg';
-import './css/hero.css';
+import './hero.css';
 import Button from "../Button/Button";
 import { motion } from "framer-motion";
 import { AiFillCaretDown } from "react-icons/ai"

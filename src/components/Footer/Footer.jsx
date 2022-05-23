@@ -1,4 +1,4 @@
-import './css/footer.css';
+import './footer.css';
 import { SiMinutemailer, SiGithub, SiBehance, SiLinkedin } from "react-icons/si";
 import { HiDocumentText } from "react-icons/hi";
 

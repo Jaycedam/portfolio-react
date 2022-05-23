@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import './css/projects.css';
-import Project from "./components/Project"
+import './projects.css';
+import Project from "./Project/Project"
 import LoadingIcon from "../LoadingIcon/LoadingIcon";
 
 export default function Projects() {

@@ -1,4 +1,4 @@
-import "./css/project.css"
+import "./project.css"
 import Button from "../../Button/Button";
 import { motion } from "framer-motion";
 import { AiOutlineLink } from "react-icons/ai"

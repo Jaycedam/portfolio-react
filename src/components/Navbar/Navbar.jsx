@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { MdMenu } from "react-icons/md";
 import { AiOutlineClose } from "react-icons/ai";
-import './css/navbar.css';
+import './navbar.css';
 import ThemeToggle from "../ThemeToggle/ThemeToggle"
 
 // enamble/disable navbar on mobile when toggled

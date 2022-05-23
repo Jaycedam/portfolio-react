@@ -1,4 +1,4 @@
-import "./css/button.css"
+import "./button.css"
 import { motion } from "framer-motion";
 
 // Button Types: "btn", "btn-color", "btn-light"
