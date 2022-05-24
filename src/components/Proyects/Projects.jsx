@@ -21,7 +21,9 @@ const variant = {
 }
 
 export default function Projects() {
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(() => {
+        return true
+    })
     const [projects, setProjects] = useState(() => {
         return []
     });

@@ -43,13 +43,7 @@ export default function Project(props) {
 
             <div className="text">
                 <h3>{props.name} - {props.area}</h3>
-                {/* if the prop is passed, show, else null */}
-                {props.technology ? (
-                    <h5><strong>{props.technology}</strong></h5>
-                ) : (
-                    null
-                )}
-
+                <h5><strong>{props.technology}</strong></h5>
                 <p>{props.about}</p>
                 <Button
                     text="Link"
