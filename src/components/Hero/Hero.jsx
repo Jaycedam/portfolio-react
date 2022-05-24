@@ -1,12 +1,12 @@
 import hero from './images/laptop.svg';
 import './hero.css';
 import Button from "../Button/Button";
-import { motion } from "framer-motion";
 import { AiFillCaretDown } from "react-icons/ai"
 import { SiMinutemailer } from "react-icons/si";
 import bg from "./images/bg.svg";
+import { motion } from 'framer-motion';
 
-// animation for hero (framer motion)
+// animation for framer motion
 const variant = {
     hidden: {
         y: 30,
@@ -16,7 +16,7 @@ const variant = {
         y: 0,
         opacity: 1,
         transition: {
-            duration: 1
+            duration: .8,
         }
     }
 }
@@ -28,6 +28,7 @@ export default function Hero() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
+
             className="hero">
 
             <div
@@ -36,6 +37,7 @@ export default function Hero() {
             </div>
 
             <div
+
                 className="fluid-container"
             >
                 <div className="logo">

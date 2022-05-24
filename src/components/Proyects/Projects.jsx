@@ -7,15 +7,15 @@ import { motion } from "framer-motion";
 
 const variant = {
     hidden: {
-        y: 30,
-        opacity: 0
+        opacity: 0,
+        y: 10
     },
     visible: {
-        y: 0,
         opacity: 1,
+        y: 0,
         transition: {
-            duration: 1,
-            delay: .5
+            delay: .8,
+            duration: .8
         }
     }
 }
@@ -47,13 +47,15 @@ export default function Projects() {
 
     return (
         <section id="projects" className="projects-section">
-            <motion.div
-                viewport={{ once: true }}
-                variants={variant}
-                initial="hidden"
-                whileInView="visible"
-                className="container">
-                <h2>Proyectos destacados</h2>
+            <div className="container">
+                <motion.h2
+                    variants={variant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                >
+                    Proyectos destacados
+                </motion.h2>
 
                 {
                     loading ? <LoadingIcon /> :
@@ -61,7 +63,7 @@ export default function Projects() {
                             {projectElements}
                         </div>
                 }
-            </motion.div>
+            </div>
         </section>
     )
 }

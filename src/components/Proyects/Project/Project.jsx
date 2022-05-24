@@ -3,17 +3,16 @@ import Button from "../../Button/Button";
 import { motion } from "framer-motion";
 import { AiOutlineLink } from "react-icons/ai"
 
-// animation for project (framer motion)
+// animation for framer motion
 const variant = {
     hidden: {
-        y: 30,
+        y: 50,
         opacity: 0
     },
     visible: {
         y: 0,
         opacity: 1,
         transition: {
-            delay: .3,
             duration: .8,
         }
     }
