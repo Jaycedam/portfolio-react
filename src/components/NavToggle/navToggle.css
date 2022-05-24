@@ -1,0 +1,80 @@
+/* mobile nav toggle button */
+.nav-toggle {
+    cursor: pointer;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    z-index: 1000;
+    background-color: rgba(150, 150, 150, 0.200);
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    box-sizing: content-box;
+}
+
+.nav-toggle span {
+    margin: 0 auto;
+    position: relative;
+    transition-duration: 0s;
+    transition-delay: .2s;
+    transition: background-color 0.3s;
+}
+
+.nav-toggle span:before,
+.nav-toggle span:after {
+    position: absolute;
+    content: '';
+}
+
+.nav-toggle span,
+.nav-toggle span:before,
+.nav-toggle span:after {
+    width: 100%;
+    height: 4px;
+    background-color: var(--text);
+    display: block;
+    opacity: 1;
+}
+
+.nav-toggle span:before {
+    margin-top: -12px;
+    transition-property: margin, transform;
+    transition-duration: .2s;
+    transition-delay: .2s, 0;
+}
+
+.nav-toggle span:after {
+    margin-top: 12px;
+    transition-property: margin, transform;
+    transition-duration: .2s;
+    transition-delay: .2s, 0;
+}
+
+.nav-toggle-active span {
+    background-color: rgba(255, 0, 0, 0);
+    transition: 0.3s background-color;
+}
+
+.nav-toggle-active span:before {
+    margin-top: 0;
+    transform: rotate(45deg);
+    transition-delay: 0, .2s;
+}
+
+.nav-toggle-active span:after {
+    margin-top: 0;
+    transform: rotate(-45deg);
+    transition-delay: 0, .2s;
+}
+
+/* responsive media queries */
+
+/* Large ≥992px / desktop navbar */
+@media (min-width:960px) {
+    .nav-toggle {
+        display: none;
+    }
+}

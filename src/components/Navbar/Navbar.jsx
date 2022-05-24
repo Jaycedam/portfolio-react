@@ -1,54 +1,12 @@
-import { useEffect } from "react";
-import { MdMenu } from "react-icons/md";
-import { AiOutlineClose } from "react-icons/ai";
 import './navbar.css';
-import ThemeToggle from "../ThemeToggle/ThemeToggle"
-
-// enamble/disable navbar on mobile when toggled
-function navToggle() {
-    const nav = document.querySelector(".primary-header");
-    const visible = nav.getAttribute("data-visible");
-    const menuicon = document.getElementById("menuicon")
-    const closeicon = document.getElementById("closeicon")
-
-    if (visible === "false") {
-        nav.setAttribute("data-visible", "true")
-        closeicon.style.display = "flex"
-        menuicon.style.display = "none"
-
-    }
-    else if (visible === "true") {
-        nav.setAttribute("data-visible", "false")
-        closeicon.style.display = "none"
-        menuicon.style.display = "flex"
-    }
-}
+import ThemeToggle from "../ThemeToggle/ThemeToggle";
+import NavToggle from "../NavToggle/NavToggle";
 
 export default function Navbar() {
-
-    // Event to close navbar when a link is clicked
-    useEffect(() => {
-
-        // Click on link closes nav
-        const nav = document.querySelector(".primary-header");
-        const navLinks = document.querySelectorAll(".nav-item");
-        const menuicon = document.getElementById("menuicon")
-        const closeicon = document.getElementById("closeicon")
-
-        navLinks.forEach(link => link.addEventListener("click", () => {
-            nav.setAttribute("data-visible", "false")
-            closeicon.style.display = "none"
-            menuicon.style.display = "flex"
-        }))
-    }, [])
-
     return (
         <>
             {/* Menu btn to toggle navbar on mobile */}
-            <button onClick={navToggle} className="nav-toggle">
-                <span id="menuicon" className="menuicon"><MdMenu /></span>
-                <span id="closeicon" className="closeicon"><AiOutlineClose /></span>
-            </button>
+            <NavToggle />
 
             <header className="primary-header" data-visible="false">
                 <div className="logo">
