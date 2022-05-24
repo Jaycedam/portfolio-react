@@ -3,7 +3,6 @@ import './hero.css';
 import Button from "../Button/Button";
 import { AiFillCaretDown } from "react-icons/ai"
 import { SiMinutemailer } from "react-icons/si";
-import bg from "./images/bg.svg";
 import { motion } from 'framer-motion';
 
 // animation for framer motion
@@ -28,18 +27,9 @@ export default function Hero() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-
             className="hero">
 
-            <div
-                className="bg-img">
-                <img src={bg} alt="" />
-            </div>
-
-            <div
-
-                className="fluid-container"
-            >
+            <div className="fluid-container">
                 <div className="logo">
                     <img id="hero-logo" src={hero} alt="hero logo" />
                 </div>
