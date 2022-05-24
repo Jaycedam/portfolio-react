@@ -96,7 +96,7 @@
         height: var(--nav-height);
         width: 100%;
         transform: translateX(0);
-        animation: slide-in 1s ease;
+        animation: slide-in 1s ease-in-out;
         padding: 0 4em;
     }
 

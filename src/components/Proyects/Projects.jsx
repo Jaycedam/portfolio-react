@@ -3,6 +3,22 @@ import { useState, useEffect } from "react";
 import './projects.css';
 import Project from "./Project/Project"
 import LoadingIcon from "../LoadingIcon/LoadingIcon";
+import { motion } from "framer-motion";
+
+const variant = {
+    hidden: {
+        y: 30,
+        opacity: 0
+    },
+    visible: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            duration: 1,
+            delay: .5
+        }
+    }
+}
 
 export default function Projects() {
     const [loading, setLoading] = useState(true)
@@ -13,9 +29,8 @@ export default function Projects() {
     useEffect(() => {
         axios.get("https://jordancortes-admin.herokuapp.com/api/projects/starred").then(res => {
             setProjects(res.data);
-            setLoading(false)
+            setLoading(false);
         });
-
     }, [])
 
     const projectElements = projects.map(n => {
@@ -32,7 +47,12 @@ export default function Projects() {
 
     return (
         <section id="projects" className="projects-section">
-            <div className="container">
+            <motion.div
+                viewport={{ once: true }}
+                variants={variant}
+                initial="hidden"
+                whileInView="visible"
+                className="container">
                 <h2>Proyectos destacados</h2>
 
                 {
@@ -41,7 +61,7 @@ export default function Projects() {
                             {projectElements}
                         </div>
                 }
-            </div>
+            </motion.div>
         </section>
     )
 }

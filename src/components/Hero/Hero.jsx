@@ -4,6 +4,7 @@ import Button from "../Button/Button";
 import { motion } from "framer-motion";
 import { AiFillCaretDown } from "react-icons/ai"
 import { SiMinutemailer } from "react-icons/si";
+import bg from "./images/bg.svg";
 
 // animation for hero (framer motion)
 const variant = {
@@ -15,22 +16,28 @@ const variant = {
         y: 0,
         opacity: 1,
         transition: {
-            duration: .8,
+            duration: 1
         }
     }
 }
 
 export default function Hero() {
     return (
-        <section className="hero">
+        <motion.section
+            variants={variant}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="hero">
 
-            <motion.div
+            <div
+                className="bg-img">
+                <img src={bg} alt="" />
+            </div>
+
+            <div
                 className="fluid-container"
-                variants={variant}
-                initial="hidden"
-                animate="visible"
             >
-
                 <div className="logo">
                     <img id="hero-logo" src={hero} alt="hero logo" />
                 </div>
@@ -56,7 +63,7 @@ export default function Hero() {
                     </div>
                 </div>
 
-            </motion.div>
-        </section>
+            </div>
+        </motion.section>
     )
 }
