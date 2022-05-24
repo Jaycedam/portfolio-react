@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Hero from '../Hero/Hero';
 import Projects from '../Proyects/Projects';
 import Footer from '../Footer/Footer';
@@ -11,10 +11,6 @@ function App() {
   const [loading, setLoading] = useState(() => {
     return true;
   });
-
-  useEffect(() => {
-
-  }, [])
 
   return (
     <AnimatePresence>
