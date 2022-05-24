@@ -14,7 +14,7 @@ const variant = {
         opacity: 1,
         y: 0,
         transition: {
-            delay: .8,
+            delay: 2,
             duration: .8
         }
     }
@@ -51,8 +51,7 @@ export default function Projects() {
                 <motion.h2
                     variants={variant}
                     initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
+                    animate="visible"
                 >
                     Proyectos destacados
                 </motion.h2>
