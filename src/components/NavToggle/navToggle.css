@@ -73,7 +73,7 @@
 /* responsive media queries */
 
 /* Large ≥992px / desktop navbar */
-@media (min-width:960px) {
+@media (min-width:992px) {
     .nav-toggle {
         display: none;
     }

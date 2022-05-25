@@ -1,9 +1,9 @@
 import image from './images/laptop.svg';
 import './hero.css';
 import Button from "../Button/Button";
-import { AiFillCaretDown } from "react-icons/ai"
-import { SiMinutemailer } from "react-icons/si";
+import { AiFillCaretDown } from "react-icons/ai";
 import { motion } from 'framer-motion';
+import { SiMinutemailer } from "react-icons/si";
 
 // animation for framer motion
 const hero = {
@@ -34,11 +34,9 @@ const heroTitle = {
 
 const heroText = {
     hidden: {
-        y: -50,
         opacity: 0
     },
     visible: {
-        y: 0,
         opacity: 1,
         transition: {
             duration: .8,
@@ -95,7 +93,6 @@ export default function Hero() {
                         />
                     </div>
                 </div>
-
             </div>
         </motion.section>
     )

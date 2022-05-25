@@ -2,24 +2,22 @@
     position: relative;
 }
 
-.hero .call-to-action {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-}
-
 .hero .fluid-container {
-    margin: 0 auto;
-    height: 80vh;
     width: 100%;
     max-width: 2000px;
     max-height: 1500px;
-    padding: 4em 0;
+    padding: 4em 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2em;
+}
+
+.hero .call-to-action {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
 }
 
 .hero .text h1 {
@@ -32,7 +30,7 @@
 .hero .text p {
     font-size: small;
     font-weight: 700;
-    letter-spacing: 6px;
+    letter-spacing: 3px;
 }
 
 .hero .fluid-container .text {
@@ -46,22 +44,28 @@
 }
 
 .hero .fluid-container .logo {
-    height: 50%;
     width: 100%;
     display: flex;
-    align-items: flex-end;
     justify-content: center;
 }
 
 .hero .fluid-container .logo img,
 .hero .fluid-container .logo svg {
-    height: 90%;
-    width: 90%;
+    height: 80%;
+    width: 80%;
     object-fit: contain;
 }
 
+/* responsive media queries */
+/* Small ≥576px */
+@media (min-width:576px) {
+    .hero .fluid-container .logo {
+        width: 50%;
+    }
+}
+
 /* Large ≥992px / desktop navbar */
-@media (min-width:960px) {
+@media (min-width:992px) {
     .hero .fluid-container {
         flex-direction: row-reverse;
         padding-top: var(--nav-height);

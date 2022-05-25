@@ -26,13 +26,13 @@ footer .social-icons {
     flex-wrap: wrap;
 }
 
-.social-icons a {
+footer .social-icons a {
     display: flex;
     align-items: center;
     gap: .5em;
 }
 
-.social-icons svg {
+footer .social-icons svg {
     color: var(--secondary-color);
 }
 

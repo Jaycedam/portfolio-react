@@ -64,7 +64,7 @@
 /* responsive media queries */
 
 /* Large ≥992px / desktop navbar */
-@media (min-width:960px) {
+@media (min-width:992px) {
     .primary-header {
         flex-direction: row;
         justify-content: space-between;
