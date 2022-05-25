@@ -5,17 +5,15 @@ import Project from "./Project/Project"
 import LoadingIcon from "../LoadingIcon/LoadingIcon";
 import { motion } from "framer-motion";
 
-const variant = {
+const projectsTitle = {
     hidden: {
         opacity: 0,
-        y: 10
     },
     visible: {
         opacity: 1,
-        y: 0,
         transition: {
-            delay: 2,
-            duration: .8
+            delay: .8,
+            duration: 1,
         }
     }
 }
@@ -51,9 +49,10 @@ export default function Projects() {
         <section id="projects" className="projects-section">
             <div className="container">
                 <motion.h2
-                    variants={variant}
+                    variants={projectsTitle}
                     initial="hidden"
-                    animate="visible"
+                    whileInView="visible"
+                    viewport={{ once: true }}
                 >
                     Proyectos destacados
                 </motion.h2>

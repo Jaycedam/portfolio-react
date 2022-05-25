@@ -5,21 +5,21 @@ import { motion } from "framer-motion";
 const variant = {
     hidden: {
         opacity: 0,
-        y: 50
+        y: 100
     },
     visible: {
         opacity: 1,
         y: 0,
         transition: {
-            duration: 1
+            duration: 1,
+            type: "spring",
         }
     },
     exit: {
         opacity: 0,
-        y: -50,
+        y: -100,
         transition: {
             duration: 1,
-            delay: 1
         }
     }
 }

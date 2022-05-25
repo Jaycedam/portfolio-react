@@ -1,4 +1,4 @@
-import hero from './images/laptop.svg';
+import image from './images/laptop.svg';
 import './hero.css';
 import Button from "../Button/Button";
 import { AiFillCaretDown } from "react-icons/ai"
@@ -6,9 +6,35 @@ import { SiMinutemailer } from "react-icons/si";
 import { motion } from 'framer-motion';
 
 // animation for framer motion
-const variant = {
+const hero = {
     hidden: {
         y: 30,
+        opacity: 0,
+    },
+    visible: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            duration: 1,
+        }
+    }
+}
+
+const heroTitle = {
+    hidden: {
+        scale: 2
+    },
+    visible: {
+        scale: 1,
+        transition: {
+            duration: 1,
+        }
+    }
+}
+
+const heroText = {
+    hidden: {
+        y: -50,
         opacity: 0
     },
     visible: {
@@ -23,7 +49,7 @@ const variant = {
 export default function Hero() {
     return (
         <motion.section
-            variants={variant}
+            variants={hero}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -31,12 +57,27 @@ export default function Hero() {
 
             <div className="fluid-container">
                 <div className="logo">
-                    <img id="hero-logo" src={hero} alt="hero logo" />
+                    <img id="hero-logo" src={image} alt="hero logo" />
                 </div>
 
                 <div className="text">
-                    <p>SOFTWARE DEVELOPER</p>
-                    <h1>JORDAN<br />CORTÉS</h1>
+                    <motion.p
+                        variants={heroText}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                    >
+                        SOFTWARE DEVELOPER
+                    </motion.p>
+
+                    <motion.h1
+                        variants={heroTitle}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                    >
+                        JORDAN<br />CORTÉS
+                    </motion.h1>
 
                     <div className="call-to-action">
                         <Button

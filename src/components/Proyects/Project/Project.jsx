@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { AiOutlineLink } from "react-icons/ai"
 
 // animation for framer motion
-const variant = {
+const project = {
     hidden: {
         y: 50,
         opacity: 0
@@ -13,7 +13,8 @@ const variant = {
         y: 0,
         opacity: 1,
         transition: {
-            duration: .8,
+            delay: .5,
+            duration: 1,
         }
     }
 }
@@ -22,7 +23,7 @@ export default function Project(props) {
     return (
         <motion.div
             key={props.id}
-            variants={variant}
+            variants={project}
             viewport={{ once: true }}
             initial="hidden"
             whileInView="visible"
@@ -31,7 +32,7 @@ export default function Project(props) {
         >
             <div className="image">
                 <motion.img
-                    whileHover={{ scale: 1.2 }}
+                    whileHover={{ scale: 1.4 }}
                     transition={{
                         type: "spring",
                         damping: 25,
