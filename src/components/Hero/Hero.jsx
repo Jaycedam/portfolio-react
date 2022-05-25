@@ -22,7 +22,7 @@ const hero = {
 
 const heroTitle = {
     hidden: {
-        scale: 2
+        scale: 1.2
     },
     visible: {
         scale: 1,
