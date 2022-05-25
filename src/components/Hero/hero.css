@@ -47,12 +47,13 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: 2em;
 }
 
 .hero .fluid-container .logo img,
 .hero .fluid-container .logo svg {
-    height: 80%;
-    width: 80%;
+    height: 100%;
+    width: 100%;
     object-fit: contain;
 }
 
@@ -67,6 +68,7 @@
 /* Large ≥992px / desktop navbar */
 @media (min-width:992px) {
     .hero .fluid-container {
+        height: 80vh;
         flex-direction: row-reverse;
         padding-top: var(--nav-height);
         padding-bottom: 0;
