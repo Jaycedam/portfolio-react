@@ -15,6 +15,7 @@
     --text: #1d1d1f;
     --text-secondary: #999;
     --card: #ffffff;
+    --shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 [data-theme="dark"] {
@@ -22,6 +23,7 @@
     --text: #fff;
     --text-secondary: #b8b8b8;
     --card: #1a1a1a;
+    --shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
 }
 
 /* prevents overflow with padding */
