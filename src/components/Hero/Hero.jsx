@@ -8,7 +8,7 @@ import { SiMinutemailer } from "react-icons/si";
 // animation for framer motion
 const hero = {
     hidden: {
-        y: 30,
+        y: 20,
         opacity: 0,
     },
     visible: {
@@ -46,14 +46,13 @@ const heroText = {
 
 export default function Hero() {
     return (
-        <motion.section
-            variants={hero}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="hero">
+        <section className="hero">
+            <motion.div
+                variants={hero}
+                initial="hidden"
+                animate="visible"
+                className="fluid-container">
 
-            <div className="fluid-container">
                 <div className="logo">
                     <img id="hero-logo" src={image} alt="hero logo" />
                 </div>
@@ -62,8 +61,7 @@ export default function Hero() {
                     <motion.p
                         variants={heroText}
                         initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
+                        animate="visible"
                     >
                         SOFTWARE DEVELOPER
                     </motion.p>
@@ -71,8 +69,7 @@ export default function Hero() {
                     <motion.h1
                         variants={heroTitle}
                         initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
+                        animate="visible"
                     >
                         JORDAN<br />CORTÉS
                     </motion.h1>
@@ -93,7 +90,7 @@ export default function Hero() {
                         />
                     </div>
                 </div>
-            </div>
-        </motion.section>
+            </motion.div>
+        </section>
     )
 }
