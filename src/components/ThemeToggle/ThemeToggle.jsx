@@ -5,12 +5,6 @@ import { BsCircleHalf } from "react-icons/bs"
 export default function ThemeToggle() {
 
     useEffect(() => {
-        // get and apply system theme or override from user in local storage
-        var storedTheme = localStorage.getItem('theme')
-            || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-        if (storedTheme)
-            document.documentElement.setAttribute('data-theme', storedTheme)
-
         // Dark mode toggle
         var toggle = document.getElementById("theme-toggle");
 

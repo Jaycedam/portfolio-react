@@ -1,5 +1,5 @@
 import './footer.css';
-import { SiMinutemailer, SiGithub, SiBehance, SiLinkedin } from "react-icons/si";
+import { SiMinutemailer, SiGithub, SiLinkedin } from "react-icons/si";
 import { HiDocumentText } from "react-icons/hi";
 
 export default function Footer() {
@@ -26,10 +26,6 @@ export default function Footer() {
                     <a href="https://github.com/Jaycedam">
                         <SiGithub />
                         GitHub
-                    </a>
-                    <a href="https://www.behance.net/jaycedam">
-                        <SiBehance />
-                        Behance
                     </a>
                     <a href="https://www.linkedin.com/in/jaycedam/">
                         <SiLinkedin />

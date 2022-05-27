@@ -37,7 +37,6 @@ export default function Navbar() {
                         <li className="nav-item">
                             <ThemeToggle />
                         </li>
-                        
                     </ul>
                 </nav>
             </header>

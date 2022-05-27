@@ -83,7 +83,7 @@
     }
 
     .primary-header .logo svg {
-        width: auto;
+        height: 100%;
     }
 
     .primary-header .primary-navigation ul {
