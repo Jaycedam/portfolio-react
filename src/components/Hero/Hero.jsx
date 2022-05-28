@@ -1,26 +1,10 @@
-import image from './images/laptop.svg';
-import './hero.css';
+import "./hero.css";
 import Button from "../Button/Button";
-import { AiFillCaretDown } from "react-icons/ai";
-import { motion } from 'framer-motion';
 import { SiMinutemailer } from "react-icons/si";
+import { motion } from "framer-motion";
+import LaptopAnimation from "../LaptopAnimation/LaptopAnimation";
 
-// animation for framer motion
-const hero = {
-    hidden: {
-        y: 20,
-        opacity: 0,
-    },
-    visible: {
-        y: 0,
-        opacity: 1,
-        transition: {
-            duration: 1,
-        }
-    }
-}
-
-const heroTitle = {
+const title = {
     hidden: {
         scale: 1.2
     },
@@ -28,51 +12,55 @@ const heroTitle = {
         scale: 1,
         transition: {
             duration: 1,
+            ease: "easeOut"
         }
     }
 }
 
-const heroText = {
+const text = {
     hidden: {
-        opacity: 0
+        opacity: 0,
+        y: -10
     },
     visible: {
         opacity: 1,
+        y: 0,
         transition: {
-            duration: .8,
+            duration: 1,
+            ease: "easeOut"
         }
     }
 }
 
 export default function Hero() {
     return (
-        <section className="hero">
-            <motion.div
-                variants={hero}
-                initial="hidden"
-                animate="visible"
-                className="fluid-container">
-
-                <div className="logo">
-                    <img id="hero-logo" src={image} alt="hero logo" />
+        <section className="hero-section">
+            <div className="fluid-container">
+                <div className="image">
+                    <LaptopAnimation />
                 </div>
 
                 <div className="text">
-                    <motion.p
-                        variants={heroText}
-                        initial="hidden"
-                        animate="visible"
-                    >
-                        SOFTWARE DEVELOPER
-                    </motion.p>
+                    <div className="title">
+                        <motion.p
+                            variants={text}
+                            initial="hidden"
+                            animate="visible"
+                        >
+                            SOFTWARE DEVELOPER
+                        </motion.p>
 
-                    <motion.h1
-                        variants={heroTitle}
-                        initial="hidden"
-                        animate="visible"
-                    >
-                        JORDAN<br />CORTÉS
-                    </motion.h1>
+                        <motion.h1
+                            variants={title}
+                            initial="hidden"
+                            animate="visible"
+                        >
+                            JORDAN
+                            <br />
+                            CORTÉS
+                        </motion.h1>
+                    </div>
+
 
                     <div className="call-to-action">
                         <Button
@@ -82,15 +70,10 @@ export default function Hero() {
                             icon={<SiMinutemailer />}
                         />
 
-                        <Button
-                            link="#projects"
-                            text="Proyectos"
-                            type="btn"
-                            icon={<AiFillCaretDown />}
-                        />
                     </div>
                 </div>
-            </motion.div>
+            </div>
         </section>
+
     )
 }

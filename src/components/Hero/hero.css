@@ -1,58 +1,38 @@
-.hero {
-    position: relative;
-}
-
-.hero .fluid-container {
-    margin: 0 auto;
+.hero-section .fluid-container {
+    margin-top: var(--nav-height);
+    padding: 2em;
     width: 100%;
-    max-width: 2000px;
-    max-height: 1500px;
-    padding: 4em 2em;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 4em;
     justify-content: center;
-    gap: 2em;
+    align-items: center;
 }
 
-.hero .call-to-action {
+.hero-section .text {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     gap: 1em;
 }
 
-.hero .text h1 {
-    font-size: clamp(2.5em, 5vw, 8em);
-    margin-bottom: 30px;
-    letter-spacing: 10px;
-    line-height: 1.2em;
-}
-
-.hero .text p {
-    font-size: small;
-    font-weight: 700;
-    letter-spacing: 3px;
-}
-
-.hero .fluid-container .text {
-    height: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
+.hero-section .title {
     text-align: center;
 }
 
-.hero .fluid-container .logo {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 2em;
+.hero-section h1 {
+    font-size: clamp(2.5em, 4vw, 5em);
+    letter-spacing: 10px;
+    line-height: 1.2em;
+    font-weight: 900;
 }
 
-.hero .fluid-container .logo img,
-.hero .fluid-container .logo svg {
+.hero-section .image {
+    width: 100%;
+}
+
+.hero-section .image svg {
     height: 100%;
     width: 100%;
     object-fit: contain;
@@ -61,29 +41,14 @@
 /* responsive media queries */
 /* Small ≥576px */
 @media (min-width:576px) {
-    .hero .fluid-container .logo {
+    .hero-section .image {
         width: 50%;
     }
 }
 
 /* Large ≥992px / desktop navbar */
 @media (min-width:992px) {
-    .hero .fluid-container {
-        height: 80vh;
-        flex-direction: row-reverse;
-        padding-top: var(--nav-height);
-        padding-bottom: 0;
-    }
-
-    .hero .fluid-container .text {
-        width: 50%;
-        height: 100%;
-        justify-content: center;
-    }
-
-    .hero .fluid-container .logo {
-        width: 50%;
-        height: 100%;
-        align-items: center;
+    .hero-section .image {
+        width: 30%;  
     }
 }

@@ -13,6 +13,7 @@ const project = {
         transition: {
             delay: .5,
             duration: 1,
+            ease: "easeOut"
         }
     }
 }

@@ -1,0 +1,7 @@
+#laptop-svg #device {
+    stroke: var(--text);
+}
+
+#laptop-svg #screen {
+    fill: var(--text);
+}

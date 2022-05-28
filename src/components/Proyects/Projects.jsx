@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import './projects.css';
 import Project from "./Project/Project"
-import LoadingIcon from "../LoadingIcon/LoadingIcon";
+import LoadingAnimation from "../LoadingAnimation/LoadingAnimation";
 import { motion } from "framer-motion";
 
 const projectsTitle = {
@@ -58,7 +58,7 @@ export default function Projects() {
                 </motion.h2>
 
                 {
-                    loading ? <LoadingIcon /> :
+                    loading ? <LoadingAnimation /> :
                         <div className="project-list">
                             {projectElements}
                         </div>

@@ -1,4 +1,4 @@
-import "./loadingIcon.css";
+import "./loadingAnimation.css";
 import { motion } from "framer-motion";
 
 export default function LoadingIcon() {
