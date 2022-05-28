@@ -50,6 +50,21 @@
     transform: translateX(0);
 }
 
+/* nav item animation */
+.nav-item .line {
+    width: 0;
+    height: 0;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    transition: all .2s ease-out;
+}
+
+.nav-item:hover .line {
+    height: 8px;
+    width: 100%;
+}
+/* end */
+
 /* Slide in animation for navbar on desktop */
 @keyframes slide-in {
     from {
@@ -79,11 +94,11 @@
     .primary-header .logo {
         /* place-content: center; */
         height: 50%;
-        width: auto;
     }
 
     .primary-header .logo svg {
         height: 100%;
+        width: auto;
     }
 
     .primary-header .primary-navigation ul {

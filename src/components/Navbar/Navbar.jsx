@@ -25,12 +25,14 @@ export default function Navbar() {
                         <li className="nav-item">
                             <a href="#top">
                                 Inicio
+                                <div className='line'></div>
                             </a>
                         </li>
 
                         <li className="nav-item">
                             <a href="#projects">
                                 Proyectos
+                                <div className='line'></div>
                             </a>
                         </li>
 

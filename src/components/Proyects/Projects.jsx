@@ -12,7 +12,7 @@ const projectsTitle = {
     visible: {
         opacity: 1,
         transition: {
-            delay: .8,
+            delay: .5,
             duration: 1,
         }
     }
@@ -48,15 +48,17 @@ export default function Projects() {
     return (
         <section id="projects" className="projects-section">
             <div className="container">
-                <motion.h2
+                <motion.div
+                    className="text"
                     variants={projectsTitle}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
                 >
-                    Proyectos destacados
-                </motion.h2>
-
+                    <h2>Proyectos destacados</h2>
+                    <p>Click en imagen para más detalles</p>
+                </motion.div>
+                
                 {
                     loading ? <LoadingAnimation /> :
                         <div className="project-list">

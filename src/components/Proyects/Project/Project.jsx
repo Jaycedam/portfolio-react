@@ -13,7 +13,7 @@ const project = {
         transition: {
             delay: .5,
             duration: 1,
-            ease: "easeOut"
+            ease: "easeInOut"
         }
     }
 }
@@ -30,7 +30,7 @@ export default function Project(props) {
             id="project"
         >
             <div className="image">
-                <a href={props.url}>
+                <a href={props.url} target="_blank" rel="noreferrer">
                     <motion.img
                         whileHover={{ scale: 1.4 }}
                         transition={{

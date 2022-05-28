@@ -30,10 +30,6 @@ footer .social-icons a {
     gap: .5em;
 }
 
-footer .social-icons svg {
-    color: var(--secondary-color);
-}
-
 footer .container .logo {
     width: 100%;
 }
@@ -44,6 +40,9 @@ footer .container .logo svg {
     object-fit: scale-down;
 }
 
+footer .social-icons svg {
+    color: var(--primary-color);
+}
 
 /* responsive media queries */
 
