@@ -69,7 +69,6 @@ export default function Hero() {
                             type="btn-color"
                             icon={<SiMinutemailer />}
                         />
-
                     </div>
                 </div>
             </div>

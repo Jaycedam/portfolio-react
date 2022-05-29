@@ -4,6 +4,8 @@
     background: none;
     font-size: 1.2em;
     color: var(--text);
+    transition: all .2s ease;
+    display: flex;
 }
 
 #theme-toggle:hover {
