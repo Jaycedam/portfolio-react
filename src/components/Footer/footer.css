@@ -40,10 +40,6 @@ footer .container .logo svg {
     object-fit: scale-down;
 }
 
-footer .social-icons svg {
-    color: var(--primary-color);
-}
-
 /* responsive media queries */
 
 /* Large ≥992px / desktop navbar */

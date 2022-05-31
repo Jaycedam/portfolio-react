@@ -37,6 +37,13 @@ export default function Navbar() {
                         </li>
 
                         <li className="nav-item">
+                            <a href="#about">
+                                Acerca
+                                <div className='line'></div>
+                            </a>
+                        </li>
+
+                        <li className="nav-item">
                             <ThemeToggle />
                         </li>
                     </ul>

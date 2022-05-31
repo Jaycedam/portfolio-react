@@ -1,0 +1,47 @@
+.about-section .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 4em;
+}
+
+.about-section .text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2em;
+    text-align: center;
+    align-items: center;
+}
+
+.about-section .text a {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.about-section .technologies .icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em;
+}
+
+.about-section .technologies .icons .element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.about-section .technologies .icons .element svg {
+    font-size: 1.5em;
+}
+
+/* Medium ≥768px */
+@media (min-width:768px) {
+    .about-section .text {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
