@@ -16,8 +16,22 @@ const about = {
         opacity: 1,
         transition: {
             delay: .5,
+            duration: .8,
+            ease: "easeOut"
+        }
+    }
+}
+
+const icon = {
+    hidden: {
+        opacity: 0
+    },
+    visible: {
+        opacity: 1,
+        transition: {
+            delay: 1,
             duration: 1,
-            ease: "easeInOut"
+            ease: "easeOut"
         }
     }
 }
@@ -25,15 +39,15 @@ const about = {
 export default function About() {
     return (
         <section id="about" className="about-section">
-            <motion.div
-                variants={about}
-                viewport={{ once: true }}
-                initial="hidden"
-                whileInView="visible"
-                className="container"
-            >
+            <div className="container">
 
-                <div className="text">
+                <motion.div
+                    variants={about}
+                    viewport={{ once: true }}
+                    initial="hidden"
+                    whileInView="visible"
+                    className="text"
+                >
                     <h2>Acerca de mí</h2>
                     <p>
                         Jordan Cortés, 1995.
@@ -51,59 +65,104 @@ export default function About() {
                         type="btn"
                         link="https://drive.google.com/file/d/1VjSfWn0HnkU4L5RkofvKKXUNrxxri1hI/view?usp=sharing"
                     />
-                </div>
+                </motion.div>
 
                 <div className="technologies">
                     <div className="icons">
-                        <div className="element">
+                        <motion.div
+                            variants={icon}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            className="element">
                             <FaPython />
                             <p>Python</p>
-                        </div>
+                        </motion.div>
 
-                        <div className="element">
+                        <motion.div
+                            variants={icon}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            className="element">
                             <FaJava />
                             <p>Java</p>
-                        </div>
+                        </motion.div>
 
-                        <div className="element">
+                        <motion.div
+                            variants={icon}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            className="element">
                             <SiCsharp />
                             <p>C#</p>
-                        </div>
+                        </motion.div>
 
-                        <div className="element">
+                        <motion.div
+                            variants={icon}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            className="element">
                             <SiOracle />
                             <p>Oracle SQL</p>
-                        </div>
+                        </motion.div>
 
-                        <div className="element">
+                        <motion.div
+                            variants={icon}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            className="element">
                             <SiPostgresql />
                             <p>PostgreSQL</p>
-                        </div>
+                        </motion.div>
 
-                        <div className="element">
+                        <motion.div
+                            variants={icon}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            className="element">
                             <FaReact />
                             <p>React</p>
-                        </div>
+                        </motion.div>
 
-                        <div className="element">
+                        <motion.div
+                            variants={icon}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            className="element">
                             <SiDjango />
                             <p>Django</p>
-                        </div>
+                        </motion.div>
 
-                        <div className="element">
+                        <motion.div
+                            variants={icon}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            className="element">
                             <SiSpring />
                             <p>Spring Boot</p>
-                        </div>
+                        </motion.div>
 
-                        <div className="element">
+                        <motion.div
+                            variants={icon}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            className="element">
                             <FaBootstrap />
                             <p>Bootstrap</p>
-                        </div>
+                        </motion.div>
 
                     </div>
                 </div>
 
-            </motion.div>
+            </div>
         </section>
     )
 }

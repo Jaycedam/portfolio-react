@@ -41,7 +41,7 @@
 /* Medium ≥768px */
 @media (min-width:768px) {
     .about-section .text {
-        width: 70%;
+        width: 60%;
         margin: 0 auto;
     }
 }

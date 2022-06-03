@@ -12,7 +12,7 @@ const btn = {
             stiffness: 250,
             damping: 30,
             delay: .8,
-            duration: 1,
+            duration: .8,
         }
     }
 }

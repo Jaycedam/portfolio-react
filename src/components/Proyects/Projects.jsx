@@ -13,7 +13,8 @@ const projectsTitle = {
         opacity: 1,
         transition: {
             delay: .5,
-            duration: 1,
+            duration: .8,
+            ease: "easeOut"
         }
     }
 }

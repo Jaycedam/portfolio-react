@@ -12,8 +12,8 @@ const project = {
         opacity: 1,
         transition: {
             delay: .5,
-            duration: 1,
-            ease: "easeInOut"
+            duration: .8,
+            ease: "easeOut"
         }
     }
 }
