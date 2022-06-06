@@ -1,18 +1,15 @@
 footer {
     margin-top: 4em;
-}
-
-footer .container {
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: wrap;
     color: var(--text);
-    font-size: smaller;
     height: auto;
     overflow: hidden;
     justify-content: center;
     align-items: center;
     gap: 3em;
+    padding: 2em 4em;
 }
 
 footer .social-icons {
@@ -28,13 +25,14 @@ footer .social-icons a {
     display: flex;
     align-items: center;
     gap: .5em;
+    font-size: smaller;
 }
 
-footer .container .logo {
+footer .logo {
     width: 100%;
 }
 
-footer .container .logo svg {
+footer .logo svg {
     width: 100%;
     height: 30px;
     object-fit: scale-down;
@@ -44,24 +42,24 @@ footer .container .logo svg {
 
 /* Large ≥992px / desktop navbar */
 @media (min-width:992px) {
-    footer .container {
+    footer {
         justify-content: space-between;
         gap: 0;
         flex-direction: row;
     }
 
     footer .social-icons {
-        width: 70%;
+        width: auto;
         align-items: center;
         justify-content: flex-end;
         gap: 3em;
     }
 
-    footer .container .logo {
-        width: 30%;
+    footer .logo {
+        width: auto;
     }
     
-    footer .container .logo svg {
+    footer .logo svg {
         width: auto;
         height: 30px;
     }
