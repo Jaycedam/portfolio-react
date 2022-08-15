@@ -11,7 +11,7 @@ const title = {
     visible: {
         scale: 1,
         transition: {
-            duration: .8,
+            duration: .5,
             ease: "easeOut"
         }
     }
@@ -26,7 +26,7 @@ const text = {
         opacity: 1,
         y: 0,
         transition: {
-            duration: .8,
+            duration: .5,
             ease: "easeOut"
         }
     }

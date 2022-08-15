@@ -16,7 +16,7 @@ const about = {
         opacity: 1,
         transition: {
             delay: .5,
-            duration: .8,
+            duration: .5,
             ease: "easeOut"
         }
     }
@@ -29,8 +29,8 @@ const icon = {
     visible: {
         opacity: 1,
         transition: {
-            delay: 1,
-            duration: 1,
+            delay: .2,
+            duration: .5,
             ease: "easeOut"
         }
     }

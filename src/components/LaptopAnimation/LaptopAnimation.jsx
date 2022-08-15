@@ -10,7 +10,7 @@ const laptop = {
         opacity: 1,
         pathLength: 1,
         transition: {
-            duration: 2,
+            duration: 1,
             ease: "easeOut"
         }
     }
@@ -27,8 +27,8 @@ const screen = {
         scale: 1,
         y: 0,
         transition: {
-            delay: 1.2,
-            duration: 1,
+            delay: .2,
+            duration: .5,
             ease: "easeOut"
         }
     }
