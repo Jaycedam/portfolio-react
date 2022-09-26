@@ -2,7 +2,7 @@ import "./about.css";
 import { FaPython, FaJava, FaReact, FaBootstrap } from "react-icons/fa";
 import { SiCsharp, SiOracle, SiPostgresql, SiDjango, SiSpring } from "react-icons/si";
 import Button from "../Button/Button";
-import { HiDocumentText } from "react-icons/hi";
+import { SiMinutemailer } from "react-icons/si";
 import { motion } from "framer-motion";
 
 // animation for framer motion
@@ -60,10 +60,10 @@ export default function About() {
                     </p>
 
                     <Button
-                        text="CV"
-                        icon={<HiDocumentText />}
+                        text="Contactar"
+                        icon={<SiMinutemailer />}
                         type="btn"
-                        link="https://drive.google.com/file/d/1VjSfWn0HnkU4L5RkofvKKXUNrxxri1hI/view?usp=sharing"
+                        link="mailto:jaycedam@gmail.com"
                     />
                 </motion.div>
 
