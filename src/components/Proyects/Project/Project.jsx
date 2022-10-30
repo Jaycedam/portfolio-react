@@ -38,14 +38,14 @@ export default function Project(props) {
                             damping: 25,
                             stiffness: 120
                         }}
-                        src={props.imageUrl} alt="Project"
+                        src={props.image_url} alt="Project"
                     />
                 </a>
             </div>
 
             <div className="text">
                 <h3>{props.name} - {props.area}</h3>
-                <h5><strong>{props.technology}</strong></h5>
+                <h5><strong>{props.technologies}</strong></h5>
                 <p>{props.about}</p>
             </div>
         </motion.div>

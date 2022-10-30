@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "../../api/axios";
 import { useState, useEffect } from "react";
 import './projects.css';
 import Project from "./Project/Project"
@@ -19,6 +19,8 @@ const projectsTitle = {
     }
 }
 
+const PROJECTS_URL = '/projects/';
+
 export default function Projects() {
     const [loading, setLoading] = useState(() => {
         return true
@@ -28,7 +30,7 @@ export default function Projects() {
     });
 
     useEffect(() => {
-        axios.get("https://jordancortes-admin.herokuapp.com/api/projects/starred").then(res => {
+        axios.get(PROJECTS_URL).then(res => {
             setProjects(res.data);
             setLoading(false);
         });
@@ -37,10 +39,10 @@ export default function Projects() {
     const projectElements = projects.map(n => {
         return <Project
             key={n.id}
-            imageUrl={n.imageUrl}
+            image_url={n.image_url}
             name={n.name}
-            area={n.area.name}
-            technology={n.technology}
+            area={n.area}
+            technologies={n.technologies}
             about={n.about}
             url={n.url}
         />
@@ -59,7 +61,7 @@ export default function Projects() {
                     <h2>Proyectos destacados</h2>
                     <p>Click en imagen para más detalles</p>
                 </motion.div>
-                
+
                 {
                     loading ? <LoadingAnimation /> :
                         <div className="project-list">
