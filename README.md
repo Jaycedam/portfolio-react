@@ -1,5 +1,7 @@
 # Front-end Personal Portfolio (React)
 
+This project is deprecated in favor of https://github.com/Jaycedam/portfolio-app
+
 > - The front-end for the website is being created with React and Framer Motion. Visit [live version](https://jordancortes.netlify.app).
 > - Back-end for the website is found [here](https://github.com/Jaycedam/portfolio-backend-django) (Django).
 > - There's an alternative backend server coded with Spring Boot (only for testing, same functionality), it can be found [here](https://github.com/Jaycedam/portfolio-backend)
