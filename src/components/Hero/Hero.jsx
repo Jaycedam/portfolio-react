@@ -64,7 +64,7 @@ export default function Hero() {
 
                     <div className="call-to-action">
                         <Button
-                            link="mailto:jaycedam@gmail.com"
+                            link="#"
                             text="Contactar"
                             type="btn-color"
                             icon={<SiMinutemailer />}
