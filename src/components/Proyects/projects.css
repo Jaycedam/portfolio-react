@@ -1,8 +1,31 @@
 .project-list {
-    margin-top: 2em;
-    display: grid;
-    align-items: start;
-    justify-items: center;
-    gap: 5em;
-    grid-template-columns: 1fr;
+  margin-top: 2em;
+  display: grid;
+  align-items: start;
+  justify-items: center;
+  gap: 5em;
+  grid-template-columns: 1fr;
+}
+
+.image {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+@media (min-width: 768px) {
+  .project-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
 }
