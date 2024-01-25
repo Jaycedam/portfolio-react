@@ -66,7 +66,7 @@ export default function Hero() {
             <p>
               Este projecto ya no es actualizado, para ver ver la versión
               actual, visitar:&nbsp;
-              <a href="jordancortes.dev">jordancortes.dev</a>
+              <a href="https://www.jordancortes.dev">jordancortes.dev</a>
             </p>
           </div>
         </div>
